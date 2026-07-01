@@ -1,0 +1,2529 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 1252
+
+\documentclass{sebase}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsfonts}
+\usepackage{SESlideJimsLandscape}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{Codepage=1252}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Thursday, August 11, 2016 17:22:02}
+%TCIDATA{LastRevised=Tuesday, September 16, 2025 21:04:41}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Style Editor\Slides - Jim's Landscape">}
+%TCIDATA{Language=American English}
+%TCIDATA{CSTFile=SESlideJimsLandscape.cst}
+%TCIDATA{ComputeDefs=
+%$\gamma _{1}=.5$
+%$\gamma _{3}=1.5$
+%1$k_{o}=1$
+%$\alpha =.66$
+%$\gamma _{2}=1$
+%}
+
+
+\input{tcilatex}
+\begin{document}
+
+\SetTitle{}
+\SetCourse{}
+\SetAuthor{}
+\SetDate{}
+\TitlePage{}
+
+\setcounter{page}{1}
+
+We first deal with the most simple kind of macroeconomic model consisting of
+a representative firm and a representative consumer. All agents will
+optimize. They maximize some objective function subject to the constraints
+they face. We will take as fundamental:
+
+\begin{itemize}
+\item the preferences of consumers
+
+\item the endowments of resources available to consumers
+
+\item the technology available to firms
+
+\item market structure.
+\end{itemize}
+
+Assuming \textit{optimizing behavior} and a \textit{defining an equilibrium}
+allows us to use the model to make predictions.
+
+\textit{Preferences}
+
+There is one period (a \textit{static} model as opposed to a \textit{dynamic
+model}) and there are $N$ consumers. These consumers have identical
+preference given by $u(c,\ell )$ where $c$ is consumption and $\ell $ is
+leisure. We set $N=1$ with no loss of generality. This is our representative
+agent.
+
+\pagebreak
+
+The utility function, $u(c,\ell ),$ has the following features
+
+\begin{itemize}
+\item strictly increasing in each argument
+
+\item strictly concave
+
+\item twice differentiable
+
+\item $lim_{c\rightarrow 0}\,u_{1}(c,\ell )=\infty ,$ $\ell >0$ and $%
+lim_{\ell \rightarrow 0}\,u_{2}(c,\ell )=\infty ,$ $c>0.$
+\end{itemize}
+
+\textit{Endowments}
+
+Each consumer is endowed with one unit of time to be allocated between work
+and leisure. Also, each consumer owns $k_{0}$ units of capital (also an
+endowment) which can be rented to firms.
+
+\textit{Technology}
+
+There are $M$ firms. Each can produce consumption goods according to 
+\begin{equation*}
+y=zf(k,n)
+\end{equation*}%
+where $y$ is output, $k$ is the capital input, $n$ is the labor input, $z$
+is a scalar.
+
+\pagebreak
+
+The production function, $z$ $f(k,n),$ has the following features
+
+\begin{itemize}
+\item increasing in both arguments
+
+\item strictly quasiconcave\footnote{\textit{A} function $f$ a quasiconcave
+function iff for any pair of distinct points $u$ and $v$ in the domain of $f$%
+, and for $0<\theta <1$%
+\begin{equation*}
+f\left( v\right) \geq f\left( u\right) \Rightarrow f\left[ \theta u+\left(
+1-\theta \right) v\right] \geq f\left( u\right)
+\end{equation*}%
+(strict) concavity implies (strict) quasiconcavity, but not vice-versa. Thus
+quasi-concavity is a generalization of the notion of concavity and a
+somewhat weaker condition. Any monotonic, non-decreasing function of a
+quasiconcave function---and therefore of a concave function---is
+quasi-concave.}
+
+\item twice differentiable
+
+\item homogeneous of degree 1\footnote{%
+This implies constant returns to scale, so that $\lambda y=zf(\lambda
+k,\lambda n).$}
+
+\item $lim_{k\rightarrow 0}\,f_{1}(k,n)=\infty ,$ $lim_{k\rightarrow \infty
+}\,f_{1}(k,n)=0,$ $lim_{n\rightarrow 0}\,f_{2}(k,n)=\infty ,$ $%
+lim_{n\rightarrow \infty }\,f_{2}(k,n)=0.$\footnote{%
+The notation $u_{1}(c,\ell )$ means the derivative of $u(c,\ell )$ with
+respect to its first argument. Other derivatives are similarly defined.}.
+\end{itemize}
+
+We set $M=1$ with no loss of generality.
+
+\pagebreak
+
+\textit{Market Structure}
+
+We will focus on a \textit{competitive equilibrium} where all agents are
+price takers. We can only determine relative prices so the price of one good
+can arbitrarily be set to 1. We call this good the \textit{numeraire}. Treat
+the consumption good as the numeraire. We have 3 markets:
+
+\begin{enumerate}
+\item consumption goods
+
+\item leisure (labor): the price of leisure in units of consumption is $%
+\omega $
+
+\item rental services of capital: the rental rate on capital is $r.$
+\end{enumerate}
+
+\pagebreak
+
+\textit{Consumer's Problem: }Each agent solves%
+\begin{equation*}
+\underset{c,\ell ,k_{s}}{\max }u(c,\ell )\text{ subject to}
+\end{equation*}%
+\begin{eqnarray*}
+c &\leq &\omega \left( 1-\ell \right) +rk_{s} \\
+0 &\leq &k_{s}\leq k_{o} \\
+0 &\leq &\ell \leq 1 \\
+c &\geq &0.
+\end{eqnarray*}%
+Here $k_{s}$ is the quantity of capital that the consumer rents to firm(s)
+and since utility is increasing in consumption we must have $k_{s}=k_{0}$. \
+Our restrictions on the utility function assure that:
+
+\begin{enumerate}
+\item the nonnegativity constraints on consumption and leisure will not be
+binding
+
+\item in equilibrium we will have $0<\ell <1.$
+\end{enumerate}
+
+\pagebreak
+
+Use this to simplify the problem to the following Lagrangian 
+\begin{equation*}
+L=u(c,\ell )+\mu \left( rk_{o}+\omega \left( 1-\ell \right) -c\right)
+\end{equation*}%
+There is sufficient structure on the utility function to assure a unique
+optimum characterized by the following focs:%
+\begin{eqnarray*}
+u_{1}(c,\ell ) &=&\mu \\
+u_{2}(c,\ell ) &=&\mu \omega \\
+rk_{o}+\omega \left( 1-\ell \right) &=&c.
+\end{eqnarray*}%
+The first two imply $\omega u_{1}(c,\ell )=u_{2}(c,\ell ).$ Substitute in
+for $c$ from the third to find
+
+\begin{equation*}
+\omega u_{1}(rk_{o}+\omega \left( 1-\ell \right) ,\ell )=u_{2}(rk_{o}+\omega
+\left( 1-\ell \right) ,\ell ).
+\end{equation*}%
+This solves (implicitly)\ for the desired quantity of leisure, $\ell $; in
+terms of $r,k_{o},\omega $ (one equation and one unknown). It does not,
+however, solve the model. We were given $k_{o}.$ We were not given $r$ and $%
+\omega .$
+
+\pagebreak
+
+The \textit{Firms' Problem: }Each firm chooses inputs of labor and capital
+to maximize profits, treating $\omega $ and $r$ as fixed; i.e. each solves%
+\begin{equation*}
+\underset{k,n}{\max }\left[ zf\left( k,n\right) -\omega n-rk\right] .
+\end{equation*}%
+Profit maximization requires 
+\begin{equation*}
+\begin{array}{ll}
+zf_{1}\left( k,n\right) )=r & zf_{2}\left( k,n\right) )=\omega .%
+\end{array}%
+\end{equation*}%
+Since $f\left( k,n\right) )$ is homogeneous of degree one, Euler's law holds%
+\footnote{\textit{Euler's law:} Suppose$f\left( \mathbf{x}\right) $ is
+homogeneous of degree $g$, If we let $\mathbf{x}=\left[ x_{1},x_{2},...x_{M}%
+\right] $ (i.e. a vector with M) elements, then $gf\left( \mathbf{x}\right) =%
+\overset{M}{\underset{i=1}{\sum f_{xi}}}\left( \mathbf{x}\right) x_{i}.$}.
+For us this implies that 
+\begin{equation*}
+zf(k,n)=zf_{1}k+zf_{2}n.
+\end{equation*}%
+That is, profits are zero. This has two important consequences:
+
+\begin{itemize}
+\item We need not be concerned with who owns the firm or how profits are
+distributed.
+
+\item The optimal scale of the firm is indeterminate and the number of firms
+is irrelevant so we set it equal to 1.
+\end{itemize}
+
+\pagebreak
+
+\noindent \textit{Definition:}\ A competitive equilibrium in this economy is
+a set of quantities $\left\{ c,y,\ell ,n,k,k_{s}\right\} $ and prices $%
+\left\{ \omega ,r\right\} $ which satisfy the following properties:
+
+\begin{enumerate}
+\item Each consumer chooses $c,$ $k_{s}$ and $\ell $ optimally given $\omega 
+$ and $r,$
+
+\item The representative firm chooses $y$, $n$ and $k$ optimally given $%
+\omega $ and $r,$
+
+\item Markets clear.
+\end{enumerate}
+
+We have three markets. In our competitive equilibrium, market clearing
+requires the following%
+\begin{equation*}
+\begin{array}{lll}
+(1-\ell )=n, & y=c, & k_{0}=k%
+\end{array}%
+.
+\end{equation*}%
+Note: the total value of \textit{excess demand} across markets is%
+\begin{equation*}
+c-y+\omega \lbrack n-(1-\ell )]+r(k-k_{0}).
+\end{equation*}
+
+\pagebreak
+
+\begin{itemize}
+\item \textit{Walras' law} states that the value of excess demand across
+markets is always zero, and this then implies that, if there are $X$ markets
+and $X-1$ of those markets are in equilibrium, then the additional market is
+also in equilibrium.
+
+\item Note above that if any two of the market clearing conditions are met
+and excess demand is zero, the third is necessarily met so this is an
+example of Walras' law\textit{.}
+
+\item Thus we can drop one market-clearing condition in determining
+competitive equilibrium prices and quantities. Lets eliminate $y=c$.
+\end{itemize}
+
+\pagebreak
+
+The competitive equilibrium reduces to a system of five equations in the
+five unknowns: $\omega ,r,\ell ,k,n.$ These are
+
+\begin{equation*}
+\omega u_{1}(rk_{o}+\omega \left( 1-\ell \right) ,\ell )=u_{2}(rk_{o}+\omega
+\left( 1-\ell \right) ,\ell )
+\end{equation*}%
+\begin{equation*}
+\begin{array}{llll}
+zf_{1}\left( k,n\right) )=r, & zf_{2}\left( k,n\right) )=\omega , & (1-\ell
+)=n, & k_{0}=k.%
+\end{array}%
+\end{equation*}%
+\newline
+
+We can plug the 2nd through 5th of these equations into the first to get: 
+\begin{equation*}
+zf_{2}\left( k_{o},1-\ell \right) u_{1}(zf\left( k_{o},1-\ell \right) ,\ell
+)=u_{2}(zf\left( k_{o},\left( 1-\ell \right) \right) ,\ell )
+\end{equation*}%
+or more succinctly%
+\begin{equation*}
+zf_{2}u_{1}=u_{2}
+\end{equation*}%
+which solves implicitly for equilibrium $\ell $. Knowing $\ell $ we
+substitute in the following equations to obtain solutions for $\omega ,r,k,n$
+and $c$ using%
+\begin{equation*}
+zf_{1}=r;~zf_{2}=\omega ,~n=(1-\ell ),~k_{0}=k,~c=zf\left( k_{0},(1-\ell
+)\right) .
+\end{equation*}
+
+\pagebreak
+
+A \textit{Pareto Optimum}\ is some allocation such that there is no other
+allocation which some agents strictly prefer and which does not make any
+agents worse off.\footnote{%
+An allocation is a production plan and a distribution of goods across
+economic agents.}
+
+Here, we have a single agent and need not worry about the allocation of
+goods across agents. It helps to think in terms of a \textit{social planner}%
+. A social planner is an 'agent' (theoretical construct outside the model)\
+who can:
+
+\begin{itemize}
+\item `dictate' inputs to production by the representative firm
+
+\item `force' the consumer to supply the appropriate quantity of labor
+
+\item `distribute' consumption goods to the consumer.
+\end{itemize}
+
+The planner does this so as to make the consumer as well off as possible.
+\pagebreak
+
+The \textit{social planner determines a Pareto optimum }by solving the
+following problem%
+\begin{equation*}
+\underset{c,\ell }{\max }u(c,\ell )\text{ }
+\end{equation*}%
+subject to%
+\begin{equation*}
+c=zf\left( k_{o},1-\ell \right) .
+\end{equation*}%
+That is, the social planner tries to maximize welfare given a \textit{%
+resource constraint. }We can write this as 
+\begin{equation*}
+\underset{\ell }{\max }u(zf\left( k_{o},1-\ell \right) ,\ell )\text{.}
+\end{equation*}%
+Setting the first order condition (foc) equal to zero gives:%
+\begin{equation*}
+zf_{2}\left( k_{o},1-\ell \right) u_{1}(zf\left( k_{o},1-\ell \right) ,\ell
+)=u_{2}(zf\left( k_{o},1-\ell \right) ,\ell ).
+\end{equation*}%
+\pagebreak
+
+This the same result we got (in terms of $\ell $) in solving for a
+competitive equilibrium. That is, \textit{the competitive equilibrium and
+the Pareto optimum are identical here}. Further, since $u(c,\ell )$ is
+strictly concave, and $f\left( k_{o},1-\ell \right) ,\ell )$ is strictly
+quasiconcave there is a unique Pareto optimum, and the competitive
+equilibrium is also unique.
+
+\noindent In more general settings, it is true \textit{under some
+restrictions} that the following hold:
+
+\begin{enumerate}
+\item A competitive equilibrium (with perfect competition) is Pareto optimal
+(\textit{First Welfare Theorem}).
+
+\item Any Pareto optimum can be supported as a competitive equilibrium (with
+perfect competition) with an appropriate choice of endowments. (\textit{%
+Second Welfare Theorem}).
+\end{enumerate}
+
+Speaking loosely, the assumptions required for (1) and (2) to hold include:%
+\footnote{%
+See Varian's text \textit{Microeconomic Analysis }for proofs and a more
+concise statement.}
+
+\begin{itemize}
+\item the absence of externalities
+
+\item completeness of markets (discussed in next set of notes)
+
+\item absence of distorting taxes and expenditures (e.g. income taxes and
+sales taxes).
+\end{itemize}
+
+\pagebreak
+
+Some uses of solving the social planner's problem:
+
+\noindent \textbf{When it holds}, the equivalence of competitive equilibria
+and Pareto optima in representative agent models can be very useful...we can
+solve for a competitive equilibrium \textit{or} solve the social planner's
+problem (which is often easier).
+
+\noindent \textbf{When it does not hold}:
+
+\begin{itemize}
+\item We often can use the Pareto optimal allocation to get insights into
+proper government policy.
+
+\item We often can use the Pareto optimal allocation to get a measure of the
+cost of inefficiency.
+\end{itemize}
+
+\pagebreak
+
+\textit{An example: \ }Assign particular functional forms. Preferences are 
+\begin{equation*}
+u\left( c,\ell \right) =\frac{c^{1-\gamma }-1}{1-\gamma }+\frac{\ell
+^{1-\gamma }-1}{1-\gamma }
+\end{equation*}%
+where $\gamma >0$ measures the degree of curvature.\FRAME{dtbpFUX}{4.4996in}{%
+3in}{0pt}{\Qcb{$\protect\gamma =.5$ lighter solid line;$\ \protect\gamma =1$
+dashed line; $\protect\gamma =1.5$ darker solid line. }}{}{Plot}{\special%
+{language "Scientific Word";type "MAPLEPLOT";width 4.4996in;height 3in;depth
+0pt;display "USEDEF";plot_snapshots TRUE;mustRecompute FALSE;lastEngine
+"MuPAD";xmin "0";xmax "5";ymin "-5";ymax "5";xviewmin "-0.0005";xviewmax
+"5.0005";yviewmin "-5.001";yviewmax "5.001";plottype 12;labeloverrides
+3;x-label "consumption";y-label "utility";axesFont "Times New
+Roman,12,0000000000,useDefault,normal";num-x-gridlines 24;num-y-gridlines
+24;plotstyle "patch";axesstyle "normal";axestips FALSE;xis \TEXUX{c};yis
+\TEXUX{u};var1name \TEXUX{$c$};var2name \TEXUX{$u$};function
+\TEXUX{$u=\frac{c^{1-\gamma _{1}}-1}{1-\gamma _{1}}$};linecolor
+"black";linestyle 1;pointstyle "point";linethickness 1;lineAttributes
+"Solid";var1range "0,5";var2range "-5,5";num-x-gridlines 54;num-y-gridlines
+49;curveColor "[flat::RGB:0000000000]";curveStyle
+"Line";rangeset"XY";function \TEXUX{$u=\ln c$};linecolor "black";linestyle
+2;pointstyle "point";linethickness 1;lineAttributes "Dash";var1range
+"0,5";var2range "-5,5";num-x-gridlines 24;num-y-gridlines 24;curveColor
+"[flat::RGB:0000000000]";curveStyle "Line";rangeset"XY";function
+\TEXUX{$u=\frac{c^{1-\gamma _{3}}-1}{1-\gamma _{3}}$};linecolor
+"black";linestyle 1;pointstyle "point";linethickness 3;lineAttributes
+"Solid";var1range "0,5";var2range "-5,5";num-x-gridlines 24;num-y-gridlines
+24;curveColor "[flat::RGB:0000000000]";curveStyle
+"Line";rangeset"XY";VCamFile 'T0OJJ204.xvz';valid_file "T";tempfilename
+'T0OJJ201.wmf';tempfile-properties "XPR";}}
+
+This is a \textquotedblleft constant relative risk
+aversion\textquotedblright\ (CRRA) utility function. At $\gamma =1$ we
+define $u\left( c,\ell \right) =\ln c+\ln \ell .$\footnote{%
+The rationale for this is that using L'Hospital's Rule $\underset{\gamma
+\rightarrow 1.}{\lim }\frac{c^{1-\gamma }-1}{1-\gamma }=\ln c.$ See Chiang's
+text \textit{Fundamental Methods of Mathematical Economics}.}\pagebreak
+
+Production \textit{Cobb-Douglas}:%
+\begin{equation*}
+f\left( k,n\right) =zk^{\alpha }n^{1-\alpha }\text{ }0<\alpha <1
+\end{equation*}%
+The social planner's problem is easiest here. The social planner solves:%
+\begin{equation*}
+u\left( \ell \right) =\frac{\left( zk^{\alpha }\left( 1-\ell \right)
+^{1-\alpha }\right) ^{1-\gamma }-1}{1-\gamma }+\frac{\ell ^{1-\gamma }-1}{%
+1-\gamma }
+\end{equation*}%
+Setting the foc equal to zero gives:%
+\begin{equation*}
+\left[ zk_{o}^{\alpha }\left( 1-\ell \right) ^{1-\alpha }\right] ^{-\gamma
+}\left( 1-\alpha \right) zk_{o}^{\alpha }\left( 1-\ell \right) ^{-\alpha
+}=\ell ^{-\gamma }
+\end{equation*}%
+This is one equation and one unknown. \pagebreak
+
+We can easily solve for it \textit{numerically} to see how the labor supply
+depends on $z$. We do ths for three different valules of $\gamma .$
+
+\FRAME{dtbpFUX}{4.4996in}{3in}{0pt}{\Qcb{$\protect\gamma =.5$ lighter solid
+line;$\ \protect\gamma =1$ dashed line; $\protect\gamma =1.5$ darker solid
+line. }}{}{Plot}{\special{language "Scientific Word";type "MAPLEPLOT";width
+4.4996in;height 3in;depth 0pt;display "FRAME";plot_snapshots
+TRUE;mustRecompute FALSE;lastEngine "MuPAD";xmin "0";xmax "10";ymin "0";ymax
+"1";xviewmin "-0.001";xviewmax "10.001";yviewmin "-0.0001";yviewmax
+"1.0001";plottype 12;labeloverrides 3;x-label "z";y-label "leisure";axesFont
+"Times New Roman,12,0000000000,useDefault,normal";num-x-gridlines
+24;num-y-gridlines 24;plotstyle "patch";axesstyle "normal";axestips
+FALSE;xis \TEXUX{z};yis \TEXUX{v8467};var1name \TEXUX{$z$};var2name
+\TEXUX{$\ell $};function \TEXUX{$\left[ zk_{o}^{\alpha }\left( 1-\ell
+\right) ^{1-\alpha }\right] ^{-\gamma _{1}}\left( 1-\alpha \right)
+zk_{o}^{\alpha }\left( 1-\ell \right) ^{-\alpha }=\ell ^{-\gamma
+_{1}}$};linecolor "black";linestyle 1;pointstyle "point";linethickness
+1;lineAttributes "Solid";var1range "0,10";var2range "0,1";num-x-gridlines
+24;num-y-gridlines 24;curveColor "[flat::RGB:0000000000]";curveStyle
+"Line";rangeset"XY";function \TEXUX{$\left[ zk_{o}^{\alpha }\left( 1-\ell
+\right) ^{1-\alpha }\right] ^{-\gamma _{2}}\left( 1-\alpha \right)
+zk_{o}^{\alpha }\left( 1-\ell \right) ^{-\alpha }=\ell ^{-\gamma
+_{2}}$};linecolor "black";linestyle 2;pointstyle "point";linethickness
+1;lineAttributes "Dash";var1range "0,10";var2range "0,1";num-x-gridlines
+24;num-y-gridlines 24;curveColor "[flat::RGB:0000000000]";curveStyle
+"Line";function \TEXUX{$\left[ zk_{o}^{\alpha }\left( 1-\ell \right)
+^{1-\alpha }\right] ^{-\gamma _{3}}\left( 1-\alpha \right) zk_{o}^{\alpha
+}\left( 1-\ell \right) ^{-\alpha }=\ell ^{-\gamma _{3}}$};linecolor
+"black";linestyle 1;pointstyle "circle";linethickness 3;lineAttributes
+"Solid";var1range "0,10";var2range "0,1";num-x-gridlines 24;num-y-gridlines
+24;curveColor "[flat::RGB:0000000000]";curveStyle "Line";VCamFile
+'T0OJJ203.xvz';valid_file "T";tempfilename
+'T0OJJ200.wmf';tempfile-properties "XPR";}}\pagebreak
+
+Lets look at a special case we can solve \textit{analytically}. Let $\gamma
+=1$ i.e., the $ln$ case.%
+\begin{equation*}
+\left[ zk_{o}^{\alpha }\left( 1-\ell \right) ^{1-\alpha }\right] ^{-1}\left(
+1-\alpha \right) zk_{o}^{\alpha }\left( 1-\ell \right) ^{-\alpha }=\ell ^{-1}
+\end{equation*}%
+or 
+\begin{equation*}
+\ell =\frac{1}{2-\alpha }.
+\end{equation*}%
+Here $\ell $ is not a function of $zk_{o}^{\alpha }.$ From this we can find
+all other endogenous items. To look at the effects of $z$, we need to look
+at the more general case above or we can consider a somewhat different set
+of preferences. Lets set preferences to 
+\begin{equation*}
+u\left( c,\ell \right) =\frac{c^{1-\gamma }-1}{1-\gamma }+\ell .
+\end{equation*}%
+Point to ponder:\ For leisure this this does not satisfy all the assumptions
+we made above. Utility is linear in leisure. Can we be assured that we will
+not have a \textit{corner solution}?\pagebreak
+
+The social planner solves%
+\begin{equation*}
+\underset{\ell }{\max }\frac{\left[ zk_{o}^{\alpha }\left( 1-\ell \right)
+^{1-\alpha }\right] ^{1-\gamma }-1}{1-\gamma }+\ell .
+\end{equation*}%
+Setting the foc equal to zero gives%
+\begin{equation*}
+\left[ zk_{o}^{\alpha }\left( 1-\ell \right) ^{1-\alpha }\right] ^{-\gamma
+}\left( 1-\alpha \right) zk_{o}^{\alpha }\left( 1-\ell \right) ^{-\alpha }=1
+\end{equation*}%
+which gives (show this on your own)%
+\begin{equation*}
+\ell =1-\left[ \left( zk_{o}^{\alpha }\right) ^{1-\gamma }\left( 1-\alpha
+\right) \right] ^{\frac{1}{\alpha +\left( 1-\alpha \right) \gamma }}.
+\end{equation*}%
+\pagebreak Knowing $\ell $ we can find $c$ from $c=zk_{o}^{\alpha }\left(
+1-\ell \right) ^{1-\alpha }$ which gives (after some algebra not shown)%
+\begin{equation*}
+c=\left[ zk_{o}^{\alpha }\left( 1-\alpha \right) ^{\left( 1-\alpha \right) }%
+\right] ^{\frac{1}{\alpha +\left( 1-\alpha \right) \gamma }}
+\end{equation*}%
+and since $zf_{2}\left( k_{o},\left( 1-\ell \right) \right) )=\ \omega $
+(from the decentralized problem) $\allowbreak $
+
+Note: Since $\ell $ cannot be less than zero, it is more complete to write 
+\begin{equation*}
+\ell =\max \left\{ 0,1-\left[ \left( zk_{o}^{\alpha }\right) ^{1-\gamma
+}\left( 1-\alpha \right) \right] ^{\frac{1}{\alpha +\left( 1-\alpha \right)
+\gamma }}\right\}
+\end{equation*}%
+\begin{equation*}
+c=\left\{ 
+\begin{array}{ccc}
+\left[ zk_{o}^{\alpha }\left( 1-\alpha \right) ^{\left( 1-\alpha \right) }%
+\right] ^{\frac{1}{\alpha +\left( 1-\alpha \right) \gamma }} & \text{if} & 
+1> \left[ \left( zk_{o}^{\alpha }\right) ^{1-\gamma }\left( 1-\alpha \right) %
+\right] ^{\frac{1}{\alpha +\left( 1-\alpha \right) \gamma }} \\ 
+c=zk_{o}^{\alpha } & \text{if} & 1\leq \left[ \left( zk_{o}^{\alpha }\right)
+^{1-\gamma }\left( 1-\alpha \right) \right] ^{\frac{1}{\alpha +\left(
+1-\alpha \right) \gamma }}%
+\end{array}%
+\right. .
+\end{equation*}%
+In general, be sure to watch for corner solutions.\pagebreak
+
+\textit{Comparative statics. }Both $c$ and $\omega $ are increasing in both $%
+z$ and $k_{0}$. However, the effects on the quantity of leisure (and
+therefore on employment) are ambiguous.
+
+\begin{itemize}
+\item With $\gamma $ $<1$ an increase in $z$ or in $k_{0}$ will decrease
+leisure.
+
+\item With $\gamma $ $>1$ an increase in $z$ or in $k_{0}$ will increase
+leisure.
+
+\item Why? There are opposing \textit{income and substitution effects. }
+\end{itemize}
+
+An empirical regularity is that an increase in productivity increases labor
+employed (decreases leisure). A productivity shock, which increases the real
+wage and output must result in a decrease in leisure (increase in
+employment) in order for employment to be procyclical in our model as in the
+data. The substitution effect must be large (in absolute value) relative to
+the income effect. $\gamma $ $<1$ is sufficient for this in our example.
+
+\pagebreak
+
+\section{An economy with a government.}
+
+We now introduce government into our model to analyze some simple fiscal
+policy issues. We make some other simplifications to keep it clean. The
+government
+
+\begin{itemize}
+\item makes purchases of consumption goods.
+
+\item finances purchases through lump-sum taxes on the representative agent.
+
+\item destroys the goods it purchases.
+\end{itemize}
+
+Let $g$ be the quantity of government purchases (exogenous) and $\tau $ be
+total taxes. The government operates under a period \textit{balanced budget
+constraint} so that $g=\tau .$
+
+Output can be produced according to $y=zn$.
+
+\pagebreak
+
+Here, the consumer's optimization problem is%
+\begin{equation*}
+\underset{c,\ell }{\max }u\left( c,\ell \right)
+\end{equation*}%
+subject to%
+\begin{equation*}
+c=\omega (1-\ell )-\tau .
+\end{equation*}%
+The foc for this maximization problem gives:%
+\begin{equation*}
+\omega u_{1}=u_{2}.
+\end{equation*}%
+The representative firm's profit maximization problem is%
+\begin{equation*}
+\underset{n}{\max }\left( z-\omega \right) n.
+\end{equation*}%
+To maximize profits the firm chooses 
+\begin{equation*}
+n=\left\{ 
+\begin{array}{ccc}
+-\infty & \text{if} & z<\omega \\ 
+\text{any quantity} & \text{if} & z=\omega \\ 
+\infty & \text{if} & z>\omega .%
+\end{array}%
+\right.
+\end{equation*}%
+\pagebreak
+
+Now a \textit{competitive equilibrium} consists of five quantities $\left(
+y,c,\ell ,n,\tau \right) $ and a price $\left( \omega \right) $ which
+satisfy the following:
+
+\begin{enumerate}
+\item The representative consumer chooses $c$ and $\ell $ to maximize
+utility, given $\omega $ and $\tau $.
+
+\item The representative firm chooses $n$ to maximize profits, given $\omega 
+$.
+
+\item Markets for consumption goods and labor clear.
+
+\item The government budget constraint is satisfied.
+\end{enumerate}
+
+Point to ponder: How do we know there is only 1 price to solve for?
+
+\pagebreak
+
+The competitive equilibrium and the Pareto optimum are equivalent here, (no
+distortionary taxes or spending). The social planner's problem is 
+\begin{equation*}
+\underset{c,\ell }{\max }u\left( c,\ell \right)
+\end{equation*}%
+subject to 
+\begin{equation*}
+c+g=z(1-\ell ).
+\end{equation*}
+
+After substituting in for $c$, the foc is: 
+\begin{equation*}
+zu_{1}\left[ \left( z\left( 1-\ell \right) -g,\ell \right) \right]
+=u_{2}\left( z\left( 1-\ell \right) -g,\ell \right) .
+\end{equation*}%
+Suppose preferences are given by 
+\begin{equation*}
+u\left( c,\ell \right) =\frac{c^{1-\gamma }-1}{1-\gamma }+\frac{\ell
+^{1-\gamma }-1}{1-\gamma }.
+\end{equation*}%
+Substitute in $c=z(1-\ell )-g$ 
+\begin{equation*}
+u\left( \ell s\right) =\frac{\left[ z(1-\ell )-g\right] ^{1-\gamma }-1}{%
+1-\gamma }+\frac{\ell ^{1-\gamma }-1}{1-\gamma }.
+\end{equation*}%
+\pagebreak
+
+The foc is%
+\begin{equation*}
+z\left[ z(1-\ell )-g\right] ^{-\gamma }=\ell ^{-\gamma }
+\end{equation*}%
+which gives 
+\begin{equation*}
+\ell =\frac{z^{\frac{-1}{\gamma }}\left( z-g\right) }{1+z^{\frac{\gamma -1}{%
+\gamma }}}
+\end{equation*}%
+and%
+\begin{equation*}
+c=z\left( 1-\frac{z^{\frac{-1}{\gamma }}\left( z-g\right) }{1+z^{\frac{%
+\gamma -1}{\gamma }}}\right) -g
+\end{equation*}%
+or%
+\begin{equation*}
+c=\left( \frac{z+z^{\frac{\gamma -1}{\gamma }}g}{1+z^{\frac{\gamma -1}{%
+\gamma }}}\right) -g.
+\end{equation*}%
+\pagebreak
+
+\begin{itemize}
+\item Note $\frac{d\ell }{dg}<0$ and $\frac{dc}{dg}<0.$
+
+\item Quantities of both goods will decrease.
+
+\item There is \textit{crowding out} of private consumption.
+
+\item The decrease in consumption is smaller than the increase in government
+purchases, ($\frac{dc}{dg}>-1$) so that output increases.
+\end{itemize}
+
+Another lesson from this is that wasteful government spending does not make
+the social planner's problem differ from the competitive equilibrium. (On
+your own: solve for CE\ to verify). Why? As we have set up the problem, the
+social planner takes the government spending as \textit{fundamental}%
+.\pagebreak
+
+\section{An economy with distortionary taxes.\textit{\ }}
+
+Let us examine a representative agent economy where the consumer has a
+utility function 
+\begin{equation}
+u=\ln c+\ln \ell  \label{u2}
+\end{equation}%
+where $c$ and $\ell $ are consumption and leisure. The consumer has an
+endowment of 1 unit of time and $k_{0}$ units of capital. The representative
+firm has a production technology given by $y=k^{\alpha }n^{1-\alpha }$ where 
+$k$ and $n$ are capital and labor inputs. Suppose the government must have
+expenditure equal to $g$ which is financed by taxing consumption at rate $%
+\tau $. The social planner maximizes welfare subject to a \textit{resource
+constraint}. The problem is 
+\begin{equation*}
+\underset{c,\ell }{\max }\ln c+\ln \ell
+\end{equation*}%
+subject to:%
+\begin{equation}
+c+g=k^{\alpha }\left( 1-\ell \right) ^{1-\alpha }  \notag
+\end{equation}%
+yielding 
+\begin{equation*}
+L=\ln c+\ln \ell +\lambda \left( k^{\alpha }\left( 1-\ell \right) ^{1-\alpha
+}-c-g\right) .
+\end{equation*}%
+\pagebreak
+
+The focs are%
+\begin{eqnarray*}
+\frac{1}{c} &=&\lambda \\
+\frac{1}{\ell } &=&\lambda \left( 1-\alpha \right) k^{\alpha }\left( 1-\ell
+\right) ^{-\alpha }
+\end{eqnarray*}%
+giving%
+\begin{equation}
+\frac{\frac{1}{c}}{\frac{1}{\ell }}=\frac{1}{\left( 1-\alpha \right)
+k^{\alpha }\left( 1-\ell \right) ^{-\alpha }}.  \label{spp}
+\end{equation}%
+Using the resource constraint and simplifying gives 
+\begin{equation}
+\frac{\left( 1-\alpha \right) k^{\alpha }\left( 1-\ell \right) ^{-\alpha }}{%
+\left( k^{\alpha }\left( 1-\ell \right) ^{1-\alpha }-g\right) }=\frac{1}{%
+\ell }  \label{6}
+\end{equation}%
+Since the size of the capital stock is $k_{0}$ and $g$ is given, this can be
+used to find $\ell .$\pagebreak
+
+A competitive equilibrium is a set of quantities $\left\{ y,c,\ell ,n,k,\tau
+\right\} $ prices $\left\{ \omega ,r\right\} $ such that
+
+\begin{enumerate}
+\item Each consumer chooses $c$ and $\ell $ to maximize (\ref{u2}) given $%
+\omega ,r$, and $\tau $.
+
+\item The representative firm chooses $k$ and $n$ to maximize profits given $%
+\omega $ and $r.$
+
+\item The government balances its budget.
+
+\item Markets clear. That is:%
+\begin{eqnarray*}
+k &=&k_{0} \\
+n+\ell &=&1 \\
+c+g &=&y.
+\end{eqnarray*}%
+\pagebreak
+\end{enumerate}
+
+Solve for the competitive equilibrium and show that it is not Pareto
+Optimal.. The agent's problem is \ 
+\begin{equation*}
+\underset{c,\ell }{\max }\ln c+\ln \ell
+\end{equation*}%
+subject to:%
+\begin{equation*}
+c\left( 1+\tau \right) \leq \left( \omega \left( 1-\ell \right)
++rk_{0}\right) .
+\end{equation*}%
+This gives%
+\begin{equation*}
+L=\ln c+\ln \ell +\lambda \left( \left( \omega \left( 1-\ell \right)
++rk_{0}\right) -c\left( 1+\tau \right) \right)
+\end{equation*}%
+so the focs are%
+\begin{eqnarray*}
+\frac{1}{c} &=&\lambda \left( 1+\tau \right) \\
+\frac{1}{\ell } &=&\lambda \omega .
+\end{eqnarray*}%
+Note that this \textit{distortionary tax} shows up in the foc. This gives 
+\begin{equation*}
+\frac{\frac{1}{c}}{\frac{1}{\ell }}=\frac{1+\tau }{\omega }.
+\end{equation*}
+
+\pagebreak
+
+The firm solves:%
+\begin{equation*}
+\underset{k,n}{\max }k^{\alpha }n^{1-\alpha }-\omega n-rk
+\end{equation*}%
+which gives 
+\begin{eqnarray*}
+r &=&\alpha \left( \frac{n}{k}\right) ^{1-\alpha } \\
+\omega &=&\left( 1-\alpha \right) \left( \frac{k}{n}\right) ^{\alpha }.
+\end{eqnarray*}%
+Compare (\ref{ce}) and (\ref{spp}) (repeated below).%
+\begin{equation*}
+\frac{\frac{1}{c}}{\frac{1}{\ell }}=\frac{1}{\left( 1-\alpha \right)
+k^{\alpha }\left( 1-\ell \right) ^{-\alpha }}
+\end{equation*}%
+\begin{equation}
+\frac{\frac{1}{c}}{\frac{1}{\ell }}=\frac{1+\tau }{\left( 1-\alpha \right)
+k^{\alpha }\left( 1-\ell \right) ^{-\alpha }}.  \label{ce}
+\end{equation}%
+Thus the competitive equilibrium gives a different solution and is Pareto
+inferior. \pagebreak \newline
+Now let's finish solving for the supply of labor in the CE. We have 
+\begin{equation*}
+\frac{\ell }{c}=\frac{1+\tau }{\left( 1-\alpha \right) k^{\alpha }\left(
+1-\ell \right) ^{-\alpha }}.
+\end{equation*}%
+Putting in the budget constraint we get%
+\begin{equation*}
+\frac{\ell }{\left( 1+\tau \right) \left( \omega \left( 1-\ell \right)
++rk_{0}\right) }=\frac{1+\tau }{\left( 1-\alpha \right) k^{\alpha }\left(
+1-\ell \right) ^{-\alpha }}
+\end{equation*}%
+or%
+\begin{equation*}
+\frac{\ell }{\left( \omega \left( 1-\ell \right) +rk_{0}\right) }=\frac{1}{%
+\left( 1-\alpha \right) k^{\alpha }\left( 1-\ell \right) ^{-\alpha }}
+\end{equation*}%
+and using the equilibrium prices we get%
+\begin{equation*}
+\frac{\ell }{k^{\alpha }\left( 1-\ell \right) ^{1-\alpha }}=\frac{1}{\left(
+1-\alpha \right) k^{\alpha }\left( 1-\ell \right) ^{-\alpha }}
+\end{equation*}%
+or%
+\begin{equation}
+\ell =\frac{1}{2-\alpha }.  \label{9}
+\end{equation}%
+\newline
+Comparing with (\ref{6}) this is a different solution and Pareto
+inferior.\pagebreak
+
+\section{An economy with distortionary government expenditures.}
+
+Consider a similar representative agent economy where the consumer has a
+utility function 
+\begin{equation}
+u=\ln c+\ln \ell  \label{u3}
+\end{equation}%
+where $c$ and $\ell $ are consumption and leisure. The consumer has an
+endowment of 1 unit of time and $k_{0}$ units of capital. The representative
+firm has a production technology given by $y=k^{\alpha }n^{1-\alpha }$ where 
+$k$ and $n$ are capital and labor inputs. Suppose the government subsidizes
+consumption. Specifically, for each unit of consumption goods purchased by
+the representative consumer, she receives $s>0$ units of consumption from
+the government. Thus letting $c_{p}$ be private spending on consumption, we
+have $c=c_{p}\left( 1+s\right) .$ This subsidy is financed by a lump-sum tax 
+$\tau $ on the representative consumer.
+
+Find the solution to the social planner's problem.\newline
+The social planner maximizes welfare subject to a \textit{resource constraint%
+}. The problem is 
+\begin{equation*}
+\underset{c,\ell }{\max }\ln c+\ln \ell
+\end{equation*}%
+subject to:%
+\begin{equation}
+c=k^{\alpha }\left( 1-\ell \right) ^{1-\alpha }.  \notag
+\end{equation}%
+\pagebreak
+
+Write this as%
+\begin{equation*}
+\underset{\ell }{\max }\ln k^{\alpha }\left( 1-\ell \right) ^{1-\alpha }+\ln
+\ell .
+\end{equation*}%
+The foc\ is 
+\begin{equation*}
+\frac{1-\alpha }{1-\ell }=\frac{1}{\ell }.
+\end{equation*}%
+Solution is 
+\begin{equation*}
+\ell =\frac{1}{2-\alpha }.
+\end{equation*}%
+From this we can find $c$, etc.
+
+\pagebreak
+
+Define a competitive equilibrium for this economy.\newline
+A competitive equilibrium is a set of quantities $\left\{ y,c,\ell ,n,k,\tau
+\right\} $ and prices $\left\{ \omega ,r\right\} $ such that
+
+\begin{enumerate}
+\item Each consumer chooses $c$ and $\ell $ to maximize (\ref{u3}) optimally
+given $\omega ,r$,$s,$ and $\tau $.
+
+\item The representative firm chooses $k$ and $n$ to maximize profits given $%
+\omega $ and $r.$
+
+\item The government choose $\tau $ to balance its budget.
+
+\item Markets clear. That is:%
+\begin{eqnarray*}
+k &=&k_{0} \\
+n+\ell &=&1 \\
+c &=&y.
+\end{eqnarray*}
+\end{enumerate}
+
+\pagebreak
+
+Solve for the competitive equilibrium and show that it is not Pareto
+Optimal. The agent solves%
+\begin{equation*}
+\underset{c_{p},\ell }{\max }\ln c+\ln \ell
+\end{equation*}%
+subject to%
+\begin{eqnarray*}
+c &=&c_{p}\left( 1+s\right) \\
+c_{p}+\tau &\leq &\omega \left( 1-\ell \right) +rk_{0} \\
+\ell &\in &\left[ 0,1\right] .
+\end{eqnarray*}%
+\pagebreak
+
+As the second and third hold with equality in equilibrium, write this as%
+\begin{equation*}
+\underset{c_{p},\ell }{\max }\ln c_{p}\left( 1+s\right) +\ln \ell +\lambda
+\left( \omega \left( 1-\ell \right) +rk_{0}-c_{p}-\tau \leq \right)
+\end{equation*}%
+and focs give 
+\begin{equation*}
+\frac{\frac{1}{c_{p}}}{\frac{1}{\ell }}=\frac{1}{\omega }
+\end{equation*}%
+or%
+\begin{equation*}
+\frac{\frac{c}{1+s}}{\frac{1}{\ell }}=\frac{1}{\omega }
+\end{equation*}%
+The subsidy is distoring the tradeoff beteen consumption and leisure.
+\pagebreak
+
+We would be more likely the write this as 
+\begin{equation*}
+\underset{\ell }{\max }\ln \left[ \left( 1+s\right) \left( \omega \left(
+1-\ell \right) +rk_{0}-\tau \right) \right] +\ln \ell .
+\end{equation*}%
+The foc is 
+\begin{equation}
+\frac{\omega }{\left( \omega \left( 1-\ell \right) +rk_{0}-\tau \right) }=%
+\frac{1}{\ell }.  \label{nfoc}
+\end{equation}%
+\pagebreak
+
+The firm solves%
+\begin{equation*}
+\underset{k,n}{\max }k^{\alpha }n^{1-\alpha }-\omega n-rk
+\end{equation*}%
+which gives 
+\begin{eqnarray}
+r &=&\alpha \left( \frac{n}{k}\right) ^{1-\alpha }  \label{wages} \\
+\omega &=&\left( 1-\alpha \right) \left( \frac{k}{n}\right) ^{\alpha }. 
+\notag
+\end{eqnarray}%
+The government budget constraint is%
+\begin{equation*}
+c_{p}s=\tau
+\end{equation*}%
+or 
+\begin{equation}
+\frac{cs}{1+s}=\tau .  \label{bud2}
+\end{equation}%
+\pagebreak
+
+Putting (\ref{wages}), (\ref{bud2}), $k=k_{0}$ and $n=1-\ell $ and $c=y$ and 
+$y=k^{\alpha }n^{1-\alpha }$ into (\ref{nfoc}) gives 
+\begin{equation*}
+\frac{\left( 1-\alpha \right) \left( \frac{k}{1-\ell }\right) ^{\alpha }}{%
+\left( 1-\alpha \right) \left( \frac{k}{1-\ell }\right) ^{\alpha }\left(
+1-\ell \right) +\alpha \left( \frac{1-\ell }{k}\right) ^{1-\alpha }k-\frac{%
+sk^{\alpha }\left( 1-\ell \right) ^{1-\alpha }}{1+s}}=\frac{1}{\ell }
+\end{equation*}%
+which simplifies to 
+\begin{equation*}
+\frac{\left( 1-\alpha \right) }{\left( 1-\alpha \right) \left( 1-\ell
+\right) +\alpha \left( 1-\ell \right) -\frac{s\left( 1-\ell \right) }{1+s}}=%
+\frac{1}{\ell },
+\end{equation*}%
+\begin{equation*}
+\frac{\left( 1+s\right) \left( 1-\alpha \right) }{1-\ell }=\frac{1}{\ell }.
+\end{equation*}%
+The solution is 
+\begin{equation*}
+\ell =\frac{1}{2-\alpha +s\left( 1-\alpha \right) }
+\end{equation*}%
+so clearly any positive (or negative) subsidy will be inefficient. \pagebreak
+
+\section{An economy with a missing market: valued government expenditures.}
+
+Consider a similar representative agent economy where the consumer has a
+utility function 
+\begin{equation*}
+u=\ln c+\ln \ell +\ln g
+\end{equation*}%
+where $c$ and $\ell $ are consumption and leisure and $g$ is the supply of
+goods which are valued by agents and provided by government. Note that since
+we assume only government can provide this good, we can consider this a case
+of \textit{missing markets} for the good $g$. The consumer has an endowment
+of 1 unit of time. The representative firm has a production technology given
+by $y=n$ where $n$ is the labor input. Government spending is funded by a
+lump-sum tax $\tau $ on the representative consumer. A unit of output
+converts one-for-one to a unit of $g$. The social planner maximizes welfare
+subject to a \textit{resource constraint}. It solves 
+\begin{equation*}
+\underset{\ell ,c,g}{\max }\ln c+\ln \ell +\ln g
+\end{equation*}%
+subject to%
+\begin{equation}
+c+g=1-\ell .  \notag
+\end{equation}%
+\pagebreak
+
+Write this as%
+\begin{equation*}
+\underset{\ell ,g}{\max }\ln \left( 1-\ell -g\right) +\ln \ell +\ln g.
+\end{equation*}%
+The focs\ are 
+\begin{equation*}
+\frac{1}{1-\ell -g}=\frac{1}{\ell }
+\end{equation*}%
+\begin{equation*}
+g=\frac{1-\ell }{2}.
+\end{equation*}%
+\pagebreak This into the first gives%
+\begin{equation*}
+\frac{1}{1-\ell -\frac{1-\ell }{2}}=\frac{1}{\ell }
+\end{equation*}%
+\begin{equation*}
+\ell =\frac{1}{3}.
+\end{equation*}%
+so 
+\begin{equation*}
+g=\frac{1-\frac{1}{3}}{2}=\frac{1}{3}
+\end{equation*}%
+\begin{equation*}
+c=\frac{1-\frac{1}{3}}{2}=\frac{1}{3}.
+\end{equation*}
+
+\pagebreak
+
+Define a competitive equilibrium for this economy.\newline
+A competitive equilibrium is a set of quantities $\left\{ y,c,\ell ,n,\tau
+\right\} $ and price $\left\{ \omega \right\} $ such that
+
+\begin{enumerate}
+\item Each consumer chooses $c$ and $\ell $ to maximize (\ref{u3}) optimally
+given $\omega ,$ $g$ and $\tau $.
+
+\item The representative firm chooses $n$ to maximize profits given $\omega
+. $
+
+\item The government balances its budget.
+
+\item Markets clear. That is:%
+\begin{eqnarray*}
+n+\ell &=&1 \\
+c+g &=&y.
+\end{eqnarray*}
+\end{enumerate}
+
+\pagebreak
+
+Now solve for the competitive equilibrium. The agent solves:%
+\begin{equation*}
+\underset{c,\ell }{\max }\ln c+\ln \ell +\ln g
+\end{equation*}%
+subject to%
+\begin{eqnarray*}
+c &\leq &\left( \omega \left( 1-\ell \right) -\tau \right) \\
+\ell &\in &\left[ 0,1\right]
+\end{eqnarray*}%
+where $g$ is taken as given by the agent. As the first holds with equality
+in equilibrium write this as 
+\begin{equation*}
+\underset{\ell }{\max }\ln \left[ \omega \left( 1-\ell \right) -\tau \right]
++\ln \ell +\ln g.
+\end{equation*}%
+The foc is 
+\begin{equation}
+\frac{\omega }{\omega \left( 1-\ell \right) -\tau }=\frac{1}{\ell }.
+\label{foc4}
+\end{equation}%
+\pagebreak
+
+The firm' problem gives 
+\begin{equation}
+\omega =1.  \notag
+\end{equation}%
+The government budget constraint is%
+\begin{equation}
+g=\tau .  \label{bc}
+\end{equation}%
+Putting $\omega =1$ into (\ref{foc4}) gives 
+\begin{eqnarray}
+\frac{1}{\left( 1-\ell \right) -\tau } &=&\frac{1}{\ell }  \label{foc5} \\
+\ell &=&\frac{1-\tau }{2}.  \notag
+\end{eqnarray}%
+$\allowbreak $How should the government choose $g?$ \pagebreak
+
+We want 
+\begin{equation*}
+\ell =\frac{1}{3}
+\end{equation*}%
+From above%
+\begin{eqnarray*}
+\frac{1}{3} &=&\frac{1-\tau }{2} \\
+\tau &=&\frac{1}{3}.
+\end{eqnarray*}%
+From government budget constraint%
+\begin{equation*}
+g=\frac{1}{3}.
+\end{equation*}%
+This is the same as we found using the social planner's problem. Here we
+have shown this is consistent with the proper supply of labor hours as well.
+Thus we have shown that through proper policy the social optimum can be
+achieved and that the social planner's problem can be used to find the
+optimal policy. \pagebreak
+
+\section{An economy with an externality.}
+
+Here government has a role even though expenditures are not directly valued.
+Government can overcome an externality. Consider an economy with many
+agents, each of whom maximizes 
+\begin{equation*}
+\frac{c^{\gamma }}{\gamma }.
+\end{equation*}%
+Here $c$ is consumption and $\gamma <1.$ Each agent has one unit of time
+available in each period and must accumulate human capital before he works.
+An individual accumulates human capital according to $h=\left( 1-u\right) $
+where $u$ is the share of time spent working$.$ A representative firm
+produces according to $y=\alpha H$ where $H$ is the amount of human capital
+employed and equal to $hu$ in equilibrium. The social planner's problem is $%
+\ $%
+\begin{equation*}
+\underset{c,u,h}{\max }\frac{c^{\gamma }}{\gamma }
+\end{equation*}%
+subject to 
+\begin{eqnarray*}
+c &=&\alpha H \\
+H &=&\left( 1-u\right) u.
+\end{eqnarray*}%
+is the amount of human capital provided per unit of time, and $u$ in the
+share of time spent in production. \pagebreak
+
+Rewrite as%
+\begin{equation*}
+\underset{u}{\max }\frac{\left( \alpha (1-u)u\right) ^{\gamma }}{\gamma }.
+\end{equation*}%
+It is easy to show $u^{\ast }=1/2$.\ \newline
+Now suppose instead that human capital is produced according to $h=\overline{%
+h}^{1-\theta }\left( 1-u\right) ^{\theta }$ where $0<\theta <1$ and $%
+\overline{h}$ is the average human capital across all agents in the economy.
+There is an externality in human capital accumulation. The representative
+firm still produces output accordind to $y=\alpha H.$ This does not change
+the social planner's problem. Why? Now look at CE. The agent's problem is%
+\begin{equation*}
+\underset{c,u,h}{\max }\frac{c^{\gamma }}{\gamma }
+\end{equation*}%
+subject to 
+\begin{equation*}
+\begin{array}{ll}
+c=whu; & h=\overline{h}^{1-\theta }\left( 1-u\right) ^{\theta }%
+\end{array}%
+\end{equation*}%
+where $w$ is the wage\ per unit of human and $w=\alpha $ in
+equilibrium.\pagebreak
+
+Rewrite this as%
+\begin{equation*}
+\underset{u}{\max }\frac{\left( whu\right) ^{\gamma }}{\gamma }.
+\end{equation*}%
+or%
+\begin{equation*}
+\underset{u}{\max }\frac{\left( w\overline{h}^{1-\theta }(1-u)^{\theta
+}u\right) ^{\gamma }}{\gamma }.
+\end{equation*}%
+This is maximized at 
+\begin{equation*}
+u=\frac{1}{1+\theta }.
+\end{equation*}%
+Notice that the social planner's solution and the result of a competitive
+equilibrium do not coincide. Why? \pagebreak
+
+Now suppose that the government pays people to go to school and taxes them
+lump sum to pay for the subsidies. Specifically the government pays $%
+\varsigma w$ per unit of time in school where $\varsigma $ is the rate at
+which schooling is subsidized$.$ The agent's problem is 
+\begin{equation*}
+\underset{u}{\max }\frac{\left( whu+\varsigma w(1-u)-\tau \right) ^{\gamma }%
+}{\gamma }.
+\end{equation*}%
+Write this as%
+\begin{equation*}
+\underset{u}{\max }\frac{\left( w\overline{h}^{1-\theta }(1-u)^{\theta
+}u+\varsigma w(1-u)-\tau \right) ^{\gamma }}{\gamma }
+\end{equation*}%
+which is maximized where $\overline{h}^{1-\theta }(1-u)^{\theta }u+\varsigma
+(1-u)$ is maximized. \pagebreak
+
+This gives%
+\begin{equation*}
+-\theta \overline{h}^{1-\theta }(1-u)^{\theta -1}u+\overline{h}^{1-\theta
+}(1-u)^{\theta }-\varsigma =0
+\end{equation*}%
+In equilibrium $\overline{h}=h=(1-u)$ so 
+\begin{equation*}
+-\theta \left( 1-u\right) ^{1-\theta }(1-u)^{\theta -1}u+(1-u)^{1-\theta
+}(1-u)^{\theta }-\varsigma =0
+\end{equation*}%
+\begin{equation*}
+-\theta u+(1-u)-\varsigma =0
+\end{equation*}%
+\begin{equation*}
+u=\frac{1-\varsigma }{\theta +1}.
+\end{equation*}%
+$\allowbreak \allowbreak $To get the social planner's solution, government
+should set $\varsigma $ such that 
+\begin{equation*}
+\frac{1}{2}=\frac{1-\varsigma }{\theta +1}.
+\end{equation*}%
+Thus $\varsigma =\frac{1-\theta }{2}.$ \ \pagebreak
+
+\section{An economy with imperfect competition.}
+
+Consider an economy with a single final good which is produced using a
+variety of intermediate goods. Specifically, $n$ intermediate goods ($x_{i},$
+$i\in \left\{ 1,2..n\right\} $) combine with labor ($L$) to produce a final
+output good $y$ according to 
+\begin{equation*}
+y=AL^{1-\alpha }\overset{n}{\underset{i=1}{\sum }}x_{i}^{\alpha }
+\end{equation*}%
+where $A>0$ and $0<\alpha <1.$ The final good is the numeraire good and is
+produced competitively. There are many producers, but they are identical.
+For simplicity we consider a single representative firm. For a producer of
+the final good, the firm's profits $\left( \pi _{f}\right) $ are given by 
+\begin{equation*}
+\pi _{f}=y-\overset{n}{\underset{i=1}{\sum }p_{i}}x_{i}-wL
+\end{equation*}%
+where $p_{i}$ is the relative price of intermediate good $i$ and $w$ is the
+wage. Profits can be rewritten as%
+\begin{equation*}
+\pi _{f}=AL^{1-\alpha }\overset{n}{\underset{i=1}{\sum }}x_{i}^{\alpha }-%
+\overset{n}{\underset{i=1}{\sum }p_{i}}x_{i}-wL.
+\end{equation*}%
+\pagebreak
+
+In choosing $x_{i},$ the foc for the firm's optimization problem is%
+\begin{equation*}
+\alpha AL^{1-\alpha }x_{i}^{\alpha -1}=p_{i}
+\end{equation*}%
+from which we can get the \textit{derived demand} for intermediate good $%
+x_{i}.$ 
+\begin{equation*}
+x_{i}=\left( \frac{\alpha AL^{1-\alpha }}{p_{i}}\right) ^{\frac{1}{1-\alpha }%
+}.
+\end{equation*}%
+Each intermediate good is unique and produced by only one firm. Thus there
+is \textit{imperfect competition} and the producer of an intermediate good
+is not a price taker. The only input to the production of an intermediate
+good is one unit of the final good. Thus the profit for the intermediate
+firm is 
+\begin{equation*}
+\pi _{i}=p_{i}x_{i}-x_{i}
+\end{equation*}%
+or 
+\begin{equation*}
+\pi _{i}=\left( p_{i}-1\right) \left( \frac{\alpha AL^{1-\alpha }}{p_{i}}%
+\right) ^{\frac{1}{1-\alpha }}.
+\end{equation*}
+
+\pagebreak
+
+The firm chooses price to maximize profit. The foc is%
+\begin{equation*}
+\left( p_{i}-1\right) \frac{1}{1-\alpha }\left( \frac{\alpha AL^{1-\alpha }}{%
+p_{i}}\right) ^{\frac{1}{1-\alpha }-1}\frac{\alpha AL^{1-\alpha }}{p_{i}^{2}}%
+=\left( \frac{\alpha AL^{1-\alpha }}{p_{i}}\right) ^{\frac{1}{1-\alpha }}
+\end{equation*}%
+or%
+\begin{equation*}
+\left( p_{i}-1\right) \frac{1}{1-\alpha }\frac{1}{p_{i}^{2}}=\left( \frac{1}{%
+p_{i}}\right)
+\end{equation*}%
+so 
+\begin{equation*}
+p_{i}=\frac{1}{\alpha }.
+\end{equation*}%
+Interpret this.\textit{\ }
+
+\pagebreak\ 
+
+Thus%
+\begin{equation*}
+x_{i}=\left( \alpha ^{2}AL^{1-\alpha }\right) ^{\frac{1}{1-\alpha }}.
+\end{equation*}%
+Notice that it is the same as for all goods so that%
+\begin{equation*}
+y=AL^{1-\alpha }\overset{n}{\underset{i=1}{\sum }}x_{i}^{\alpha }
+\end{equation*}%
+becomes%
+\begin{equation*}
+y=nAL^{1-\alpha }\left( \alpha ^{2}AL^{1-\alpha }\right) ^{\frac{\alpha }{%
+1-\alpha }}
+\end{equation*}%
+and goods available for consumption are 
+\begin{equation*}
+\overset{\text{output}}{\overbrace{nAL^{1-\alpha }\left( \alpha
+^{2}AL^{1-\alpha }\right) ^{\frac{\alpha }{1-\alpha }}}}-\overset{\text{used
+to produce inter. goods}}{\overbrace{n\left( \alpha ^{2}AL^{1-\alpha
+}\right) ^{\frac{1}{1-\alpha }}}}.
+\end{equation*}%
+$\allowbreak $\pagebreak
+
+\begin{itemize}
+\item We can \ show that the final goods producer has zero profits.
+
+\item Does the producer of the intermediate good have profits? Rewrite%
+\begin{equation*}
+\pi _{i}=p_{i}x_{i}-x_{i}
+\end{equation*}%
+as%
+\begin{equation*}
+\pi _{i}=\left( \alpha ^{2}AL^{1-\alpha }\right) ^{\frac{1}{1-\alpha }%
+}\left( \frac{1}{\alpha }-1\right) .
+\end{equation*}%
+Obviously there are profits unless $\alpha =1.$
+
+\item To find income add labor income to dividend income (profits).
+
+\item We can show the goods market clears.
+
+\item Preferences? Since there is no labor leisure choice and only one good
+and only one time period, the agent simply buys goods with the proceeds of
+her entire endowment. Any set of preferences will give us the same result so
+long as utility increases in consumption.
+
+\item Is the competitive equilibrium Pareto optimal? Here maximizing
+consumption is the same as maximizing utility. So the question whether the
+competitive equilibrium brings about the greatest possible consumption.
+\end{itemize}
+
+\pagebreak
+
+Consider the social planner's problem. 
+\begin{equation*}
+\underset{x_{i}}{\max }\left( AL^{1-\alpha }\overset{n}{\underset{i=1}{\sum }%
+}x_{i}^{\alpha }-\overset{n}{\underset{i=1}{\sum }}x_{i}\right) .
+\end{equation*}%
+The foc is 
+\begin{equation*}
+\alpha AL^{1-\alpha }x_{i}^{\alpha -1}=1
+\end{equation*}%
+\begin{equation*}
+x_{i}^{\ast }=\left( \alpha AL^{1-\alpha }\right) ^{\frac{1}{1-\alpha }}.
+\end{equation*}%
+Compare this to 
+\begin{equation*}
+x_{i}=\left( \alpha ^{2}AL^{1-\alpha }\right) ^{\frac{1}{1-\alpha }}.
+\end{equation*}%
+Clearly, $x_{i}<x_{i}^{\ast }$. Why?\pagebreak
+
+Can policy help? Suppose we decide to lump sum tax all individuals to fund a
+production subsidy. Each time an intermediate firm produces, it is given $%
+\varsigma $ units of the final good as a subsidy 
+\begin{equation*}
+\pi _{i}=p_{i}x_{i}-x_{i}+\varsigma x_{i}
+\end{equation*}%
+\begin{equation*}
+\pi _{i}=p_{i}x_{i}-x_{i}\left( 1-\varsigma \right) .
+\end{equation*}%
+The we could show 
+\begin{equation*}
+p_{i}=\frac{\left( 1-\varsigma \right) }{\alpha }.
+\end{equation*}%
+Recall that the demand for the intermediate good is 
+\begin{equation*}
+x_{i}=\left( \frac{\alpha AL^{1-\alpha }}{p_{i}}\right) ^{\frac{1}{1-\alpha }%
+}
+\end{equation*}%
+or%
+\begin{equation*}
+x_{i}=\left( \frac{\alpha AL^{1-\alpha }}{\frac{\left( 1-\varsigma \right) }{%
+\alpha }}\right) ^{\frac{1}{1-\alpha }}.
+\end{equation*}%
+The optimum can be achieved if $\varsigma =1-\alpha .$ Discuss how such a
+model might give insights into the growth process (R\&D).\pagebreak
+
+\section{An economy with simple dynamics.}
+
+We now introduce \textit{dynamics} in a simple 2 period exchange economy. We
+assume no uncertainty, competitive markets and non-storable goods.
+
+\textit{Preferences: }an agent has log utility over consumption in the first
+and second periods of life ($c_{1}$ and $c_{2}$), that is 
+\begin{equation*}
+u\left( c_{1},c_{2}\right) =\ln c_{1}+\beta \ln c_{2}
+\end{equation*}%
+where $0<\beta <1.$
+
+\textit{Endowments:} the representative agent is endowed with quantities $%
+y_{1}$ and $y_{2}$ respectively in the first and second period. The agent
+maximizes utility subject to%
+\begin{equation*}
+p_{1}c_{1}+p_{2}c_{2}\leq p_{1}y_{1}+p_{2}y_{2}
+\end{equation*}%
+where prices are market clearing prices.
+
+A competitive equilibrium in this economy is a set of prices $\left\{
+p_{1},p_{2}\right\} $ and allocations $\left\{ c_{1},c_{2}\right\} $ such
+that:
+
+\begin{enumerate}
+\item The consumer maximizes utility subject to the budget constraint for
+given prices.
+
+\item Markets clear: $c_{t}=y_{t}$ for $t=1,2$.
+\end{enumerate}
+
+\pagebreak
+
+\textit{Example}. Let%
+\begin{equation*}
+u\left( c_{1},c_{2}\right) =\ln c_{1}+\beta \ln c_{2}+\lambda \left(
+p_{1}y_{1}+p_{2}y_{2}-p_{1}c_{1}-p_{2}c_{2}\right) .
+\end{equation*}%
+Focs are:%
+\begin{equation*}
+\frac{1}{c_{1}}=\lambda p_{1}
+\end{equation*}%
+\begin{equation*}
+\frac{\beta }{c_{2}}=\lambda p_{2}.
+\end{equation*}%
+These imply $c_{2}=\frac{p_{1}}{p_{2}}\beta c_{1}.$ This into $%
+p_{1}c_{1}+p_{2}c_{2}=p_{1}y_{1}+p_{2}y_{2}$ gives the following demand
+functions%
+\begin{equation*}
+c_{1}=\frac{1}{1+\beta }\left( y_{1}+\frac{p_{2}}{p_{1}}y_{2}\right)
+\end{equation*}%
+\begin{equation*}
+c_{2}=\frac{\beta }{1+\beta }\frac{p_{1}}{p_{2}}\left( y_{1}+\frac{p_{2}}{%
+p_{1}}y_{2}\right) .
+\end{equation*}%
+\pagebreak
+
+We now impose the second half of our definition of an equilibrium. $%
+c_{1}=y_{1}$ and $c_{2}=y_{2}$. We need only impose one of these (Walras'
+Law). Using $c_{1}=y_{1}$ gives 
+\begin{equation*}
+y_{1}=\frac{1}{1+\beta }\left( y_{1}+\frac{p_{2}}{p_{1}}y_{2}\right)
+\end{equation*}%
+and solving for prices gives:%
+\begin{equation*}
+\frac{p_{2}}{p_{1}}=\beta \frac{y_{1}}{y_{2}}
+\end{equation*}%
+These prices reflect the rate that an agent \textit{would} trade current for
+future consumption. We will soon allow such trade. Note: We can only solve
+for relative prices $\frac{p_{1}}{p_{2}}$. We can set $p_{1}=1$ without
+losing any generality.
+
+Thus the prices $\left\{ p_{1}=1,\text{ }p_{2}=\beta \frac{y_{1}}{y_{2}}%
+\right\} $ and allocations $\left\{ c_{1}=y_{1},\text{ }c_{2}=y_{2}\right\} $
+constitute a competitive equilibrium for this economy.
+
+Note this is 
+\begin{equation*}
+\frac{p_{1}}{p_{2}}=\frac{1}{p_{2}}=\frac{\frac{1}{c_{1}}}{\frac{\beta }{%
+c_{2}}}=\frac{u_{1}}{\beta u_{2}}=\left\vert MRS_{1,2}\right\vert
+\end{equation*}%
+With output unable to adjust, the price of a period 2 good adjusts so that
+the ratio of prices is equal to the absolute value of the marginal rate of
+substitution. \pagebreak
+
+\section{An economy with savings.}
+
+Suppose there is a bond market. The price of a bond is one unit of the
+consumption good. Each bond purchased in period 1 yields $\left(
+1+r_{b}\right) $ units of the consumption good in period two. The budget
+constraint in periods 1 and two are%
+\begin{eqnarray*}
+p_{1}c_{1}+p_{1}b &=&p_{1}y_{1} \\
+c_{2}p_{2} &=&p_{2}b\left( 1+r_{b}\right) +p_{2}y_{2}
+\end{eqnarray*}%
+or%
+\begin{eqnarray*}
+c_{1}+b &=&y_{1} \\
+c_{2} &=&b\left( 1+r_{b}\right) +y_{2}.
+\end{eqnarray*}%
+\pagebreak
+
+We can write the Lagrangian as 
+\begin{equation*}
+L=\ln c_{1}+\beta \ln c_{2}+\lambda _{1}\left( y_{1}-b-c_{1}\right) +\lambda
+_{1}\left( y_{2}+b\left( 1+r_{b}\right) -c_{2}\right) .
+\end{equation*}
+
+Focs are 
+\begin{eqnarray*}
+\frac{1}{c_{1}} &=&\lambda _{1} \\
+\frac{\beta }{c_{2}} &=&\lambda _{2} \\
+\lambda _{1} &=&\lambda _{2}\left( 1+r_{b}\right) \\
+c_{1} &=&y_{1}-b \\
+c_{2} &=&y_{2}+b\left( 1+r_{b}\right) .
+\end{eqnarray*}%
+\pagebreak
+
+\begin{itemize}
+\item In equilibrium, the interest rate must adjust so that the goods market
+clears in each period.
+
+\item This is the same role played by prices in the earlier statement of the
+model. A competitive equilibrium in this economy is a price $\left\{
+r_{b}\right\} $ and allocations $\left\{ c_{1},c_{2}\right\} $ such that:
+\end{itemize}
+
+\begin{enumerate}
+\item The consumer maximizes utility subject to the budget constraint for
+given prices.
+
+\item Markets clear: $c_{t}=y_{t}$ for $t=1,2$ and $b=0$. (Why $b=0$)?
+\end{enumerate}
+
+From the first three focs we have%
+\begin{equation*}
+c_{2}=\beta c_{1}\left( 1+r_{b}\right)
+\end{equation*}%
+Then from the two market clearing conditions we have%
+\begin{equation*}
+y_{2}=\beta y_{1}\left( 1+r_{b}\right)
+\end{equation*}%
+and the equilibrium interest rate is%
+\begin{equation*}
+1+r_{b}=\frac{y_{2}}{\beta y_{1}}
+\end{equation*}%
+\begin{equation*}
+\frac{1}{1+r_{b}}=\frac{\beta y_{1}}{y_{2}}
+\end{equation*}%
+\pagebreak
+
+Recall%
+\begin{equation*}
+p_{2}=\frac{\beta y_{1}}{y_{2}}
+\end{equation*}%
+Compare this to our earlier expression to find that $\frac{1}{p_{2}}=\left(
+1+r_{b}\right) \ $or $p_{2}=\frac{1}{1+r_{b}}.$ The price of a future good
+is the discounted value of a current good, since one current good can be
+transformed into $1+r\ $future goods.
+
+Note this is 
+\begin{equation*}
+\frac{p_{1}}{p_{2}}=\frac{1}{p_{2}}=\left( 1+r_{b}\right) =\frac{\frac{1}{%
+c_{1}}}{\frac{\beta }{c_{2}}}=\frac{u_{1}}{\beta u_{2}}=\left\vert
+MRS_{1,2}\right\vert
+\end{equation*}%
+With output unable to adjust, the interest rate adjusts so that $\left(
+1+r_{b}\right) $ is equal to the absolute value of the marginal rate of
+substitution. Prices adjust accordingly, but knowing $(1+r_{b})$ is
+sufficient. \pagebreak
+
+Two other common approaches.
+
+The first other common approach is to combine period budget constraints into
+a lifetime budget constraint. Recall 
+\begin{eqnarray*}
+c_{1}+b &=&y_{1} \\
+c_{2} &=&b\left( 1+r_{b}\right) +y_{2}.
+\end{eqnarray*}%
+The second of these gives 
+\begin{equation*}
+\frac{c_{2}-y_{2}}{1+r_{b}}=b
+\end{equation*}%
+and this into the first gives%
+\begin{eqnarray*}
+c_{1}+\frac{c_{2}-y_{2}}{1+r_{b}} &=&y_{1} \\
+c_{1}+\frac{c_{2}}{1+r_{b}} &=&y_{1}+\frac{y_{2}}{1+r_{b}}.
+\end{eqnarray*}%
+\pagebreak
+
+We can write the problem as 
+\begin{equation*}
+L=\ln c_{1}+\beta \ln c_{2}+\lambda \left( y_{1}+\frac{c_{2}}{1+r_{b}}-c_{1}-%
+\frac{c_{2}}{1+r_{b}}\right)
+\end{equation*}%
+so that focs are%
+\begin{eqnarray*}
+\frac{1}{c_{1}} &=&\lambda \\
+\frac{\beta }{c_{2}} &=&\frac{\lambda }{1+r_{b}} \\
+y_{1}+\frac{c_{2}}{1+r_{b}} &=&c_{1}+\frac{c_{2}}{1+r_{b}}.
+\end{eqnarray*}%
+\pagebreak
+
+Together these give 
+\begin{equation*}
+c_{2}=\beta c_{1}\left( 1+r_{b}\right) .
+\end{equation*}%
+This into the budget constraint gives%
+\begin{equation*}
+c_{1}+\beta c_{1}=y_{1}+\frac{y_{2}}{1+r_{b}}.
+\end{equation*}%
+In equilibrium (using goods market clearing) 
+\begin{equation*}
+y_{1}+\beta y_{1}=y_{1}+\frac{y_{2}}{1+r_{b}}
+\end{equation*}%
+\begin{equation*}
+1+r_{b}=\frac{y_{2}}{\beta y_{1}}.
+\end{equation*}%
+\pagebreak
+
+The second other common approach is to plug in period budget constraints. We
+can write the problem as%
+\begin{equation*}
+L=\ln \left( y_{1}-b\right) +\beta \ln \left( y_{2}+b\left( 1+r_{b}\right)
+\right) .
+\end{equation*}%
+so foc gives 
+\begin{equation*}
+\frac{1}{y_{1}-b}=\frac{\beta \left( 1+r_{b}\right) }{y_{2}+\left(
+1+r_{b}\right) b}.
+\end{equation*}%
+Now impose $b=0$ in equilibrium giving 
+\begin{equation*}
+\frac{1}{y_{1}}=\frac{\beta \left( 1+r_{b}\right) }{y_{2}}
+\end{equation*}%
+or 
+\begin{equation*}
+1+r_{b}=\frac{y_{2}}{\beta y_{1}}.
+\end{equation*}%
+\pagebreak
+
+\section{An\ economy with storage.}
+
+Above there is no opportunity for producing goods and $r$ depends on
+preferences and endowments. In general $r$ will also depend on the
+technological opportunities for transforming current consumption to future
+consumption. Consider the case above except that there is a storage
+technology: one good can be transformed to $1+r_{k}\;$units tomorrow. A bond
+market still exists. Let $k$ be the amount of storage chosen by the
+representative agent. We leave out prices as indicated above. The first and
+second period budget constraints are 
+\begin{eqnarray*}
+c_{1}+b+k &=&y_{1} \\
+c_{2} &=&k\left( 1+r_{k}\right) +b\left( 1+r_{b}\right) +y_{2}.
+\end{eqnarray*}%
+The individual's problem is%
+\begin{equation*}
+L=\ln c_{1}+\beta \ln c_{2}+\lambda _{1}\left( y_{1}-c_{1}-k-b\right)
++\lambda _{2}\left( y_{2}+k\left( 1+r_{k}\right) +b\left( 1+r_{b}\right)
+-c_{2}\right)
+\end{equation*}%
+and focs are 
+\begin{eqnarray*}
+\frac{1}{c_{1}} &=&\lambda _{1} \\
+\frac{\beta }{c_{2}} &=&\lambda _{2} \\
+\lambda _{1} &=&\lambda _{2}\left( 1+r_{b}\right) \\
+\lambda _{1} &=&\lambda _{2}\left( 1+r_{k}\right) \\
+y_{1} &=&c_{1}+k+b \\
+y_{2}+k\left( 1+r_{k}\right) +b\left( 1+r_{b}\right) &=&c_{2}.
+\end{eqnarray*}
+
+\pagebreak
+
+So these imply $\left( 1+r_{k}\right) =\left( 1+r_{b}\right) $ or $\left(
+1+r_{k}\right) =\left( 1+r_{b}\right) =r.$ (assuming for now all constraints
+hold with equality)
+
+\begin{itemize}
+\item In our earlier example, $\left( 1+r_{b}\right) $ adjusted so that
+consumption equaled endowments.
+
+\item Here consumption is adjusting so that $\left( 1+r_{k}\right) =\left(
+1+r_{b}\right) .\ $Let's call this common return $R$.
+
+\item Bond market clearing still gives $b=0.$
+
+\item Goods market clearing conditions are now 
+\begin{eqnarray*}
+c_{1} &=&y_{1}-k \\
+c_{2} &=&y_{2}+kR.
+\end{eqnarray*}%
+\pagebreak
+
+From focs 
+\begin{equation*}
+c_{2}=\beta c_{1}R
+\end{equation*}%
+Note this is 
+\begin{equation*}
+\frac{1}{p_{2}}=\left( 1+r_{b}\right) =\left( 1+r_{k}\right) =R=\frac{\frac{1%
+}{c_{1}}}{\frac{\beta }{c_{2}}}=\frac{u_{1}}{\beta u_{2}}=\left\vert
+MRS_{1,2}\right\vert
+\end{equation*}%
+With prices and $R$ unable to adjust, consumption adjusts through savings so
+that $R$ is equal to the absolute value of the marginal rate of
+substitution. \pagebreak
+
+Before, we were done at this point since $c_{i}$ was equal to $y_{i}$. Now
+we need to go a bit further. From focs 
+\begin{equation*}
+c_{2}=\beta c_{1}R
+\end{equation*}%
+so from second goods market clearing condition%
+\begin{equation*}
+\beta c_{1}R=y_{2}+kR
+\end{equation*}%
+or 
+\begin{equation*}
+k=\beta c_{1}-\frac{y_{2}}{R}
+\end{equation*}%
+and this into the first gives 
+\begin{equation*}
+c_{1}+\beta c_{1}-\frac{y_{2}}{R}=y_{1}
+\end{equation*}%
+or 
+\begin{equation*}
+c_{1}=\frac{1}{1+\beta }\left( y_{1}+\frac{y_{2}}{R}\right) .
+\end{equation*}%
+\pagebreak
+\end{itemize}
+
+Note 1: In the problem above, savings for the individual was $s=k+b$. We
+again define $R$ to be general returns on saving and write 
+\begin{equation*}
+L=\ln c_{1}+\beta \ln c_{2}+\lambda _{1}\left( y_{1}-c_{1}-s\right) +\lambda
+_{2}\left( y_{2}+sR-c_{2}\right) .
+\end{equation*}%
+or combine period constraints to a lifetime constraint and write 
+\begin{equation*}
+L=\ln c_{1}+\beta \ln c_{2}+\lambda \left( y_{1}+\frac{y_{2}}{R}-c_{1}-\frac{%
+c_{2}}{R}\right)
+\end{equation*}%
+or plug in period budget constraints and write%
+\begin{equation*}
+L=\ln \left( y_{1}-s\right) +\beta \ln \left( y_{2}+sR\right) .
+\end{equation*}%
+Then we solve for savings and use no arbitrage conditions to argue $%
+R=1+r_{k}=1+r_{b}.$ Also in equilibrium with $b=0$ we have $s=k+b=k$.\bigskip
+
+\pagebreak
+
+Note 2: It is common also to solve only for $k$ and let the bond market
+operate in the background. Then we just write the problem as%
+\begin{equation*}
+L=\ln c_{1}+\beta \ln c_{2}+\lambda _{1}\left( y_{1}-c_{1}-k\right) +\lambda
+_{2}\left( y_{2}+k\left( 1+r_{k}\right) -c_{2}\right)
+\end{equation*}%
+or combine period constraints to a lifetime constraint and write 
+\begin{equation*}
+L=\ln c_{1}+\beta \ln c_{2}+\lambda \left( y_{1}+\frac{y_{2}}{1+r_{k}}-c_{1}-%
+\frac{c_{2}}{1+r_{k}}\right)
+\end{equation*}%
+$\left( y_{1}-c_{1}-\frac{c_{2}-y_{2}}{r_{k}+1}\right) $or plug in period
+budget constraints and write%
+\begin{equation*}
+L=\ln \left( y_{1}-k\right) +\beta \ln \left( y_{2}+k\left( 1+r_{k}\right)
+\right) .
+\end{equation*}%
+Here we can argue that a bond market operates in the background and $%
+r_{b}=r_{k}=r.$\pagebreak
+
+\section{A storage economy with diminishing returns.}
+
+Consider the case above except that with the storage technology $k$ units
+stored in period 1 can be transformed to $k^{\alpha }\;$units tomorrow with $%
+0<\alpha <1$. Also, let $y_{2}=0$ and simplify notation so that $y_{1}=y.$ A
+bond market still exists, but operates in the background. Let $k$ be the
+amount of storage chosen by the representative agent. The first and second
+period budget constraints are 
+\begin{eqnarray*}
+c_{1}+k &=&y \\
+c_{2} &=&k^{\alpha }.
+\end{eqnarray*}%
+The individual's problem is to maximize 
+\begin{equation*}
+\ln \left( y-k\right) +\beta \ln \left( k^{\alpha }\right)
+\end{equation*}%
+so foc is $\frac{1}{y-k}=\frac{\beta \alpha k^{\alpha -1}}{k^{\alpha }}.$%
+\pagebreak
+
+Then 
+\begin{equation*}
+\frac{1}{y-k}=\frac{\beta \alpha }{k}
+\end{equation*}%
+\begin{equation*}
+k=\frac{\alpha \beta y}{\alpha \beta +1}.
+\end{equation*}%
+Show that 
+\begin{eqnarray*}
+R &=&\left( 1+r_{b}\right) =\alpha k^{\alpha -1} \\
+r_{b} &=&\alpha \left( \frac{\alpha \beta y}{\alpha \beta +1}\right)
+^{\alpha -1}-1.
+\end{eqnarray*}%
+$\allowbreak $
+
+\begin{itemize}
+\item \pagebreak
+
+Note in all cases we have 
+\begin{equation*}
+\frac{1}{p_{2}}=R=\frac{\frac{1}{c_{1}}}{\frac{\beta }{c_{2}}}=\frac{u_{1}}{%
+\beta u_{2}}=\left\vert MRS_{1,2}\right\vert
+\end{equation*}
+
+\item In our first example, $p_{2},$ adjusted to make this hold.
+
+\item In our second, the interest rate adjusted to make this hold.
+
+\item In our third, consumption adjusted to make this hold.
+
+\item In our fourth example, consumption and interest rates both adjust to
+make this hold. \pagebreak
+\end{itemize}
+
+\section{A production economy with diminishing returns.}
+
+Consider the possibility of investment in physical capital. A representative
+agent receives $y$ units of output in the first period of life and none in
+the second period of life. The agent has one unit of time supplied
+inelastically in the labor market in the second period of life. The agent
+can save some consumption while young. This becomes capital which can be
+rented to a firm in the second period. A representative firm can transform $%
+k $ units of capital into $k^{\alpha }L^{1-\alpha }$ extra units of the good
+in the next period. This firm hires capital at rate $r_{k}$ in the second
+period and uses it to produce output. Capital is used up in the production
+of the consumption good. That is, the depreciation rate is 1. In the second
+period, the firm chooses $k$ to maximize profits%
+\begin{equation*}
+\pi =k^{\alpha }L^{1-\alpha }-r_{k}k-\omega L.
+\end{equation*}%
+Assume that the agent owns both the capital stock and the firm. The focs are:%
+\begin{eqnarray*}
+\alpha k^{\alpha -1}L^{1-\alpha } &=&r_{k} \\
+\left( 1-\alpha \right) k^{\alpha }L^{-\alpha } &=&\omega .
+\end{eqnarray*}%
+\pagebreak
+
+The representative agent chooses $c_{1}$, $c_{2}$ and $s$ (savings) to
+maximize 
+\begin{equation*}
+\underset{s,c_{1},c_{2}}{\max }\ln c_{1}+\beta \ln c_{2}
+\end{equation*}%
+subject to 
+\begin{eqnarray*}
+c_{1} &\leq &y-s \\
+c_{2} &\leq &sR+\omega
+\end{eqnarray*}%
+where $R$ is the return to savings.
+
+\pagebreak
+
+Rewrite as%
+\begin{equation*}
+\underset{s}{\max }\ln \left( y-s\right) +\beta \ln \left( sR+\omega \right) 
+\end{equation*}%
+so that focs is%
+\begin{equation*}
+\frac{1}{y-s}=\frac{\beta R}{sR+\omega }.
+\end{equation*}%
+In equilibrium $R=r_{k}=\alpha k^{\alpha -1}L^{1-\alpha },$ $k=s,L=1$ 
+\begin{equation*}
+\frac{1}{y-k}=\frac{\beta \alpha k^{\alpha -1}L^{1-\alpha }}{k\alpha
+k^{\alpha -1}L^{1-\alpha }+\left( 1-\alpha \right) k^{\alpha }L^{-\alpha }}
+\end{equation*}%
+or 
+\begin{eqnarray*}
+\frac{1}{y-k} &=&\frac{\beta \alpha }{k\alpha +\left( 1-\alpha \right) k} \\
+k &=&\frac{\alpha \beta y}{\alpha \beta +1}.
+\end{eqnarray*}%
+and 
+\begin{equation*}
+c=y-\frac{\alpha \beta y}{\alpha \beta +1}=\frac{y}{\alpha \beta +1}
+\end{equation*}
+$\allowbreak $\pagebreak 
+
+On your own...Because it is simpler and the proper conditions hold, we can
+instead solve the social planner's problem. This is 
+\begin{equation*}
+\underset{k}{\max }\ln \left( c_{1}\right) +\beta \ln \left( c_{2}\right)
+\end{equation*}%
+subject to%
+\begin{equation*}
+c_{1}+k\leq y
+\end{equation*}%
+\begin{equation*}
+c_{2}\leq k^{\alpha }
+\end{equation*}%
+since $L=1.$ We plug the feasibility constraint into the utility function to
+get: 
+\begin{equation*}
+\underset{k}{\max }\ln \left( y-k\right) +\beta \ln \left( k^{\alpha
+}\right) .
+\end{equation*}
+
+\pagebreak
+
+The foc is 
+\begin{equation*}
+\frac{1}{y-k}=\beta \frac{\alpha k^{\alpha -1}}{k^{\alpha }}
+\end{equation*}%
+or%
+\begin{equation*}
+k=\frac{\alpha \beta y}{1+\alpha \beta }.
+\end{equation*}%
+i.e. a constant share is saved (since we have log utility). Now consumption
+in each period is 
+\begin{eqnarray*}
+c_{1} &=&y-k=\frac{1}{1+\alpha \beta }y \\
+c_{2} &=&\left( \frac{\alpha \beta y}{1+\alpha \beta }\right) ^{\alpha }.
+\end{eqnarray*}
+
+\pagebreak
+
+\section{An economy with three periods.}
+
+Consider the same problem except that the representative agent lives 3
+periods. We solve the social planner's problem%
+\begin{equation*}
+\underset{c_{1},c_{2},c_{3},k_{2},k_{3}}{\max }\ln c_{1}+\beta \ln
+c_{2}+\beta ^{2}\ln c_{3}
+\end{equation*}%
+subject to%
+\begin{equation*}
+c_{1}+k_{2}\leq y
+\end{equation*}%
+\begin{equation*}
+c_{2}+k_{3}\leq k_{2}^{\alpha }L^{1-\alpha }
+\end{equation*}%
+\begin{equation*}
+c_{3}\leq k_{3}^{\alpha }L^{1-\alpha }
+\end{equation*}%
+where $c_{3}$ is period 3 consumption, $k_{i}$ is capital available in
+period $i$.
+
+\pagebreak
+
+All resource constraints will bind. Write as 
+\begin{equation*}
+L=\ln \left( y-k_{2}\right) +\beta \ln \left( k_{2}^{\alpha }-k_{3}\right)
++\beta ^{2}\ln \left( k_{3}^{\alpha }\right)
+\end{equation*}%
+so that the first order conditions are%
+\begin{eqnarray*}
+\frac{1}{y-k_{2}} &=&\frac{\alpha \beta k_{2}^{\alpha -1}}{k_{2}^{\alpha
+}-k_{3}} \\
+\frac{\beta }{k_{2}^{\alpha }-k_{3}} &=&\frac{\beta ^{2}\alpha k_{3}^{\alpha
+-1}}{k_{3}^{\alpha }}.
+\end{eqnarray*}%
+\pagebreak
+
+From second 
+\begin{equation*}
+k_{3}=\alpha \beta \frac{k_{2}^{\alpha }}{\alpha \beta +1}
+\end{equation*}%
+and this into the first gives 
+\begin{equation*}
+\frac{1}{y-k_{2}}=\frac{\alpha \beta k_{2}^{\alpha -1}}{k_{2}^{\alpha
+}-\alpha \beta \frac{k_{2}^{\alpha }}{\alpha \beta +1}}
+\end{equation*}%
+\begin{equation*}
+k_{2}=\frac{y\left( \alpha \beta +\alpha ^{2}\beta ^{2}\right) }{1+\alpha
+\beta +\alpha ^{2}\beta ^{2}}.
+\end{equation*}%
+Since $c_{1}=y-k_{2}$ we have%
+\begin{equation*}
+c_{1}=y-\frac{y\left( \alpha \beta +\alpha ^{2}\beta ^{2}\right) }{1+\alpha
+\beta +\alpha ^{2}\beta ^{2}}
+\end{equation*}%
+so that 
+\begin{equation*}
+c_{1}=\frac{y}{1+\alpha \beta +\alpha ^{2}\beta ^{2}}.
+\end{equation*}%
+\pagebreak
+
+Compare this to the two period case%
+\begin{equation*}
+c_{1}=\frac{1}{1+\alpha \beta }y
+\end{equation*}%
+\begin{equation*}
+c_{1}=\frac{y}{1+\alpha \beta +\alpha ^{2}\beta ^{2}}.
+\end{equation*}%
+How do you expect your answer to change if agents live four periods? \ 
+\newline
+How do you expect your answer to change if agents live forever?
+
+\pagebreak
+
+\section{An economy with heterogeneous agents.}
+
+Consider an economy with 2 agents. Agent 1 is endowed with $\alpha _{1}$
+units of consumption in period 1 and $\theta _{1}$ units of consumption good
+in period 2. Endowments for agent 2 are $\alpha _{2}$ and $\theta _{2}.$
+Each agent has preferences given by 
+\begin{equation*}
+U_{i}\left( c_{i}\left( 1\right) ,c_{i}\left( 2\right) \right) =\ln
+c_{i}\left( 1\right) +\beta \ln \left( c_{i}\left( 2\right) \right)
+\end{equation*}%
+where $c_{i}\left( j\right) $ is consumption in period $j$ by agent $i$ for $%
+j,i\in \left\{ 1,2\right\} .$ Note $U_{i}$ is utility of agent $i$ (not a
+derivative). Agents can issue or purchase 1 period bonds in the first period
+that yield $1+r=R$ units of the consumption good in period 2 per unit of
+bond purchased in period 1. There is no default on bonds.
+
+Find consumption in period 1, consumption in period 2 and bond holdings in
+period 1 for each agent as a function of parameters and $r.$\newline
+\pagebreak
+
+The problem for agent $i\in \left\{ 1,2\right\} $ can be written as%
+\begin{eqnarray*}
+&&\underset{c_{i}\left( 1\right) ,c_{i}\left( 2\right) ,b_{i}}{\max }\ln
+c_{i}\left( 1\right) +\beta \ln \left( c_{i}\left( 2\right) \right) \\
+&&\text{subject to} \\
+c_{i}\left( 1\right) +b_{i} &=&\alpha _{i} \\
+c_{i}\left( 2\right) &=&b_{i}R+\theta _{i}.
+\end{eqnarray*}%
+Solving gives 
+\begin{equation*}
+c_{i}\left( 1\right) =\frac{1}{1+\beta }\left( \alpha _{i}+\frac{\theta _{i}%
+}{R}\right)
+\end{equation*}%
+\begin{equation*}
+c_{i}\left( 2\right) =\frac{\beta R}{1+\beta }\left( \alpha _{i}+\frac{%
+\theta _{i}}{R}\right)
+\end{equation*}%
+\begin{equation}
+b_{i}=\alpha _{i}-\frac{1}{1+\beta }\left( \alpha _{i}+\frac{\theta _{i}}{R}%
+\right) .  \label{bond}
+\end{equation}
+
+\pagebreak
+
+Now we find the maximum lifetime utility ($v_{ai}$) for each agent $i$ as a
+function of $\alpha _{i}$, $\theta _{i}$ and $R$. \ Plugging $c_{i}\left(
+1\right) $ and $c_{i}\left( 2\right) $ into the utility function gives%
+\begin{equation*}
+v_{ai}=\ln \frac{1}{1+\beta }\left( \alpha _{i}+\frac{\theta _{i}}{R}\right)
++\beta \ln \frac{\beta R}{1+\beta }\left( \alpha _{i}+\frac{\theta _{i}}{R}%
+\right)
+\end{equation*}%
+or%
+\begin{equation*}
+v_{ai}=\ln \left[ \left( \frac{1}{1+\beta }\left( \alpha _{i}+\frac{\theta
+_{i}}{R}\right) \right) ^{1+\beta }\left( \beta R\right) ^{^{\beta }}\right]
+\end{equation*}%
+How does $v_{ai}$ change with $R$ when $\alpha _{i}=0?$ when $\theta _{i}=0?$
+Why?
+
+\pagebreak
+
+Define an equilibrium. \newline
+(Roughly) An equilibrium is a price ($R$) and allocations $c_{1}\left(
+1\right) ,$ $c_{1}\left( 2\right) $, $c_{2}\left( 1\right) ,$ $c_{2}\left(
+2\right) $ such that each agent optimizes (giving equation (\ref{bond})),
+the goods market clears in each period ($c_{1}\left( 1\right) +c_{2}\left(
+1\right) =\alpha _{1}+\alpha _{2}$ and $c_{1}\left( 2\right) +c_{2}\left(
+2\right) =\theta _{1}+\theta _{2}$) and the bond market clears in period 1 $%
+\left( b_{1}+b_{2}=0\right) .$
+
+Find the equilibrium interest rate. Bond market clearing requires $%
+b_{1}+b_{2}=0$ or 
+\begin{equation*}
+\alpha _{1}+\alpha _{2}=\frac{1}{1+\beta }\left( \alpha _{1}+\frac{\theta
+_{1}}{R}\right) +\frac{1}{1+\beta }\left( \alpha _{2}+\frac{\theta _{2}}{R}%
+\right)
+\end{equation*}%
+\begin{equation*}
+\beta \left( \alpha _{1}+\alpha _{2}\right) =\frac{\theta _{1}}{R}+\frac{%
+\theta _{2}}{R}
+\end{equation*}%
+\begin{equation*}
+R=\frac{\theta _{1}+\theta _{2}}{\beta \left( \alpha _{1}+\alpha _{2}\right) 
+}.
+\end{equation*}
+
+\pagebreak
+
+Agent 1 will save if bond holdings are positive, i.e. if 
+\begin{equation*}
+b_{1}=\alpha _{1}-\frac{1}{1+\beta }\left( \alpha _{1}+\frac{\theta _{1}}{R}%
+\right) >0
+\end{equation*}%
+or%
+\begin{equation*}
+\alpha _{1}>\frac{1}{1+\beta }\left( \alpha _{1}+\frac{\theta _{1}\beta
+\left( \alpha _{1}+\alpha _{2}\right) }{\theta _{1}+\theta _{2}}\right)
+\end{equation*}%
+\begin{equation*}
+\alpha _{1}>\frac{\theta _{1}\left( \alpha _{1}+\alpha _{2}\right) }{\theta
+_{1}+\theta _{2}}
+\end{equation*}%
+\begin{equation*}
+\frac{\alpha _{1}}{\theta _{1}}>\frac{\alpha _{2}}{\theta _{2}}.
+\end{equation*}
+
+\pagebreak
+
+\section{An economy with agents who differ in preferences.}
+
+Consider again an economy with 2 agents. Each agent is endowed with $\alpha $
+units of consumption in period 1 and $\theta $ units of consumption good in
+period 2. Agent 1 has preferences given by 
+\begin{equation*}
+U_{1}=\ln c_{1}\left( 1\right) +\beta \ln \left( c_{1}\left( 2\right) \right)
+\end{equation*}%
+and Agent 2 has preferences given by 
+\begin{equation*}
+U_{2}=c_{2}\left( 1\right) +\beta c_{2}\left( 2\right)
+\end{equation*}%
+where $c_{i}\left( j\right) $ is consumption in period $j$ by agent $i$ for $%
+j,i\in \left\{ 1,2\right\} .$ Agents can issue or purchase 1 period bonds in
+the first period that yield $R$ units of the consumption good in period 2
+per unit of bond purchased in period 1. There is no default on bonds.
+
+Find consumption in period 1, consumption in period 2 and bond holdings in
+period 1 for each agent as a function of parameters and $R.$\newline
+\pagebreak
+
+The problem for agent $1$ is like that above problem so 
+\begin{equation}
+b_{1}=\alpha -\frac{1}{1+\beta }\left( \alpha +\frac{\theta }{R}\right) .
+\label{bond1}
+\end{equation}%
+\newline
+Putting budget constraints ($c_{2}\left( 1\right) =\alpha -b_{2}$ and $%
+c_{2}\left( 2\right) =b_{2}R+\theta $) into the utility function for second
+agent gives 
+\begin{equation*}
+\alpha -b_{2}+\beta \left[ b_{2}R+\theta \right]
+\end{equation*}%
+or 
+\begin{equation*}
+\alpha +\beta \theta +\left( \beta R-1\right) b_{2}
+\end{equation*}%
+which is maximized at%
+\begin{equation*}
+b_{2}=\left\{ 
+\begin{array}{ccc}
+-\infty & \text{if} & \beta R<1 \\ 
+\text{any quantity} & \text{if} & \beta R=1 \\ 
+\infty & \text{if} & \beta R>1.%
+\end{array}%
+\right.
+\end{equation*}
+
+\pagebreak
+
+Define an equilibrium. (Roughly) An equilibrium is a price ($r$) and
+allocations $c_{1}\left( 1\right) ,$ $c_{1}\left( 2\right) $, $c_{2}\left(
+1\right) ,$ $c_{2}\left( 2\right) $ such that each agent optimizes, the
+goods market clears in each period ($c_{1}\left( 1\right) +c_{2}\left(
+1\right) =2\alpha $ and $c_{1}\left( 2\right) +c_{2}\left( 2\right) =2\theta 
+$) and the bond market clears in period 1 $\left( b_{1}+b_{2}=0\right) .$
+Find the equilibrium interest rate. Bond market clearing requires $%
+b_{1}+b_{2}=0$ which can occur only if $\beta R=1.$ This into (\ref{bond1})
+gives%
+\begin{equation*}
+b_{1}=\alpha -\frac{1}{1+\beta }\left( \alpha +\beta \theta \right)
+\end{equation*}%
+and by bond market clearing 
+\begin{equation*}
+b_{2}=\frac{1}{1+\beta }\left( \alpha +\beta \theta \right) -\alpha .
+\end{equation*}%
+Agent 2 will be a borrow if $b_{2}<0\ $or 
+\begin{equation*}
+\frac{1}{1+\beta }\left( \alpha +\beta \theta \right) <\alpha
+\end{equation*}%
+or%
+\begin{equation*}
+\theta <\alpha .
+\end{equation*}%
+If $\theta $ (second period endowment) is small, the agent with log
+preferences wishes to save for purposes of consumption smoothing. \ The
+other agent, indifferent to consumption smoothing, accommodates in
+equilibrium and borrows.\pagebreak
+
+\section{Overlapping generations.}
+
+\subsection{A first example}
+
+The economy consists of overlapping generations of two-period-lived
+homogeneous agents, a representative firm producing a single good using
+physical capital and labor and a government.
+
+\begin{itemize}
+\item A representative agent is born each period. The population of each
+generation is normalized to 1.
+
+\item At each point in time there are young and old.
+
+\item Discuss overlapping generations structure.
+
+\item The initial old agents are endowed with $K_{0}$ units of capital$.$
+
+\item All young have $\phi _{y}$ units of time and all old have $\phi _{o}$
+units of time where $\phi _{y}+\phi _{o}=1.$ Time is supplied exogenously to
+the labor market.\pagebreak
+
+\item Wage per unit of time is give by $\omega _{t}$.
+
+\item Savings in period $t$ $(s_{t})$ returns $s_{t}R_{t+1}$ units of the
+final good in period $t+1.$
+
+\item The total capital stock evolves according to $K_{t+1}=K_{t}\left(
+1-\delta \right) +I_{t}$ where $I_{t}$ is investment in capital by the young.
+
+\item A unit of capital purchased in period $t$ returns $1-\delta +r_{t+1}$
+units where $r_{t+1}$ is the period $t+1$ rental rate. We set $\delta =1.$
+
+\item Government spends $\tilde{e}_{t}$ on wasteful expenditures.
+\end{itemize}
+
+\pagebreak
+
+\textbf{Definition}. A competitive equilibrium in this environment is a
+sequence of consumption levels and portfolio holdings $%
+\{c_{t,t},c_{t,t+1},s_{t}\}_{t=0}^{t=\infty }$ chosen by the representative
+agent of each generation, a sequence of outputs and inputs chosen by the
+representative firm in each period $\{Y_{t},K_{t},L_{t}\}_{t=0}^{t=\infty }$%
+, a sequence of government policies $\tilde{\tau}_{y},\tilde{\tau}_{o},\{%
+\tilde{e}_{t}\}_{t=0}^{t=\infty }$, a sequence of prices $\{\omega
+_{t},r_{t}\}_{t=0}^{t=\infty }$, and an initial condition $\{K_{0}\}$ such
+that the initial old consume $r_{0}K_{0}+\omega _{0}\phi _{o}-\tilde{\tau}%
+_{o}$ and
+
+\begin{enumerate}
+\item a period $t$ young agents chooses $c_{t,t},c_{t,t+1}\ $and $s_{t}$ to
+solve the agent's problem taking prices and government policy as given,
+
+\item the firm chooses $Y_{t},K_{t}$ and $L_{t}$ in period $t$ to maximize
+profits taking prices, government policy and the production possibilities as
+given,
+
+\item the government chooses $\{\tilde{\tau}_{y,t},\tilde{\tau}_{o,t},\tilde{%
+e}_{t}\}$ subject to a balanced budget constraint.
+
+\item the goods market clears: $Y_{t}=\tilde{e}_{t}+c_{t,t}+c_{t-1,t}+I_{t}.$
+
+\item the capital market clears, $K_{t}=I_{t-1}=s_{t-1}.$
+
+\item the labor market clears: $L_{t}=L=\phi _{y}+\phi _{o}=1.$
+
+\item No arbitrage requires $r_{t+1}=R_{t+1}$.\newline
+\end{enumerate}
+
+(We have $s_{t}$ instead of $s_{t,t}$ since only the young save so the extra 
+$t$ is not needed. If agents lived 3 periods and saved in the first and
+second period of life we would need $s_{t,t}$ and $s_{t,t+1}.)$\pagebreak
+
+A \textbf{steady state} satisfies the definition above and has the following
+additional properties:\newline
+(i) government policy is time invariant, $\tilde{e}_{t}=\tilde{e}$ \newline
+(ii) the stock of physical capital, labor supply, wages, interest rates,
+consumption by young, consumption by the old, output, and government
+expenditures are all constant.
+
+That is
+
+\begin{itemize}
+\item $c_{t,t}=c_{t+1,t+1}=c_{t+2,t+2}...=c_{y}$
+
+\item $c_{t,t+1}=c_{t+1,t++2}=c_{t+2,t+3}...=c_{0}$\pagebreak
+\end{itemize}
+
+Government spends a share $e_{t}$ of output on wasteful expenditures so that 
+$\tilde{e}_{t}=e_{t}Y_{t}$. Since this is the only type of spending for
+government, a balanced budget in the steady state requires 
+\begin{equation*}
+\tilde{\tau}_{y}+\tilde{\tau}_{o}=eY.
+\end{equation*}%
+Agents take taxes as given. However, we assume (since it makes our math
+easier) that these are fixed shares of the wage per unit of time in
+equilibrium so that $\tilde{\tau}_{y}=\tau _{y}\omega $ and $\tilde{\tau}%
+_{o}=\tau _{o}\omega $. Given this, in a steady state we have 
+\begin{equation*}
+\omega \left( \tau _{y}+\tau _{o}\right) =eY.
+\end{equation*}%
+\pagebreak
+
+The representative agent's problem is: 
+\begin{equation*}
+\underset{c_{t,t},c_{t,t+1},s_{t}}{\max }\ln c_{t,t}+\beta \ln c_{t,t+1}
+\end{equation*}%
+subject to 
+\begin{eqnarray*}
+c_{t,t}+s_{t}+\tilde{\tau}_{y} &\leq &\phi _{y}\omega _{t} \\
+c_{t,t+1}+\tilde{\tau}_{o} &\leq &R_{t+1}s_{t}+\phi _{o}\omega _{t+1}.
+\end{eqnarray*}%
+Case 1: Assume no bond market or storage. $R_{t+1}=0.$ $Y_{t}=\mu _{\ell
+}L_{t}$.
+
+In this case $R_{t+1}=r_{t+1}=0$ and $\omega _{t}=\omega _{t+1}=\mu _{\ell
+}. $ As no bond market can operate%
+\begin{eqnarray*}
+s_{t} &=&0 \\
+c_{t,t} &=&\phi _{y}\omega _{t}-\tilde{\tau}_{y} \\
+c_{t,t+1} &=&\phi _{o}\omega _{t+1}-\tilde{\tau}_{o}
+\end{eqnarray*}%
+\pagebreak
+
+Consider the steady state and suppose $e=0$ so $\tilde{\tau}_{y}=-\tilde{\tau%
+}_{o}=\tilde{\tau}.$ Then steady state utility is%
+\begin{equation*}
+\ln \left( \phi _{y}\omega -\tilde{\tau}\right) +\beta \ln \left( \phi
+_{o}\omega +\tilde{\tau}\right)
+\end{equation*}
+\begin{equation*}
+\ln \left( \phi _{y}\omega -\tau \omega \right) +\beta \ln \left( \phi
+_{o}\omega +\tau \omega \right)
+\end{equation*}
+\begin{equation*}
+\ln \left( \phi _{y}\mu _{\ell }-\tau \mu _{\ell }\right) +\beta \ln \left(
+\phi _{o}\mu _{\ell }+\tau \mu _{\ell }\right)
+\end{equation*}%
+Suppose government wants to set $\tau $ to maximize steady state utility.
+i.e. 
+\begin{equation*}
+\underset{\tau }{\max }\ln \left( \phi _{y}\mu _{\ell }-\mu _{\ell }\tau
+\right) +\beta \ln \left( \phi _{o}\mu _{\ell }+\mu _{\ell }\tau \right)
+\end{equation*}%
+Foc is 
+\begin{equation*}
+\frac{1}{\phi _{y}-\tau }=\frac{\beta }{\phi _{o}+\tau }
+\end{equation*}%
+\begin{equation*}
+\tau =\frac{\beta \phi _{y}-\phi _{0}}{1+\beta }
+\end{equation*}%
+So $\tau >0$ iff%
+\begin{equation*}
+\phi _{y}>\frac{\phi _{o}}{\beta }
+\end{equation*}
+
+\pagebreak
+
+Case 2: $R_{t+1}>0,$ $Y_{t}=\mu _{\ell }L_{t}+\mu _{k}K_{t}$. In this case $%
+R_{t+1}=r_{t+1}=\mu _{k}$ and $\omega _{t+1}=\omega _{t}=\mu _{\ell }.$ The
+agent's problem is 
+\begin{eqnarray*}
+&&\underset{c_{t,t},c_{t,t+1},s_{t}}{\max }\ln c_{t,t}+\beta \ln c_{t,t+1} \\
+&&+\lambda _{t}\left( \phi _{y}\omega _{t}-c_{t,t}-\tilde{\tau}%
+_{y}-s_{t}\right) \\
+&&+\lambda _{t+1}\left( R_{t+1}s_{t}+\phi \omega _{t+1}-c_{t,t+1}-\tilde{\tau%
+}_{o}\right)
+\end{eqnarray*}%
+Optimal consumption requires 
+\begin{eqnarray*}
+\frac{1}{c_{t,t}} &=&\lambda _{t} \\
+\frac{\beta }{c_{t,t+1}} &=&\lambda _{t+1} \\
+\lambda _{t} &=&\lambda _{t+1}r_{t+1}
+\end{eqnarray*}%
+(since $r_{t}=R_{t}$).\pagebreak
+
+The first and second into the third gives%
+\begin{equation*}
+c_{t,t+1}=\beta r_{t+1}c_{t,t}
+\end{equation*}%
+Since budget constraints hold with equality we can treat them as a single
+lifetime budget constraint.%
+\begin{equation*}
+c_{t,t}+\frac{c_{t,t+1}}{r_{t+1}}+\tilde{\tau}_{y}+\frac{\tilde{\tau}_{o}}{%
+r_{t+1}}=\omega _{t}\phi _{y}+\frac{\phi _{o}\omega _{t+1}}{r_{t+1}}
+\end{equation*}%
+plugging in for $c_{t,t+1}$ and considering the state we have: 
+\begin{equation*}
+c_{t,t}=c_{y}=\frac{1}{1+\beta }\left( \phi _{y}\omega -\tilde{\tau}_{y}+%
+\frac{\phi _{o}\omega }{r}-\frac{\tilde{\tau}_{o}}{r}\right)
+\end{equation*}%
+\begin{equation*}
+c_{t+1,t}=c_{o}=\frac{\beta R}{1+\beta }\left( \phi _{y}\omega -\tilde{\tau}%
+_{y}+\frac{\phi _{o}\omega }{r}-\frac{\tilde{\tau}_{o}}{r}\right)
+\end{equation*}%
+and then since $s=\omega \phi _{y}-\tilde{\tau}_{y}-c_{t,t}$ 
+\begin{equation*}
+s_{t}=s=\phi _{y}\omega _{t}-\tilde{\tau}_{y}-\frac{1}{1+\beta }\left( \phi
+_{y}\omega +\frac{\phi _{o}\omega }{r}-\tilde{\tau}_{y}-\frac{\tilde{\tau}%
+_{o}}{r}\right)
+\end{equation*}%
+In a steady state and with again $\tilde{\tau}_{y}=-\tilde{\tau}_{o}=\tilde{%
+\tau}$ 
+\begin{equation*}
+K=\phi _{y}\omega -\tau \omega -\frac{1}{1+\beta }\left( \phi _{y}\omega +%
+\frac{\phi _{o}\omega }{r}-\tau \omega +\frac{\tau \omega }{r}\right)
+\end{equation*}%
+\begin{equation*}
+K=\phi _{y}\mu _{\ell }-\tau \mu _{\ell }-\frac{1}{1+\beta }\left( \phi
+_{y}\mu _{\ell }+\frac{\phi _{o}\mu _{\ell }}{\mu _{k}}-\tau \mu _{\ell }+%
+\frac{\tau \mu _{\ell }}{\mu _{k}}\right)
+\end{equation*}%
+\pagebreak
+
+Equilibrium utility is%
+\begin{equation*}
+\ln c_{y}+\beta \ln c_{o}
+\end{equation*}%
+which we found to be the same as%
+\begin{equation*}
+\ln c_{y}+\beta \ln \beta rc_{y}
+\end{equation*}%
+Write this as 
+\begin{equation*}
+\left( 1+\beta \right) \ln c_{y}+\beta \ln \beta r.
+\end{equation*}%
+With $R=r$ unaffected by the level of capital, and hence saving, and hence
+consumption, the level of $\tau $ that maximizes this is the same as the
+level that maximizes 
+\begin{equation*}
+c_{y}=\frac{1}{1+\beta }\left( \phi _{y}\mu _{\ell }+\frac{\phi _{o}\mu
+_{\ell }}{\mu _{k}}-\tau \mu _{\ell }+\frac{\tau \mu _{\ell }}{\mu _{k}}%
+\right)
+\end{equation*}%
+The government should set $\tau >0$ iff%
+\begin{equation*}
+-\mu _{\ell }+\frac{\mu _{\ell }}{\mu _{k}}>0
+\end{equation*}%
+\begin{equation*}
+\mu _{k}<1
+\end{equation*}
+
+Intuition?
+
+\pagebreak
+
+Case 3: $R_{t+1}>0,$ $Y_{t}=K_{t}^{\alpha }L_{t}^{1-\alpha }$.
+
+In this case, in equilibrium%
+\begin{eqnarray*}
+r_{t} &=&\alpha K_{t}^{\alpha -1} \\
+\omega _{t} &=&\left( 1-\alpha \right) K_{t}^{\alpha }.
+\end{eqnarray*}%
+As before we have 
+\begin{equation*}
+s=\phi _{y}\omega _{t}-\tilde{\tau}_{y}-\frac{1}{1+\beta }\left( \phi
+_{y}\omega _{t}+\frac{\phi _{o}\omega _{t+1}}{r_{t+1}}-\tilde{\tau}_{y}-%
+\frac{\tilde{\tau}_{o}}{r_{t+1}}\right)
+\end{equation*}%
+or in a steady state equilibrium 
+\begin{equation*}
+K=\phi _{y}\omega -\tau \omega -\frac{1}{1+\beta }\left( \phi _{y}\omega +%
+\frac{\phi _{o}\omega }{r}-\tau \omega +\frac{\tau \omega }{r}\right)
+\end{equation*}%
+Lets write this as 
+\begin{equation*}
+\frac{K}{\omega }=\phi _{y}-\tau -\frac{1}{1+\beta }\left( \phi _{y}-\tau
++\left( \frac{\phi _{o}+\tau }{r}\right) \right)
+\end{equation*}%
+\pagebreak
+
+Note 
+\begin{equation*}
+\frac{K}{\omega }=\frac{\alpha }{r\left( 1-\alpha \right) }
+\end{equation*}%
+so this is 
+\begin{equation*}
+\frac{\alpha }{r\left( 1-\alpha \right) }=\left( \phi _{y}-\tau \right) -%
+\frac{1}{1+\beta }\left( \left( \phi _{y}-\tau \right) +\left( \frac{\phi
+_{o}+\tau }{r}\right) \right)
+\end{equation*}%
+or%
+\begin{equation*}
+\frac{1}{r}\left( \frac{\alpha }{1-\alpha }+\frac{\phi _{o}+\tau }{1+\beta }%
+\right) =\frac{\beta \left( \phi _{y}-\tau \right) }{1+\beta }
+\end{equation*}%
+or%
+\begin{equation*}
+\frac{1}{\alpha K^{\alpha -1}}=\frac{\beta \left( \phi _{y}-\tau \right) }{%
+\left( 1+\beta \right) \left( \frac{\alpha }{1-\alpha }+\frac{\phi _{o}+\tau 
+}{1+\beta }\right) }
+\end{equation*}%
+giving 
+\begin{equation*}
+K=\left( \frac{\beta \alpha \left( \phi _{y}-\tau \right) }{\left( 1+\beta
+\right) \left( \frac{\alpha }{1-\alpha }+\frac{\phi _{o}+\tau }{1+\beta }%
+\right) }\right) ^{\frac{1}{1-\alpha }}.
+\end{equation*}
+
+\pagebreak
+
+We can see that taxation decreases savings. The effect of taxation on
+utility is tough. We know from before that utility is 
+\begin{equation*}
+\left( 1+\beta \right) \ln c_{y}+\beta \ln \beta r.
+\end{equation*}%
+But (after cleaning things up a bit)%
+\begin{equation*}
+c_{y}=\frac{1}{1+\beta }\left( \left( 1-\alpha \right) K^{\alpha }\left(
+\phi _{y}-\tau \right) +\frac{\left( \phi _{o}+\tau \right) \left( 1-\alpha
+\right) K}{\alpha }\right)
+\end{equation*}%
+so 
+\begin{equation*}
+\frac{\partial \ln c_{y}}{\partial K}\frac{\partial K}{\partial \tau }
+\end{equation*}%
+is already tough and then we need to also consider 
+\begin{equation*}
+\frac{\partial \ln r}{\partial K}\frac{\partial K}{\partial \tau }.
+\end{equation*}%
+As such, we will not consider what tax rate maximizes utility as in the
+earlier cases.
+
+\end{document}

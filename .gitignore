@@ -1,0 +1,17 @@
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.nav
+*.snm
+*.toc
+*.vrb
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.pdf
