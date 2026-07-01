@@ -1,0 +1,103 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 1252
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{Codepage=1252}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Monday, October 01, 2001 13:27:51}
+%TCIDATA{LastRevised=Monday, October 20, 2025 14:30:29}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="General\SW\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\begin{document}
+
+
+\begin{center}
+{\LARGE Assignment 7}
+\end{center}
+
+\noindent Blankenau\hspace*{\stretch{0.7500}}
+
+\noindent Economics 905, Fall 2025\medskip 
+
+\noindent \noindent \textit{Instructions.} You may work in groups and may
+compare answers prior to submission. Joint submissions with up to 4 names
+are allowed and encouraged. All work should be legible and concise. A due
+date will be announced in class.
+
+\medskip \medskip Consider a discrete time endogenous growth model where a
+representative household maximizes%
+\begin{equation*}
+U=\overset{\infty }{\underset{t=0}{\sum }}\beta ^{t}\frac{C_{t}^{\sigma }}{%
+\sigma }
+\end{equation*}%
+$0<\beta <1\ $where $C_{t}$ is consumption. The population is normalized to
+1. Each agent has one unit of time available in each period to allocate
+across human capital accumulation and production. The agents can produce
+consumption goods according to $Y_{t}=Bh_{t}u_{t}$ where $Y_{t}$ is the
+output of the final good$.$ Note, then, that $\left( 1-u_{t}\right) $ is the
+time spent in human capital accumulation. The human capital accumulation
+technology is given by $h_{t+1}=Ah_{t}\left( 1-u_{t}\right) .\ $where $A>0.$
+
+\begin{enumerate}
+\item Set up the agent's optimization problem as a dynamic programming
+problem and find the first order condition(s) and envelope condition(s).
+
+\item Find the balanced growth rate of consumption in this model and find $u$
+along the balanced growth path.
+
+\item Let the period utility function be $\ln C_{t}.$ Now suppose there is
+congestion in schooling so that the more time people spend studying the less
+productive is the educational system. This is expressed by $A=\left( 1-\bar{u%
+}\right) ^{-\alpha }$ where $0<\alpha <1$ and $\bar{u}$ is the average
+amount of time spent in schooling, taken as given by all agents but equal to 
+$u$ in equilibrium. Find the balanced growth rate of consumption in this
+model and find $u$ along the balanced growth path.
+
+\item With again $A=\left( 1-\bar{u}\right) ^{-\alpha },$ write down and the
+social planner's problem and find first order conditions and envelope
+conditions. Recall the social planner internalizes the externality and so
+sets $A=(1-u_{t})^{-\alpha }$.
+
+\item Show that the social planners's allocation would yield%
+\begin{equation*}
+\gamma =\left( \frac{\beta \left( 1-\alpha \right) }{1-\beta \alpha }\right)
+^{1-\alpha }
+\end{equation*}%
+\begin{equation*}
+u=1-\frac{\beta \left( 1-\alpha \right) }{1-\beta \alpha }.
+\end{equation*}
+\end{enumerate}
+
+\end{document}

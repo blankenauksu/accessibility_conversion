@@ -17,3 +17,4 @@ __pycache__/
 *.fdb_latexmk
 *.synctex.gz
 *.pdf
+!canvas_pdfs/.gitkeep

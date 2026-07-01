@@ -615,6 +615,7 @@ def convert_swp_slides(
     print(f"Slides:   {len(slides)} content frames + 1 title frame")
     print(f"Plots:    {plot_count} replaced with text placeholder(s)")
     print(f"Compile:  bash accessible_slides/compile_pdf.sh {input_path.stem} {input_path.parent}")
+    print(f"PDF folder: canvas_pdfs/")
 
     if validate:
         from validate_accessible_tex import print_validation_report, validate_accessible_tex

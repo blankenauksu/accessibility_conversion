@@ -1,0 +1,339 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 1252
+
+\documentclass[11pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{Codepage=1252}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Monday, September 22, 2003 09:40:11}
+%TCIDATA{LastRevised=Tuesday, November 11, 2025 12:10:47}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="General\SW\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\input{tcilatex}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-.50in}
+\setlength{\oddsidemargin}{.0in}
+\setlength{\evensidemargin}{.0in}
+
+\begin{document}
+
+
+\begin{center}
+{\LARGE Assignment 9}
+\end{center}
+
+\noindent Blankenau\hspace*{\stretch{0.7500}}
+
+\noindent Economics 905, Fall 2025
+
+\noindent \noindent \textit{Instructions.} You may work in groups and may
+compare answers prior to submission. Joint submissions with up to 4 names
+are allowed and encouraged. All work should be legible and concise. A due
+date will be announced in class.
+
+\begin{enumerate}
+\item Consider the following economy. The representative agent maximizes%
+\begin{equation*}
+E_{0}\overset{\infty }{\underset{t=0}{\sum }}\beta ^{t}\left( \ln
+c_{t}\right)
+\end{equation*}%
+where $0<\beta <1,$ and $c_{t}>0$ is consumption. The representative agent
+has one unit of time available in each period. Output is produced according
+to 
+\begin{equation*}
+y_{t}=z_{t}\bar{k}_{t}^{\gamma }k_{t}^{\alpha }n_{t}^{1-\alpha }
+\end{equation*}%
+where $k_{t}$ is the capital input, $n_{t}$ is the labor input, and $%
+0<\alpha <1.$ This is a learning-by-doing economy so $\bar{k}_{t}$ is the
+average capital stock, taken as given by all agents and firms. Assume $%
+\gamma +\alpha <1$ so this is not an endogenous growth model. Capital
+depreciates fully in each period. Assume that $\ln z_{t}$ is an i.i.d.
+random variable with an expected value of $\mu >0$ and that $k_{0}$ is
+given. Since leisure is not valued, $n_{t}$ will be one in equilibrium. Note
+that relative to your notes, $\rho $ here is 0.
+
+\begin{enumerate}
+\item Formulate the stochastic dynamic programming problem for the social
+planner. Recall the social planner internalizes this externality and so
+works with $y_{t}=z_{t}k_{t}^{\alpha +\gamma }n_{t}^{1-\alpha }.$ This
+should not fundamentally change how you solve the problem. It will be easier
+to define $\delta \equiv \alpha +\gamma $ and work with $z_{t}k_{t}^{\delta
+}n_{t}^{1-\alpha }$ in the social planner's problem. Notice that leisure is
+not valued so there is one less first order condition relative to your notes
+and $n_{t}=1.$ Guess that the value function takes the form%
+\begin{equation*}
+\upsilon \left( k_{t},z_{t}\right) =B+D\ln k_{t}+F\ln z_{t}
+\end{equation*}%
+and verify that this is correct by solving for $D$ and $F$. You do not need
+to solve for $B$.
+
+\item Now consider the competitive equilibrium. Formulate the stochastic
+dynamic programming problem for the representative agent with budget
+constraint $c_{t}+k_{t+1}=w_{t}n_{t}+r_{t}k_{t}.$ Here $w_{t}$ is the wage
+and $r_{t}$ is the real interest rate. Guess that the value function takes
+the form%
+\begin{equation*}
+\upsilon \left( k_{t},z_{t},\bar{k}_{t}\right) =B+D\ln k_{t}+F\ln z_{t}+G\ln 
+\bar{k}_{t}
+\end{equation*}%
+and verify that this is correct by finding $D$ and $F,$ and $G$ where $D$
+and $F$ are potentially different from what you found above. You do not need
+to solve for $B$. Note that after taking first order conditions in this case
+you can plug in for $w_{t}n_{t}+r_{t}k_{t}=z_{t}\bar{k}_{t}^{\gamma
+}k_{t}^{\alpha }n_{t}^{1-\alpha }\ $(It is straightforward to show this, but
+you can take it as given). Notice that since leisure is not valued $n_{t}=1$
+in equilibrium$.$ Do not separately set $\bar{k}_{t}=k_{t}$ in this
+situation.
+\end{enumerate}
+\end{enumerate}
+
+\pagebreak \pagebreak
+
+\begin{enumerate}
+\item 
+\begin{enumerate}
+\item The dynamic programming problem for this model is%
+\begin{equation*}
+v(k_{t},z_{t})=\underset{n_{t},k_{t+1}}{\max }\{\ln \left(
+z_{t}k_{t}^{\delta }n_{t}^{1-\alpha }-k_{t+1}\right) +\beta
+E_{t}v(k_{t+1},z_{t+1})\}
+\end{equation*}%
+We guess the value function to be of the form: 
+\begin{equation*}
+v(k_{t},z_{t})=B+D\ln k_{t}+F\ln z_{t}
+\end{equation*}%
+Now we plug our guess into the Bellman equation and solve the optimization
+problem for $k_{t+1}$ 
+\begin{equation*}
+B+D\ln k_{t}+F\ln z_{t}=\underset{k_{t+1}}{\max }\{\ln \left(
+z_{t}k_{t}^{\delta }n_{t}^{1-\alpha }-k_{t+1}\right) +\beta E_{t}\left[
+B+D\ln k_{t+1}+F\ln z_{t+1}\right] \}
+\end{equation*}%
+Since $k_{t+1}$ is something controlled by the planner, it is not
+stochastic. Also $B$ is clearly not stochastic and $E_{t}\ln z_{t+1}=\mu $
+so this is we 
+\begin{equation*}
+B+D\ln k_{t}+F\ln z_{t}=\underset{k_{t+1}}{\max }\{\ln \left(
+z_{t}k_{t}^{\delta }n_{t}^{1-\alpha }-k_{t+1}\right) +\beta \left[ B+D\ln
+k_{t+1}+F\ln \mu \right] \}
+\end{equation*}%
+Then, solving the maximization problem on the right-hand side of the Bellman
+equation gives the following:%
+\begin{equation*}
+\frac{1}{z_{t}k_{t}^{\delta }n_{t}^{1-\alpha }-k_{t+1}}=\frac{\beta D}{%
+k_{t+1}}
+\end{equation*}%
+so%
+\begin{equation*}
+k_{t+1}=\frac{\beta Dz_{t}k_{t}^{\delta }n_{t}^{1-\alpha }}{1+\beta D}
+\end{equation*}%
+This into above expression gives 
+\begin{eqnarray*}
+B+D\ln k_{t}+F\ln z_{t} &=&\{\ln \left( z_{t}k_{t}^{\delta }n^{1-\alpha }-%
+\frac{\beta D}{\left( 1+\beta D\right) }z_{t}k_{t}^{\delta }n^{1-\alpha
+}\right) + \\
+&&\beta B+\beta D\ln \frac{\beta D}{\left( 1+\beta D\right) }%
+z_{t}k_{t}^{\delta }n^{1-\alpha }+\beta F\mu \}
+\end{eqnarray*}%
+Now let $n=1$ giving 
+\begin{equation*}
+B+D\ln k_{t}+F\ln z_{t}=\{\ln \left( z_{t}k_{t}^{\delta }\left( 1-\frac{%
+\beta D}{\left( 1+\beta D\right) }1\right) \right) +\beta B+\beta D\ln \frac{%
+\beta D}{\left( 1+\beta D\right) }z_{t}k_{t}^{\delta }n^{1-\alpha }+\beta
+F\mu \}
+\end{equation*}%
+or%
+\begin{equation*}
+B+D\ln k_{t}+F\ln z_{t}=\{\ln \left( z_{t}k_{t}^{\delta }\right) +\beta D\ln
+z_{t}k_{t}^{\delta }+X\}
+\end{equation*}%
+or 
+\begin{equation*}
+B+D\ln k_{t}+F\ln z_{t}=\{\ln z_{t}+\delta \ln k_{t}+\beta D\delta \ln
+k_{t}+\beta D\ln z_{t}+X\}
+\end{equation*}%
+\begin{equation*}
+B+D\ln k_{t}+F\ln z_{t}=\{\left( 1+\beta D\right) \ln z_{t}+\left( \delta
++\beta D\delta \right) \ln k+X\}
+\end{equation*}%
+Equating coefficients: 
+\begin{equation*}
+D=\delta +\beta D\delta
+\end{equation*}%
+or 
+\begin{equation*}
+D=\frac{\delta }{1-\beta \delta }
+\end{equation*}%
+Similarly 
+\begin{equation*}
+F=1+\beta D=\frac{1}{1-\beta \delta }
+\end{equation*}%
+The rest of this was not required but we can also find the policy function 
+\begin{equation*}
+k_{t+1}=\frac{\beta Dz_{t}k_{t}^{\delta }n_{t}^{1-\alpha }}{1+\beta D}
+\end{equation*}%
+\begin{equation*}
+k_{t+1}=\frac{\beta \frac{\delta }{1-\beta \delta }z_{t}k_{t}^{\delta
+}n_{t}^{1-\alpha }}{1+\beta \frac{\delta }{1-\beta \delta }}
+\end{equation*}%
+becomes 
+\begin{equation*}
+k_{t+1}=\delta \beta z_{t}k_{t}^{\delta }n_{t}^{1-\alpha }
+\end{equation*}
+
+\item The dynamic programming problem for this model is: 
+\begin{equation*}
+v(k_{t},z_{t},)=\underset{c_{t},n_{t},k_{t+1}}{\max }\{\ln \left(
+n_{t}w_{t}+r_{t}k_{t}-k_{t+1}\right) +\beta E_{t}v(k_{t+1},z_{t+1})\}
+\end{equation*}%
+We guess the value function to be of the form: 
+\begin{equation*}
+v(k_{t},z_{t})=B+D\ln k_{t}+F\ln z_{t}+G\ln \bar{k}_{t}
+\end{equation*}%
+Now we will plug our guess into the Bellman equation and solve the
+optimization problem for $k_{t+1}$, $n_{t}$: 
+\begin{equation*}
+B+D\ln k_{t}+F\ln z_{t}+G\ln \bar{k}_{t}=\underset{k_{t+1}}{\max }\{\ln
+\left( w_{t}+r_{t}k_{t}-k_{t+1}\right) +\beta E_{t}\left[ B+D\ln
+k_{t+1}+F\ln z_{t+1}+G\ln \bar{k}_{t+1}\right] \}
+\end{equation*}%
+Since $k_{t+1}$ is something controlled by the agent, it is not stochastic. $%
+\bar{k}_{t+1}$ is not controlled by this agent but is known. Also $B$ is not
+stochastic and $E_{t}\ln z_{t+1}=\mu $ so we can write 
+\begin{equation*}
+B+D\ln k_{t}+F\ln z_{t}+G\ln \bar{k}_{t}=\underset{k_{t+1}}{\max }\{\ln
+\left( w_{t}n_{t}+r_{t}k_{t}-k_{t+1}\right) +\beta \left[ B+D\ln
+k_{t+1}+F\ln \mu +G\ln \bar{k}_{t+1}\right] \}
+\end{equation*}%
+Differentiation wrt $k_{t+1}$ give 
+\begin{equation*}
+\frac{1}{w_{t}n_{t}+r_{t}k_{t}-k_{t+1}}=\frac{\beta D}{k_{t+1}}
+\end{equation*}%
+It was given to you that $w_{t}n_{t}+r_{t}k_{t}=z_{t}\bar{k}_{t}^{\gamma
+}k_{t}^{\alpha }n_{t}^{1-\alpha }.$ To see it, we know from firm's problem
+that%
+\begin{equation*}
+r_{t}=\alpha z_{t}\bar{k}_{t}^{\gamma }k_{t}^{\alpha -1}n_{t}^{1-\alpha }
+\end{equation*}%
+, 
+\begin{equation*}
+w_{t}=\left( 1-\alpha \right) z_{t}\bar{k}_{t}^{\gamma }k_{t}^{\alpha
+}n_{t}^{-\alpha }
+\end{equation*}%
+so 
+\begin{equation*}
+w_{t}n_{t}+r_{t}k_{t}=\left( 1-\alpha \right) z_{t}\bar{k}_{t}^{\gamma
+}k_{t}^{\alpha }n_{t}^{1-\alpha }+\alpha z_{t}\bar{k}_{t}^{\gamma
+}k_{t}^{\alpha }n_{t}^{1-\alpha }=z_{t}\bar{k}_{t}^{\gamma }k_{t}^{\alpha
+}n_{t}^{1-\alpha }
+\end{equation*}%
+Given this, we have 
+\begin{equation*}
+\frac{1}{z_{t}\bar{k}_{t}^{\gamma }k_{t}^{\alpha }n_{t}^{1-\alpha }-k_{t+1}}=%
+\frac{\beta D}{k_{t+1}}
+\end{equation*}%
+$\allowbreak \allowbreak $%
+\begin{equation*}
+k_{t+1}=\frac{\beta Dz_{t}\bar{k}_{t}^{\gamma }k_{t}^{\alpha
+}n_{t}^{1-\alpha }}{1+\beta D}
+\end{equation*}%
+\begin{eqnarray*}
+B+D\ln k_{t}+F\ln z_{t}+G\ln \bar{k}_{t} &=&\{\ln \left( z_{t}\bar{k}%
+_{t}^{\gamma }k_{t}^{\alpha }n_{t}^{1-\alpha }-\frac{\beta D}{\left( 1+\beta
+D\right) }z_{t}\bar{k}_{t}^{\gamma }k_{t}^{\alpha }n_{t}^{1-\alpha }\right) +
+\\
+&&\beta B+\beta D\ln \frac{\beta D}{\left( 1+\beta D\right) }z_{t}\bar{k}%
+_{t}^{\gamma }k_{t}^{\alpha }n_{t}^{1-\alpha }+\beta F\mu +\beta G\ln \bar{k}%
+_{t+1}
+\end{eqnarray*}%
+set $n=1$ which we can write as%
+\begin{eqnarray*}
+B+D\ln k_{t}+F\ln z_{t}+G\ln \bar{k}_{t} &=&\{\ln \left( z_{t}\bar{k}%
+_{t}^{\gamma }k_{t}^{\alpha }\left( 1-\frac{\beta D}{\left( 1+\beta D\right) 
+}\right) \right) + \\
+&&\beta B+\beta D\ln \frac{\beta D}{\left( 1+\beta D\right) }z_{t}\bar{k}%
+_{t}^{\gamma }k_{t}^{\alpha }+\beta F\mu +\beta G\ln \bar{k}_{t+1}
+\end{eqnarray*}%
+or%
+\begin{equation*}
+B+D\ln k_{t}+F\ln z_{t}+G\ln \bar{k}_{t}=\{\ln \left( z_{t}\bar{k}%
+_{t}^{\gamma }k_{t}^{\alpha }\right) +\beta D\ln z_{t}\bar{k}_{t}^{\gamma
+}k_{t}^{\alpha }+\beta G\ln \bar{k}_{t+1}+X\}
+\end{equation*}%
+where $X$ is a constant or 
+\begin{equation*}
+B+D\ln k_{t}+F\ln z_{t}+G\ln \bar{k}_{t}=\{\ln z_{t}+\gamma \ln \bar{k}%
+_{t}+\alpha \ln k_{t}+\beta D\alpha \ln k_{t}+\beta D\ln z_{t}+\beta D\gamma
+\ln \bar{k}_{t}+\beta G\ln \bar{k}_{t}+X\}
+\end{equation*}%
+\begin{equation*}
+B+D\ln k_{t}+F\ln z_{t}+G\ln \bar{k}_{t}=\left( 1+\beta D\right) \ln
+z_{t}+\left( \gamma +\beta D\gamma +\beta G\right) \ln \bar{k}_{t}+\left(
+\alpha +\beta D\alpha \right) \ln k_{t}+X
+\end{equation*}%
+where $X$ is a constant. Equating coefficients:%
+\begin{equation*}
+D=\alpha +\beta D\alpha 
+\end{equation*}%
+or 
+\begin{equation*}
+D=\frac{\alpha }{1-\beta \alpha }
+\end{equation*}%
+Similarly%
+\begin{equation*}
+F=1+\beta D=\frac{1}{1-\beta \alpha }
+\end{equation*}%
+$.$%
+\begin{equation*}
+G=\gamma +\beta D\gamma +\beta G
+\end{equation*}%
+\begin{equation*}
+G=\frac{\gamma \left( 1+D\beta \right) }{1-\beta }
+\end{equation*}%
+\begin{equation*}
+G=\gamma +\beta \frac{\alpha }{1-\beta \alpha }\gamma +\beta G
+\end{equation*}%
+$\allowbreak $%
+\begin{equation*}
+G=\frac{\gamma \left( 1+\frac{\alpha }{1-\beta \alpha }\beta \right) }{%
+\left( 1-\beta \right) }
+\end{equation*}%
+\begin{equation*}
+G=\frac{\gamma }{\left( 1-\beta \right) \left( 1-\alpha \beta \right) }
+\end{equation*}
+\end{enumerate}
+\end{enumerate}
+
+\end{document}

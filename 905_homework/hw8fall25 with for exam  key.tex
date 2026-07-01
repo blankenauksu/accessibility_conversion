@@ -1,0 +1,398 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 1252
+
+\documentclass[11pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{Codepage=1252}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Monday, September 22, 2003 09:40:11}
+%TCIDATA{LastRevised=Wednesday, December 17, 2025 19:42:27}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="General\SW\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\input{tcilatex}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-.50in}
+\setlength{\oddsidemargin}{.0in}
+\setlength{\evensidemargin}{.0in}
+
+\begin{document}
+
+
+\begin{center}
+{\LARGE Assignment 8}
+\end{center}
+
+\noindent Blankenau\hspace*{\stretch{0.7500}}
+
+\noindent Economics 905, Fall 2025
+
+\noindent \noindent \textit{Instructions.} You may work in groups and may
+compare answers prior to submission. Joint submissions with up to 4 names
+are allowed and encouraged. All work should be legible and concise. A due
+date will be announced in class.
+
+Consider an economy with a single final good which is produced using a
+variety of intermediate goods. Specifically, $n_{t}$ intermediate goods ($%
+x_{i},$ $i\in \left\{ 1,2..n_{t}\right\} $) combine with labor ($L$) to
+produce a final output good $y$ according to 
+\begin{equation*}
+y_{t}=AL^{1-\alpha }\overset{n_{t}}{\underset{i=1}{\sum }}x_{it}^{\alpha }
+\end{equation*}%
+where $A>0$ and $0<\alpha <1.$ The final good is the numeraire good and is
+produced competitively by a representative firm. Profits for the producer of
+the final good $\left( \pi _{ft}\right) $ are 
+\begin{equation*}
+\pi _{ft}=y_{t}-\overset{n_{t}}{\underset{i=1}{\sum }}p_{it}x_{it}-w_{t}L
+\end{equation*}%
+where $p_{it}$ is the relative price of intermediate good $i$ and $w_{t}$ is
+the wage. Each intermediate good is unique and produced by only one firm.
+Thus there is imperfect competition. The only input to the production of an
+intermediate good is $\phi >0$ units of the final good. Thus the profit for
+the intermediate firm is%
+\begin{equation*}
+\pi _{i}=p_{i}x_{i}-\phi x_{i}
+\end{equation*}%
+There is also a government that taxes labor income at rate $\tau $ and
+subsidizes inventions at rate $\varsigma $ where $0\leq \tau ,\varsigma \leq
+1.$ The government balances its budget in each period. There is free entry
+into the business of being an inventor. Anyone can pay $\eta >0$ to invent a
+new good. The government pays $\varsigma \eta $ of this so the private cost
+is $\left( 1-\varsigma \right) \eta .$ The private cost is financed by
+borrowing (issuing bonds). The owner of the new intermediate good type gets
+exclusive rights to produce it forever. A representative agent supplies one
+unit of time supplied inelastically in the labor market. The agents
+inelastically supplies one unit of labor each period. The agent chooses
+consumption and bond holdings to bring into the subsequent period to
+maximize lifetime utility, $\underset{t=0}{\overset{\infty }{\text{ }\sum }}%
+\beta ^{t}\frac{c_{t}^{\sigma }}{\sigma }$ where $0\leq \beta \leq 1,$ $%
+\sigma \leq 1$ and $c_{t}$ is consumption$.$ The period budget constraint is 
+$c_{t}+b_{t+1}=w_{t}\left( 1-\tau \right) +\left( 1+r_{t}\right) b_{t}\ $%
+where $w_{t}$ is wage per unit of time worked, and $b_{t}$ is bond holdings
+at the beginning of period $t$ and $r_{t}$ is the interest rate on bonds in
+period $t$.
+
+\begin{enumerate}
+\item Firms' problems.
+
+\begin{enumerate}
+\item Find the final goods producer's derived demand for the intermediate
+good $x_{it}$.
+
+\item Find the profit maximizing price of the intermediate good $x_{it}$ set
+by its producer.
+
+\item Find the one-period profits for the producer of an intermediate good.
+Find the present discounted value of all profits accruing to the producer of
+an intermediate good. Assume the interest rate is constant and recall $%
+\underset{t=0}{\overset{\infty }{\text{ }\sum }}\frac{1}{\left( 1+r\right)
+^{t}}=\frac{1}{r}.$
+\end{enumerate}
+
+\item Agent's problem.
+
+\begin{enumerate}
+\item Write down \ the Bellman equation for the agent's optimization problem.
+
+\item Find the first order condition and the updated envelope condition.
+
+\item Consider a balanced growth path where $\frac{c_{t+1}}{c_{t}}=\frac{%
+y_{t+1}}{y_{t}}=\frac{n_{t+1}}{n_{t}}=\gamma $. Find the optimal growth rate
+of consumption as a function of the interest rate.
+
+\item Find the equilibrium interest rate from the bond market clearing
+condition.
+
+\item Find the growth rate as a function of exogenous items and policy
+variables.
+\end{enumerate}
+
+\item The social planner takes $n_{t}$ as a state variable and chooses $%
+n_{t+1}$ and $\hat{x}_{t}$ where $\hat{x}_{t}$ is a vector of the $n_{t}$
+intermediate goods available in period $t$. It does this to maximize $%
+\overset{\infty }{\underset{t=0}{\sum }}\beta ^{t}\ln c_{t}$ where $c_{t}=%
+\overset{n_{t}}{\underset{i=1}{\sum }}\left( x_{it}^{\alpha }-x_{it}\right)
+-\eta \left( n_{t+1}-n_{t}\right) .$ Here $x_{it}$ is the $i^{th}$ element
+of $\hat{x}_{t}.$
+
+\begin{enumerate}
+\item Write down the social planner's Bellman equation and find the first
+order condition with respect to $x_{it}.$
+
+\item Use the above first order condition and the fact that all values of $x$
+will be the same to write the social planner's Bellman equation with only $%
+n_{t}$ and $n_{t+1}$ as endogenous items.
+
+\item Find the growth rate that arises as a solution to the social planner's
+problem.
+
+\item Find $\varsigma $ such that $x_{it}$ in a competitive equilibrium
+coincides with that from the social planner's problem.
+\end{enumerate}
+
+\pagebreak \bigskip
+\end{enumerate}
+
+\bigskip
+
+\begin{enumerate}
+\item \bigskip From notes 
+\begin{equation*}
+x_{it}=\left( \frac{\alpha AL^{1-\alpha }}{p_{it}}\right) ^{\frac{1}{%
+1-\alpha }}
+\end{equation*}
+
+\item Profit for the intermediate firm is 
+\begin{equation*}
+\pi _{it}=p_{it}x_{it}-\phi x_{it}
+\end{equation*}%
+The firm chooses price to maximize profit. The first order condition is%
+\begin{equation*}
+\left( p_{it}-\phi \right) \frac{1}{1-\alpha }\left( \frac{\alpha
+AL^{1-\alpha }}{p_{it}}\right) ^{\frac{1}{1-\alpha }-1}\frac{\alpha
+AL^{1-\alpha }}{p_{it}^{2}}=\left( \frac{\alpha AL^{1-\alpha }}{p_{it}}%
+\right) ^{\frac{1}{1-\alpha }}
+\end{equation*}%
+so 
+\begin{equation*}
+p_{it}=p_{i}=\frac{\phi }{\alpha }
+\end{equation*}
+
+\item Thus%
+\begin{equation*}
+y_{t}=AL^{1-\alpha }n\left( \frac{\alpha AL^{1-\alpha }}{\frac{\phi }{\alpha 
+}}\right) ^{\frac{\alpha }{1-\alpha }}
+\end{equation*}%
+\begin{equation*}
+x_{it}n=n\left( \frac{\alpha AL^{1-\alpha }}{\frac{\phi }{\alpha }}\right) ^{%
+\frac{1}{1-\alpha }}
+\end{equation*}%
+\begin{equation*}
+x_{it}=\left( \frac{\alpha AL^{1-\alpha }}{\frac{\phi }{\alpha }}\right) ^{%
+\frac{1}{1-\alpha }}
+\end{equation*}%
+\begin{equation*}
+x_{it}=x_{i}=\left( \frac{\alpha ^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{1%
+}{1-\alpha }}
+\end{equation*}%
+and profits are 
+\begin{equation*}
+\pi _{it}=\pi _{i}=\left( \frac{\phi }{\alpha }-\phi \right) \left( \frac{%
+\alpha ^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{1}{1-\alpha }}
+\end{equation*}
+
+\item 
+\begin{eqnarray*}
+&&\left( \frac{\phi }{\alpha }-\phi \right) \left( \frac{\alpha
+^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{1}{1-\alpha }}\left( \underset{t=1}%
+{\overset{\infty }{\sum }}\frac{1}{\left( 1+r\right) ^{t}}\right) \\
+&&\frac{1}{r}\left( \frac{\phi }{\alpha }-\phi \right) \left( \frac{\alpha
+^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{1}{1-\alpha }}
+\end{eqnarray*}
+
+\item 
+\begin{equation*}
+\upsilon \left( b_{t}\right) =\underset{b_{t+1}}{\max }\left[ w_{t}\left(
+1-L_{t}\right) \left( 1-\tau \right) +\left( 1+r_{t}\right) b_{t}-b_{t+1}%
+\right] ^{\sigma }+\ln L_{t}+\beta \upsilon \left( b_{t+1}\right) 
+\end{equation*}
+
+\item 
+\begin{eqnarray*}
+c_{t}^{\sigma -1} &=&\beta v^{\prime }(b_{t+1}) \\
+v^{\prime }(b_{t+1}) &=&\left( 1+r_{t+1}\right) c_{t+1}^{\sigma -1}
+\end{eqnarray*}
+
+\item We focus on \textquotedblleft balanced growth paths\textquotedblright\
+where $\frac{c_{t+1}}{c_{t}}=\frac{y_{t+1}}{y_{t}}=\frac{n_{t+1}}{n_{t}}%
+=\gamma $. This into the above gives 
+\begin{equation*}
+\gamma =\left( \beta \left( 1+r_{t}\right) \right) ^{\frac{1}{1-\sigma }}
+\end{equation*}
+
+\item Wage =%
+\begin{equation*}
+\left( 1-\alpha \right) AL^{-\alpha }\overset{n_{t}}{\underset{i=1}{\sum }}%
+x_{it}^{\alpha }
+\end{equation*}%
+\begin{equation*}
+w_{t}=\left( 1-\alpha \right) A\overset{n_{t}}{\underset{i=1}{\sum }}%
+x_{it}^{\alpha }
+\end{equation*}%
+$\left( \frac{\alpha ^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{1}{1-\alpha }%
+} $%
+\begin{equation*}
+w_{t}=\left( 1-\alpha \right) An_{t}\left( \frac{\alpha ^{2}A}{\phi }\right)
+^{\frac{1}{1-\alpha }}
+\end{equation*}
+
+\item Bond market requires%
+\begin{equation*}
+\eta \left( 1-\varsigma \right) =\frac{1}{r}\left( \frac{\phi }{\alpha }%
+-\phi \right) \left( \frac{\alpha ^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{1%
+}{1-\alpha }}
+\end{equation*}%
+\begin{equation*}
+r=\left( \frac{\phi }{\alpha }-\phi \right) \left( \frac{\alpha
+^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{1}{1-\alpha }}\frac{1}{\eta \left(
+1-\varsigma \right) }
+\end{equation*}%
+\begin{equation*}
+\pi _{i}=\left( \frac{\phi }{\alpha }-\phi \right) \left( \frac{\alpha
+^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{1}{1-\alpha }}
+\end{equation*}
+
+\item 
+\begin{eqnarray*}
+\gamma  &=&\left( \beta \left( 1+r_{t}\right) \right) ^{\frac{1}{1-\sigma }}
+\\
+\gamma  &=&\left( \beta \left( 1+\left( \frac{\phi }{\alpha }-\phi \right)
+\left( \frac{\alpha ^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{1}{1-\alpha }}%
+\frac{1}{\eta \left( 1-\varsigma \right) }\right) \right) ^{\frac{1}{%
+1-\sigma }}
+\end{eqnarray*}%
+\begin{equation*}
+\upsilon \left( b_{t}\right) =\underset{b_{t+1}}{\max }\frac{\left[
+w_{t}\left( 1-l_{t}\right) \left( 1-\tau \right) +\left( 1+r_{t}\right)
+b_{t}-b_{t+1}\right] ^{\sigma }}{\sigma }+\ln \left( l_{t}\right) +\beta
+\upsilon \left( b_{t+1}\right) 
+\end{equation*}%
+\begin{equation*}
+\upsilon \left( n_{t}\right) =\underset{\hat{x}_{t},n_{t+1}}{\max }\ln
+\left( \overset{n_{t}}{\underset{i=1}{\sum }}\left( x_{it}^{\alpha
+}-x_{it}\right) -\eta \left( n_{t+1}-n_{t}\right) \right) +\beta \upsilon
+\left( n_{t+1}\right) 
+\end{equation*}%
+Take the FOC for $x_{it}$%
+\begin{equation*}
+\frac{\alpha x_{it}^{\alpha -1}-1}{c_{t}}=0
+\end{equation*}%
+\begin{equation*}
+\alpha x_{it}^{\alpha -1}-1=0
+\end{equation*}%
+\begin{equation*}
+\alpha x_{it}^{\alpha -1}=1
+\end{equation*}%
+\begin{equation*}
+\alpha ^{\frac{1}{1-\alpha }}=x_{it}
+\end{equation*}%
+since this is the same for each good, we can write the Bellman equation as 
+\begin{equation*}
+\upsilon \left( n_{t}\right) =\underset{n_{t+1}}{\max }\ln \left(
+n_{t}\left( \alpha ^{\frac{\alpha }{1-\alpha }}-\alpha ^{\frac{1}{1-\alpha }%
+}\right) -\eta \left( n_{t+1}-n_{t}\right) \right) +\beta \upsilon \left(
+n_{t+1}\right) 
+\end{equation*}%
+The first order condition for $n_{t+1}$ is 
+\begin{equation*}
+\beta \upsilon ^{^{\prime }}\left( n_{t+1}\right) =\frac{\eta }{c_{t}}
+\end{equation*}%
+The envelope condition for $n_{t}$ (updated) is%
+\begin{equation*}
+\upsilon ^{^{\prime }}\left( n_{t+1}\right) =\frac{\alpha ^{\frac{\alpha }{%
+1-\alpha }}-\alpha ^{\frac{1}{1-\alpha }}+\eta }{c_{t+1}}
+\end{equation*}%
+Thus 
+\begin{equation*}
+\frac{c_{t+1}}{c_{t}}=\beta \left( \frac{\alpha ^{\frac{\alpha }{1-\alpha }%
+}-\alpha ^{\frac{1}{1-\alpha }}+\eta }{\eta }\right) 
+\end{equation*}%
+\begin{equation*}
+\gamma =\beta \left( \frac{\alpha ^{\frac{\alpha }{1-\alpha }}-\alpha ^{%
+\frac{1}{1-\alpha }}+\eta }{\eta }\right) 
+\end{equation*}
+\end{enumerate}
+
+********************************
+
+Goods market clearing%
+\begin{equation*}
+c_{t}=\overset{n_{t}}{\underset{i=1}{\sum }}\left( x_{it}^{\alpha
+}-x_{it}\right) -\eta \left( n_{t+1}-n_{t}\right) 
+\end{equation*}%
+bond market clearing 
+\begin{equation*}
+b_{t+1}-b_{t}=\eta \left( n_{t+1}-n_{t}\right) 
+\end{equation*}%
+\begin{equation*}
+c_{t}+b_{t+1}=w_{t}\left( 1-\tau \right) +\left( 1+r_{t}\right) b_{t}
+\end{equation*}%
+\begin{equation*}
+\overset{n_{t}}{\underset{i=1}{\sum }}\left( x_{it}^{\alpha }-x_{it}\right)
+-\eta \left( n_{t+1}-n_{t}\right) +b_{t+1}=w_{t}\left( 1-\tau \right)
+L+\left( 1+r_{t}\right) b_{t}
+\end{equation*}%
+\begin{equation*}
+\overset{n_{t}}{\underset{i=1}{\sum }}\left( x_{it}^{\alpha }-x_{it}\right)
+=\left( 1-\tau \right) w_{t}L+r_{t}b_{t}
+\end{equation*}%
+\begin{equation*}
+w_{t}L=\left( 1-\alpha \right) L^{1-\alpha }\overset{n_{t}}{\underset{i=1}{%
+\sum }}x_{it}^{\alpha }
+\end{equation*}%
+\begin{equation*}
+r_{t}b_{t}=
+\end{equation*}%
+\begin{equation*}
+L^{1-\alpha }n_{t}\left( \frac{\alpha ^{2}AL^{1-\alpha }}{\phi }\right) ^{%
+\frac{\alpha }{1-\alpha }}-n_{t}\left( \frac{\alpha ^{2}AL^{1-\alpha }}{\phi 
+}\right) ^{\frac{1}{1-\alpha }}=\left( 1-\alpha \right) L^{1-\alpha
+}n_{t}\left( \frac{\alpha ^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{\alpha }{%
+1-\alpha }}+n_{t}\left( \frac{\phi }{\alpha }-\phi \right) \left( \frac{%
+\alpha ^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{1}{1-\alpha }}
+\end{equation*}%
+\begin{equation*}
+L^{1-\alpha }n_{t}\left( \frac{\alpha ^{2}AL^{1-\alpha }}{\phi }\right) ^{%
+\frac{\alpha }{1-\alpha }}-\phi n_{t}\left( \frac{\alpha ^{2}AL^{1-\alpha }}{%
+\phi }\right) ^{\frac{1}{1-\alpha }}=\left( 1-\alpha \right) L^{1-\alpha
+}n_{t}\left( \frac{\alpha ^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{\alpha }{%
+1-\alpha }}+n_{t}\left( \frac{\phi }{\alpha }-\phi \right) \left( \frac{%
+\alpha ^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{1}{1-\alpha }}
+\end{equation*}%
+\begin{equation*}
+L^{1-\alpha }n_{t}-\phi n_{t}\frac{\alpha ^{2}AL^{1-\alpha }}{\phi }=\left(
+1-\alpha \right) L^{1-\alpha }n_{t}+n_{t}\left( \frac{\phi }{\alpha }-\phi
+\right) \left( \frac{\alpha ^{2}AL^{1-\alpha }}{\phi }\right) 
+\end{equation*}%
+\begin{equation*}
+L^{1-\alpha }-\alpha ^{2}AL^{1-\alpha }=\left( 1-\alpha \right)
+L_{t}^{1-\alpha }+\left( \frac{1}{\alpha }-1\right) \left( \alpha
+^{2}AL^{1-\alpha }\right) 
+\end{equation*}%
+\begin{equation*}
+1-\alpha ^{2}=1-\alpha +\left( \frac{1}{\alpha }-1\right) \alpha ^{2}
+\end{equation*}
+: $1-\alpha ^{2}=1-\alpha ^{2}$ : 
+
+\end{document}

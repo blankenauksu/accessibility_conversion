@@ -1,0 +1,402 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 1252
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{Codepage=1252}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Monday, September 22, 2003 09:40:11}
+%TCIDATA{LastRevised=Wednesday, September 03, 2025 08:48:02}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="General\SW\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\input{tcilatex}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\setlength{\topmargin}{-.50in}
+\setlength{\oddsidemargin}{.0in}
+\setlength{\evensidemargin}{.0in}
+
+\begin{document}
+
+
+\begin{center}
+{\LARGE Assignment 2}
+\end{center}
+
+\noindent Blankenau\hspace*{\stretch{0.7500}}
+
+\noindent Economics 905, Fall 2025\medskip
+
+\noindent \textit{Instructions.} You may work in groups and may compare
+answers prior to submission. Joint submissions are allowed and encouraged.
+All work should be legible and concise. A due date will be announced in
+class. \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+
+\textbf{Note: }I have included the key here. You are to try this as best you
+can and look at the key when you can no longer make progress. Despite having
+the key, you are expected to turn in the assignment.
+
+\begin{enumerate}
+\item Consider a static economy with a single representative agent endowed
+with one unit of time to allocate across labor and leisure and $k_{0}$ units
+of capital. Preference are given by 
+\begin{equation}
+U=\ln c+\beta \ln \ell  \label{utility}
+\end{equation}%
+where $\beta >0,$ $c$ is the agent's consumption and $\ell $ is the agent's
+leisure$.$ There is also a representative firm with a production technology
+given by 
+\begin{equation*}
+y=k^{\alpha }n^{1-\alpha }.
+\end{equation*}%
+where $\alpha \in \left( 0,1\right) ,$ $k$ is capital employed by the firm
+and $n$ is the labor employed by the firm$.$ Finally there is a government
+which consumes $G$ units of output, finances its consumption by taxing and
+is subject to a balanced budget constraint.
+
+\begin{enumerate}
+\item State the social planner's problem and find the first order conditions
+for the social planner's problem.
+
+\item Find an implicit function which could be used to solve for $n.$ This
+will be non-linear and you will not be able to solve explicitly for $n.$
+
+\item Now lets look at the competitive equilibrium assuming that the
+government pays for its expenditures through a lump sum tax. First, state
+the agent's problem and show that optimization requires 
+\begin{equation*}
+\frac{w}{wn_{s}+rk_{s}-\tau }=\frac{\beta }{1-n_{s}}
+\end{equation*}%
+where $r$ is the rental rate of capital, $w$ is the wage rate for a unit of
+labor and $\tau $ is the lump sum tax. The $s$ subscript denotes quantities
+supplied.
+
+\item State the firm's problem. From the first order conditions, find
+expressions for $r$ and $w$.
+
+\item Find the government's balanced budget constraint.
+
+\item Define a competitive equilibrium in this case.
+
+\item Use the information from d-f to arrive at an equation identical to
+that in b. Why does this occur?
+
+\item Now suppose an identical environment except that taxes are imposed at
+an equal rate on all income. That is, the tax burden on an individual is $%
+\hat{\tau}\left( wn_{s}+rk_{s}\right) $ and net income is $\left( 1-\hat{\tau%
+}\right) \left( wn_{s}+rk_{s}\right) .$ Show that this time the solution to
+the social planner's problem and the solution that arises in a competitive
+equilibrium differ. You will not need to solve the social planner's problem
+again. (It would be good to think about why but that is on your own). Thus
+you need to show that the competitive equilibrium gives something else. Why
+is this?
+
+\item Now lets consider an identical environment except that the government
+collects a fixed share of output rather than a fixed quantity of output. 
+\textit{It again finances consumption through a lump sum tax. }That is, set $%
+G=gy$ so that the size of government depends on the size of output. Solve
+the social planner's problem for the optimal amount of $n$. The social
+planner does not choose $g$. This time you will be able to solve explicitly
+for the optimal $n$.
+
+\item Solve the competitive equilibrium in this case. Note that the agent
+takes his lump sum tax as given. That is, since he is a representative
+agent, he thinks of himself as one agent of many. He knows that if total
+income goes up, so will government spending. However, an increase in his own
+income is too small to have a measurable effect on total income. Thus the
+agent's problem is the same as before. It is the government's budget
+constraint that is different. You will be able to solve explicitly for the
+equilibrium level of $n$.
+
+\item Compare your answers to the previous two parts and comment. Are they
+the same or different? Why?
+
+\item Show that the utility of an agent under the social planner's solution
+and in a competitive equilibrium can be written respectively as 
+\begin{equation}
+U=\ln \left( 1-g\right) k^{\alpha }+\left( 1-\alpha \right) \ln \left( \frac{%
+1-\alpha }{1+\beta -\alpha }\right) +\beta \ln \left( \frac{\beta }{1+\beta
+-\alpha }\right)  \label{a}
+\end{equation}%
+and%
+\begin{equation}
+U=\ln \left( 1-g\right) k^{\alpha }+\left( 1-\alpha \right) \ln \left( \frac{%
+1-\alpha }{1+\beta \left( 1-g\right) -\alpha }\right) +\beta \ln \left( 
+\frac{\beta \left( 1-g\right) }{1+\beta \left( 1-g\right) -\alpha }\right)
+\label{b}
+\end{equation}
+
+\item We want to measure the welfare cost of this inefficiency. Toward this,
+consider scaling an agent's consumption of the good and leisure in the
+competitive equilibrium so that in a competitive equilibrium 
+\begin{equation*}
+U=\ln \left( zc\right) +\beta \ln \left( z\ell \right) .
+\end{equation*}%
+Show that if 
+\begin{equation*}
+z=\frac{1}{\left( 1-g\right) ^{\frac{\beta }{1+\beta }}}\left( \frac{1+\beta
+\left( 1-g\right) -\alpha }{1+\beta -\alpha }\right) ^{\frac{1-\alpha +\beta 
+}{1+\beta }}
+\end{equation*}%
+the utility in the competitive equilibrium is the same as in the social
+planner's problem. That is, you want to equate \ref{a} and your new version
+of \ref{b}, solve for $z$, and show that it reduces to the above expression$%
+. $
+
+\item Interpret $z.$
+\end{enumerate}
+
+\pagebreak
+\end{enumerate}
+
+\begin{enumerate}
+\item ..
+
+\begin{enumerate}
+\item Note that in this solution I am assuming interior solutions. In
+general we should be careful about this but with log preferences we know
+that neither $c$ nor \ $\ell $ will be 0. I skip a bit of this and jump into
+the Lagrangian for the social planner's problem:%
+\begin{equation*}
+L=\ln c+\beta \ln \ell +\lambda _{1}\left( k^{\alpha }n^{1-\alpha
+}-c-G\right) +\lambda _{2}\left( 1-\ell -n\right)
+\end{equation*}%
+which simplifies to%
+\begin{equation*}
+L=\ln (k_{0}^{\alpha }n^{1-\alpha }-G)+\beta \ln \left( 1-n\right)
+\end{equation*}
+
+\item The FOC gives (after some simplification):%
+\begin{equation}
+\frac{\left( 1-\alpha \right) k_{0}^{\alpha }n^{-\alpha }}{k_{0}^{\alpha
+}n^{1-\alpha }-G}=\frac{\beta }{1-n}  \label{OPT1}
+\end{equation}%
+Now turn to the competitive equilibrium. \ 
+
+\item Agent's problem%
+\begin{equation*}
+L=\ln c+\beta \ln \ell +\lambda _{1}\left( wn+rk_{0}-c-\tau \right)
+\end{equation*}%
+\begin{equation*}
+L=\ln \left( wn+rk_{0}-\tau \right) +\beta \ln \left( 1-n\right)
+\end{equation*}%
+First order conditions give%
+\begin{equation}
+\frac{w}{wn+rk_{0}-\tau }=\frac{\beta }{1-n}  \label{foc}
+\end{equation}
+
+\item The firm's maximization gives 
+\begin{equation}
+r=\alpha \left( \frac{n}{k}\right) ^{1-\alpha }  \label{r}
+\end{equation}%
+\begin{equation}
+w=\left( 1-\alpha \right) \left( \frac{k}{n}\right) ^{\alpha }  \label{w}
+\end{equation}
+
+\item Government budget constraint gives $G=\tau .$
+
+\item A competitive equilibrium in this economy is a set of quantities $%
+\left( c,\ell ,n,\tau ,G\right) $ and prices $\left( \omega ,r\right) $
+which satisfy the following:
+
+\begin{enumerate}
+\item Consumer optimizes: equation (\ref{foc}).
+
+\item Firm maximizes profits: equations (\ref{r}) and (\ref{w}).
+
+\item The goods market, labor, market and capital markets clear; i.e. $%
+y=c+G, $ capital demanded equals capital supplied and labor demanded equals
+labor supplied.
+
+\item The government budget constraint is satisfied; $G=\tau $.
+\end{enumerate}
+
+\item Put these and $k=k_{0}$ into \ref{foc} and simplify to get \ 
+\begin{equation*}
+\frac{\left( 1-\alpha \right) \left( \frac{k}{n}\right) ^{\alpha }}{%
+k^{\alpha }n^{1-\alpha }-G}=\frac{\beta }{1-n}
+\end{equation*}%
+Inspect to see these are the same. While we cannot solve for $n$ explicitly
+it is obvious that the same $n$ will solve both the competitive equilibrium
+and the social planner's problem. This of course holds because we are
+satisfying the requirements of the welfare theorems.
+
+\item If the tax is instead on income the agent's problem becomes 
+\begin{equation*}
+L=\ln \left( \left( 1-\hat{\tau}\right) \left( wn+rk_{0}\right) \right)
++\beta \ln \left( 1-n\right)
+\end{equation*}%
+and the first order condition is 
+\begin{equation*}
+\frac{w}{wn+rk_{0}}=\frac{\beta }{1-n}
+\end{equation*}%
+There is nothing different about the firm's problem so put in wages and
+rental rate of capital to get 
+\begin{equation*}
+\frac{\left( 1-\alpha \right) }{n}=\frac{\beta }{1-n}
+\end{equation*}%
+Clearly a different $n$ will solve this. This is not surprising since with a
+distortionary tax, welfare theorems are not met and a competitive
+equilibrium is not the same as the solution to the social planner's problem.
+
+\item When the government collects a fixed share of output the social
+planner's problem becomes%
+\begin{equation*}
+L=\ln c+\beta \ln \ell +\lambda _{1}\left( \left( 1-g\right) k^{\alpha
+}n^{1-\alpha }-c\right) +\lambda _{2}\left( 1-\ell -n\right)
+\end{equation*}%
+or%
+\begin{equation*}
+L=\ln (\left( 1-g\right) k^{\alpha }n^{1-\alpha })+\beta \ln \left(
+1-n\right)
+\end{equation*}%
+First order conditions give 
+\begin{equation*}
+\frac{\left( 1-g\right) \left( 1-\alpha \right) k^{\alpha }n^{-\alpha }}{%
+\left( 1-g\right) k^{\alpha }n^{1-\alpha }}=\frac{\beta }{1-n}
+\end{equation*}%
+or after solving for $n$ 
+\begin{equation*}
+n=\frac{1-\alpha }{1+\beta -\alpha }.
+\end{equation*}
+
+\item Now lets solve the competitive equilibrium. The agent's problem is the
+same as before and so is the firm's so we know%
+\begin{equation*}
+\frac{\left( 1-\alpha \right) k_{0}^{\alpha }n^{-\alpha }}{k_{0}^{\alpha
+}n^{1-\alpha }-G}=\frac{\beta }{1-n}
+\end{equation*}%
+but now $G=gy$ so we get 
+\begin{equation*}
+\frac{\left( 1-\alpha \right) k_{0}^{\alpha }n^{-\alpha }}{\left( 1-g\right)
+k_{0}^{\alpha }n^{1-\alpha }}=\frac{\beta }{1-n}
+\end{equation*}%
+and simplifying gives 
+\begin{equation*}
+\frac{\left( 1-\alpha \right) }{\left( 1-g\right) n}=\frac{\beta }{1-n}
+\end{equation*}%
+or 
+\begin{equation*}
+\frac{\left( 1-\alpha \right) }{1+\beta \left( 1-g\right) -\alpha }=n
+\end{equation*}
+
+\item From this it is clear that in the competitive equilibrium agent's work
+too much. Why? They ignore that when they work, it increases the tax burden.
+For each agent this effect is negligible but taken together it leads to a
+distortion. The social planner takes this into account.
+
+\item Utility is%
+\begin{equation*}
+U=\ln c+\beta \ln \ell
+\end{equation*}%
+In the social planner's problem this is 
+\begin{equation*}
+U=\ln \left( \left( 1-g\right) k^{\alpha }\left( \frac{1-\alpha }{1+\beta
+-\alpha }\right) ^{1-\alpha }\right) +\beta \ln \left( 1-\frac{1-\alpha }{%
+1+\beta -\alpha }\right)
+\end{equation*}%
+\begin{equation*}
+U=\ln \left( 1-g\right) k^{\alpha }+\left( 1-\alpha \right) \ln \left( \frac{%
+1-\alpha }{1+\beta -\alpha }\right) +\beta \ln \left( \frac{\beta }{1+\beta
+-\alpha }\right)
+\end{equation*}%
+whereas in a competitive equilibrium.%
+\begin{equation*}
+U=\ln \left( \left( 1-g\right) k^{\alpha }\left( \frac{\left( 1-\alpha
+\right) }{1+\beta \left( 1-g\right) -\alpha }\right) ^{1-\alpha }\right)
++\beta \ln \left( 1-\frac{\left( 1-\alpha \right) }{1+\beta \left(
+1-g\right) -\alpha }\right)
+\end{equation*}%
+\begin{equation*}
+U=\ln \left( 1-g\right) k^{\alpha }+\left( 1-\alpha \right) \ln \left( \frac{%
+1-\alpha }{1+\beta \left( 1-g\right) -\alpha }\right) +\beta \ln \left( 
+\frac{\beta \left( 1-g\right) }{1+\beta \left( 1-g\right) -\alpha }\right)
+\end{equation*}
+
+\item Now scale all by $z$. This gives 
+\begin{equation*}
+U=\ln \left( z\left( 1-g\right) k^{\alpha }\left( \frac{\left( 1-\alpha
+\right) }{1+\beta \left( 1-g\right) -\alpha }\right) ^{1-\alpha }\right)
++\beta \ln \left( z\left( 1-\frac{\left( 1-\alpha \right) }{1+\beta \left(
+1-g\right) -\alpha }\right) \right)
+\end{equation*}%
+or 
+\begin{equation*}
+U=\ln \left( 1-g\right) k^{\alpha }+\left( 1-\alpha \right) \ln \left( \frac{%
+1-\alpha }{1+\beta \left( 1-g\right) -\alpha }\right) +\beta \ln \left( 
+\frac{\beta \left( 1-g\right) }{1+\beta \left( 1-g\right) -\alpha }\right)
++\left( 1+\beta \right) \ln z
+\end{equation*}%
+Now solve to set these equal 
+\begin{eqnarray*}
+&&\ln \left( 1-g\right) k^{\alpha }+\left( 1-\alpha \right) \ln \left( \frac{%
+1-\alpha }{1+\beta \left( 1-g\right) -\alpha }\right) +\beta \ln \left( 
+\frac{\beta \left( 1-g\right) }{1+\beta \left( 1-g\right) -\alpha }\right)
++\left( 1+\beta \right) \ln z \\
+&=&\ln \left( 1-g\right) k^{\alpha }+\left( 1-\alpha \right) \ln \left( 
+\frac{1-\alpha }{1+\beta -\alpha }\right) +\beta \ln \left( \frac{\beta }{%
+1+\beta -\alpha }\right)
+\end{eqnarray*}%
+or%
+\begin{eqnarray*}
+&&\ln \left( \left( \frac{1}{1+\beta \left( 1-g\right) -\alpha }\right)
+^{\left( 1-\alpha \right) }\left( \frac{\beta \left( 1-g\right) }{1+\beta
+\left( 1-g\right) -\alpha }\right) ^{\beta }z^{\left( 1+\beta \right)
+}\right) \\
+&=&\ln \left( \left( \frac{1}{1+\beta -\alpha }\right) ^{\left( 1-\alpha
+\right) }\left( \frac{\beta }{1+\beta -\alpha }\right) ^{\beta }\right)
+\end{eqnarray*}%
+or%
+\begin{eqnarray*}
+&&\left( \frac{1}{1+\beta \left( 1-g\right) -\alpha }\right) ^{\left(
+1-\alpha \right) }\left( \frac{\beta \left( 1-g\right) }{1+\beta \left(
+1-g\right) -\alpha }\right) ^{\beta }z^{\left( 1+\beta \right) } \\
+&=&\left( \frac{1}{1+\beta -\alpha }\right) ^{\left( 1-\alpha \right)
+}\left( \frac{\beta }{1+\beta -\alpha }\right) ^{\beta }
+\end{eqnarray*}%
+or%
+\begin{equation*}
+z=\frac{1}{\left( 1-g\right) ^{\frac{\beta }{1+\beta }}}\left( \frac{1+\beta
+\left( 1-g\right) -\alpha }{1+\beta -\alpha }\right) ^{\frac{1-\alpha +\beta 
+}{1+\beta }}
+\end{equation*}
+
+\item This is a measure of the welfare loss due to the inefficiency.
+Consumption would have to be scaled by $z$ in each period to make the agent
+as well off with the inefficiency as she would be without the inefficiency.
+\end{enumerate}
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,237 @@
+% !TEX TS-program = lualatex
+
+\DocumentMetadata{
+  lang = en,
+  pdfversion = 2.0,
+  pdfstandard = ua-2,
+  tagging = on,
+  tagging-setup = {
+    math/setup = {mathml-SE},
+    table/header-rows = 1
+  }
+}
+
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{
+  letterpaper,
+  textwidth=6.5in,
+  textheight=9in,
+  top=0.85in,
+  bottom=1in,
+  left=0.75in,
+  right=0.75in,
+}
+\usepackage{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\tagpdfsetup{
+  math/alt/use
+}
+
+\hypersetup{
+  pdftitle={Assignment 8},
+  pdfauthor={Blankenau},
+  pdfsubject={Fall, 2025},
+  hidelinks,
+}
+
+\begin{document}
+\begin{center}
+{\LARGE Assignment 8}
+\end{center}
+
+\noindent Blankenau
+
+\noindent Economics 905, Fall, 2025
+
+\medskip
+\noindent \noindent \textit{Instructions.} You may work in groups and may
+compare answers prior to submission. Joint submissions with up to 4 names
+are allowed and encouraged. All work should be legible and concise. A due
+date will be announced in class.
+
+Consider an economy with a single final good which is produced using a
+variety of intermediate goods. Specifically, $n_{t}$ intermediate goods ($%
+x_{i},$ $i\in \left\{ 1,2..n_{t}\right\} $) combine with labor ($L$) to
+produce a final output good $y$ according to 
+\begin{equation*}
+y_{t}=AL^{1-\alpha }\overset{n_{t}}{\underset{i=1}{\sum }}x_{it}^{\alpha }
+\end{equation*}%
+where $A>0$ and $0<\alpha <1.$ The final good is the numeraire good and is
+produced competitively by a representative firm. Profits for the producer of
+the final good $\left( \pi _{ft}\right) $ are 
+\begin{equation*}
+\pi _{ft}=y_{t}-\overset{n_{t}}{\underset{i=1}{\sum }}p_{it}x_{it}-w_{t}L
+\end{equation*}%
+where $p_{it}$ is the relative price of intermediate good $i$ and $w_{t}$ is
+the wage. Each intermediate good is unique and produced by only one firm.
+Thus there is imperfect competition. The only input to the production of an
+intermediate good is $\phi >0$ units of the final good. Thus the profit for
+the intermediate firm is%
+\begin{equation*}
+\pi _{i}=p_{i}x_{i}-\phi x_{i}
+\end{equation*}%
+There is also a government that taxes labor income at rate $\tau $ and
+subsidizes inventions at rate $\varsigma $ where $0\leq \tau ,\varsigma \leq
+1.$ The government balances its budget in each period. There is free entry
+into the business of being an inventor. Anyone can pay $\eta >0$ to invent a
+new good. The government pays $\varsigma \eta $ of this so the private cost
+is $\left( 1-\varsigma \right) \eta .$ The private cost is financed by
+borrowing (issuing bonds). The owner of the new intermediate good type gets
+exclusive rights to produce it forever. A representative agent supplies one
+unit of time supplied inelastically in the labor market. The agents
+inelastically supplies one unit of labor each period. The agent chooses
+consumption and bond holdings to bring into the subsequent period to
+maximize lifetime utility, $\underset{t=0}{\overset{\infty }{\text{ }\sum }}%
+\beta ^{t}\frac{c_{t}^{\sigma }}{\sigma }$ where $0\leq \beta \leq 1,$ $%
+\sigma \leq 1$ and $c_{t}$ is consumption$.$ The period budget constraint is 
+$c_{t}+b_{t+1}=w_{t}\left( 1-\tau \right) +\left( 1+r_{t}\right) b_{t}\ $%
+where $w_{t}$ is wage per unit of time worked, and $b_{t}$ is bond holdings
+at the beginning of period $t$ and $r_{t}$ is the interest rate on bonds in
+period $t$.
+
+\begin{enumerate}
+\item Find the final goods producer's derived demand for the intermediate
+good $x_{it}$.
+
+\item Find the profit maximizing price of the intermediate good $x_{it}$ set
+by its producer.
+
+\item Find the one-period profits for the producer of an intermediate good.
+
+\item Find the present discounted value of all profits accruing to the
+producer of an intermediate good. Assume the interest rate is constant and
+recall $\underset{t=0}{\overset{\infty }{\text{ }\sum }}\frac{1}{\left(
+1+r\right) ^{t}}=\frac{1}{r}.$
+
+\item Write down \ the Bellman equation for the agent's optimization problem.
+
+\item Find the first order condition and the updated envelope condition.
+
+\item Consider a balanced growth path where $\frac{c_{t+1}}{c_{t}}=\frac{%
+y_{t+1}}{y_{t}}=\frac{n_{t+1}}{n_{t}}=\gamma $. Find the optimal growth rate
+of consumption as a function of the interest rate.
+
+\item Find the equilibrium interest rate from the bond market clearing
+condition.
+
+\item Find the growth rate as a function of exogenous items and policy
+variables.
+
+\pagebreak \bigskip 
+\end{enumerate}
+\begin{enumerate}
+\item \bigskip From notes 
+\begin{equation*}
+x_{it}=\left( \frac{\alpha AL^{1-\alpha }}{p_{it}}\right) ^{\frac{1}{%
+1-\alpha }}
+\end{equation*}
+
+\item Profit for the intermediate firm is 
+\begin{equation*}
+\pi _{it}=p_{it}x_{it}-\phi x_{it}
+\end{equation*}%
+The firm chooses price to maximize profit. The first order condition is%
+\begin{equation*}
+\left( p_{it}-\phi \right) \frac{1}{1-\alpha }\left( \frac{\alpha
+AL^{1-\alpha }}{p_{it}}\right) ^{\frac{1}{1-\alpha }-1}\frac{\alpha
+AL^{1-\alpha }}{p_{it}^{2}}=\left( \frac{\alpha AL^{1-\alpha }}{p_{it}}%
+\right) ^{\frac{1}{1-\alpha }}
+\end{equation*}%
+so 
+\begin{equation*}
+p_{it}=p_{i}=\frac{\phi }{\alpha }
+\end{equation*}
+
+\item Thus%
+\begin{equation*}
+x_{it}=\left( \frac{\alpha AL^{1-\alpha }}{\frac{\phi }{\alpha }}\right) ^{%
+\frac{1}{1-\alpha }}
+\end{equation*}%
+\begin{equation*}
+x_{it}=x_{i}=\left( \frac{\alpha ^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{1%
+}{1-\alpha }}
+\end{equation*}%
+and profits are 
+\begin{equation*}
+\pi _{it}=\pi _{i}=\left( \frac{\phi }{\alpha }-\phi \right) \left( \frac{%
+\alpha ^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{1}{1-\alpha }}
+\end{equation*}
+
+\item 
+\begin{eqnarray*}
+&&\left( \frac{\phi }{\alpha }-\phi \right) \left( \frac{\alpha
+^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{1}{1-\alpha }}\left( \underset{t=1}%
+{\overset{\infty }{\sum }}\frac{1}{\left( 1+r\right) ^{t}}\right) \\
+&&\frac{1}{r}\left( \frac{\phi }{\alpha }-\phi \right) \left( \frac{\alpha
+^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{1}{1-\alpha }}
+\end{eqnarray*}
+
+\item 
+\begin{equation*}
+\upsilon \left( b_{t}\right) =\underset{b_{t+1}}{\max }\frac{\left[
+w_{t}\left( 1-\tau \right) +\left( 1+r_{t}\right) b_{t}-b_{t+1}\right]
+^{\sigma }}{\sigma }+\beta \upsilon \left( b_{t+1}\right)
+\end{equation*}
+
+\item 
+\begin{eqnarray*}
+c_{t}^{\sigma -1} &=&\beta v^{\prime }(b_{t+1}) \\
+v^{\prime }(b_{t+1}) &=&\left( 1+r_{t+1}\right) c_{t+1}^{\sigma -1}
+\end{eqnarray*}
+
+\item We focus on \textquotedblleft balanced growth paths\textquotedblright\
+where $\frac{c_{t+1}}{c_{t}}=\frac{y_{t+1}}{y_{t}}=\frac{n_{t+1}}{n_{t}}%
+=\gamma $. This into the above gives 
+\begin{equation*}
+\gamma =\left( \beta \left( 1+r_{t}\right) \right) ^{\frac{1}{1-\sigma }}
+\end{equation*}
+
+\item Bond market requires%
+\begin{equation*}
+\eta \left( 1-\varsigma \right) =\frac{1}{r}\left( \frac{\phi }{\alpha }%
+-\phi \right) \left( \frac{\alpha ^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{1%
+}{1-\alpha }}
+\end{equation*}%
+\begin{equation*}
+r=\left( \frac{\phi }{\alpha }-\phi \right) \left( \frac{\alpha
+^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{1}{1-\alpha }}\frac{1}{\eta \left(
+1-\varsigma \right) }
+\end{equation*}
+
+\item 
+\begin{eqnarray*}
+\gamma  &=&\left( \beta \left( 1+r_{t}\right) \right) ^{\frac{1}{1-\sigma }}
+\\
+\gamma  &=&\left( \beta \left( 1+\left( \frac{\phi }{\alpha }-\phi \right)
+\left( \frac{\alpha ^{2}AL^{1-\alpha }}{\phi }\right) ^{\frac{1}{1-\alpha }}%
+\frac{1}{\eta \left( 1-\varsigma \right) }\right) \right) ^{\frac{1}{%
+1-\sigma }}
+\end{eqnarray*}
+\end{enumerate}
+\end{document}

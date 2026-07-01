@@ -1,0 +1,164 @@
+% !TEX TS-program = lualatex
+
+\DocumentMetadata{
+  lang = en,
+  pdfversion = 2.0,
+  pdfstandard = ua-2,
+  tagging = on,
+  tagging-setup = {
+    math/setup = {mathml-SE},
+    table/header-rows = 1
+  }
+}
+
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{
+  letterpaper,
+  textwidth=6.5in,
+  textheight=9in,
+  top=0.85in,
+  bottom=1in,
+  left=0.75in,
+  right=0.75in,
+}
+\usepackage{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\tagpdfsetup{
+  math/alt/use,
+  role/new-tag=section/H1,
+}
+
+\hypersetup{
+  pdftitle={Assignment 3},
+  pdfauthor={Blankenau},
+  pdfsubject={Fall, 2027},
+  hidelinks,
+}
+
+\begin{document}
+\begin{center}
+{\LARGE Assignment 3}
+\end{center}
+
+\noindent Blankenau
+
+\noindent Economics 905, Fall, 2027
+
+\medskip
+\noindent \textit{Instructions.} You may work in groups and may compare
+answers prior to submission. Joint submissions are allowed and encouraged.
+All work should be legible and concise. A due date will be announced in
+class.
+
+\begin{enumerate}
+\item Parts a-g follow your notes but try to work this without reference to
+that for practice. Consider a one-period economy populated by a
+representative agent and a representative firm. The agent is endowed with
+one unit of time which is allocated between working, $n_{s},$ and leisure $%
+\ell $. The agent makes these choices to maximize utility given by 
+\begin{equation*}
+u\left( c,\ell \right) =\frac{c^{1-\gamma }-1}{1-\gamma }+\frac{\ell
+^{1-\gamma }-1}{1-\gamma }
+\end{equation*}%
+where $c$ is consumption and $\gamma >0$ measures the degree of curvature in
+the utility function with respect to consumption and leisure. For each unit
+of time worked, the agent is paid a wage $\omega $. The agent is also
+endowed with $k_{s}$ units of capital which she rents inelastically in the
+capital market. Each unit of capital rented pays $r$ and then fully
+depreciates. The firm combines capital, $k_{d},$ and labor, $n_{d},$ to
+produce a final good according to 
+\begin{equation}
+y\left( k,n\right) =zk_{d}^{\alpha }n_{d}^{1-\alpha },\text{ }0<\alpha <1
+\label{out}
+\end{equation}%
+All markets are competitive.
+
+\begin{enumerate}
+\item Find the first order condition(s) for the agent's problem.
+
+\item Find the first order conditions for the firm's problem.
+
+\item Find the market clearing conditions.
+
+\item Define an equilibrium.
+
+\item Arrive at one equation and one unknown that could be used to solve for 
+$\ell .$
+
+\item Discuss how to find the other items of interest.
+
+\item State and solve the social planner's problem. You will not be able to
+get an explicit solution so arrive at one equation and 1 unknown. \ Will $%
+\ell $ be the same as in the competitive equilibrium?
+
+\item Suppose instead that there are two goods and preferences are given by 
+\begin{equation*}
+u\left( c,\ell \right) =\frac{c_{1}^{1-\gamma }-1}{1-\gamma }+\frac{%
+c_{2}^{1-\gamma }-1}{1-\gamma }+\frac{\ell ^{1-\gamma }-1}{1-\gamma }
+\end{equation*}%
+where $c_{1}$ and $c_{2}$ are consumption of good 1 and good two. There is a
+representative competitive firm producing each of the two goods according to 
+\begin{eqnarray*}
+y_{1} &=&z_{1}k_{1}^{\alpha }n_{1}^{1-\alpha } \\
+y_{2} &=&z_{2}k_{2}^{\alpha }n_{2}^{1-\alpha }
+\end{eqnarray*}%
+where $n_{j}$ are $k_{j}$ are capital and labor hired by the firm producing
+good $j$. Note that in equilibrium $k_{1}+k_{2}=k_{s}$ and $%
+n_{1}+n_{2}=n_{s}.$ Write down the social planner's problem.
+
+\item Find a system of three equations and three unknowns that could be used
+to solve for the equilibrium values of $n_{1},n_{2},$ and $k_{1}.$
+
+\item For the case where $\gamma =1$ find $n_{1},$ $n_{2},$ $\ell ,$ $k_{1}$
+and $k_{2}.$
+\end{enumerate}
+
+\item Consider the following representative agent model. The consumer has
+preferences given by 
+\begin{equation*}
+u\left( c,\ell \right) =\ln c+\ell
+\end{equation*}%
+where $c$ and $\ell $ are consumption and leisure$.$ The consumer is endowed
+with 1 unit of time and $k_{0}$ units of capital. The representative firm
+has a technology for producing consumption goods given by $y=zk^{\gamma
+}n^{1-\gamma }$ where $z$ is total factor productivity, $k$ is the capital
+input, $n$ is the labor input and $0<\gamma <1.$ Let $\omega $ denote the
+wage rate and $r$ the rental rate on capital.
+
+\begin{enumerate}
+\item Define an equilibrium in this economy.
+
+\item Solve for the competitive equilibrium prices and quantities.
+
+\item Now suppose $y=zk+zn.$ Solve for the competitive equilibrium prices
+and quantities. Here you will need to be careful about the requirement that $%
+\ell \leq 1.$
+\end{enumerate}
+\end{enumerate}
+\end{document}

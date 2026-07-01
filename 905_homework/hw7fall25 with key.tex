@@ -1,0 +1,278 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 1252
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{Codepage=1252}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Monday, October 01, 2001 13:27:51}
+%TCIDATA{LastRevised=Monday, October 20, 2025 14:27:48}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="General\SW\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+\begin{document}
+
+
+\begin{center}
+{\LARGE Assignment 7}
+\end{center}
+
+\noindent Blankenau\hspace*{\stretch{0.7500}}
+
+\noindent Economics 905, Fall 2025\medskip 
+
+\noindent \noindent \textit{Instructions.} You may work in groups and may
+compare answers prior to submission. Joint submissions with up to 4 names
+are allowed and encouraged. All work should be legible and concise. A due
+date will be announced in class.
+
+\medskip \medskip Consider a discrete time endogenous growth model where a
+representative household maximizes%
+\begin{equation*}
+U=\overset{\infty }{\underset{t=0}{\sum }}\beta ^{t}\frac{C_{t}^{\sigma }}{%
+\sigma }
+\end{equation*}%
+$0<\beta <1\ $where $C_{t}$ is consumption. The population is normalized to
+1. Each agent has one unit of time available in each period to allocate
+across human capital accumulation and production. The agents can produce
+consumption goods according to $Y_{t}=Bh_{t}u_{t}$ where $Y_{t}$ is the
+output of the final good$.$ Note, then, that $\left( 1-u_{t}\right) $ is the
+time spent in human capital accumulation. The human capital accumulation
+technology is given by $h_{t+1}=Ah_{t}\left( 1-u_{t}\right) .\ $where $A>0.$
+
+\begin{enumerate}
+\item Set up the agent's optimization problem as a dynamic programming
+problem and find the first order condition(s) and envelope condition(s).
+
+\item Find the balanced growth rate of consumption in this model and find $u$
+along the balanced growth path.
+
+\item Let the period utility function be $\ln C_{t}.$ Now suppose there is
+congestion in schooling so that the more time people spend studying the less
+productive is the educational system. This is expressed by $A=\left( 1-\bar{u%
+}\right) ^{-\alpha }$ where $0<\alpha <1$ and $\bar{u}$ is the average
+amount of time spent in schooling, taken as given by all agents but equal to 
+$u$ in equilibrium. Find the balanced growth rate of consumption in this
+model and find $u$ along the balanced growth path.
+
+\item With again $A=\left( 1-\bar{u}\right) ^{-\alpha },$ write down and the
+social planner's problem and find first order conditions and envelope
+conditions. Recall the social planner internalizes the externality and so
+sets $A=(1-u_{t})^{-\alpha }$.
+
+\item Show that the social planners's allocation would yield%
+\begin{equation*}
+\gamma =\left( \frac{\beta \left( 1-\alpha \right) }{1-\beta \alpha }\right)
+^{1-\alpha }
+\end{equation*}%
+\begin{equation*}
+u=1-\frac{\beta \left( 1-\alpha \right) }{1-\beta \alpha }.
+\end{equation*}
+\end{enumerate}
+
+\pagebreak
+
+\begin{enumerate}
+\item 
+\begin{equation*}
+V\left( h_{t}\right) =\underset{C_{t},h_{t+1},u_{t}}{\max }\frac{%
+C_{t}^{\sigma }}{\sigma }+\beta V\left( h_{t+1}\right)
+\end{equation*}%
+subject to 
+\begin{equation*}
+C_{t}=Bh_{t}u_{t}
+\end{equation*}%
+\begin{equation*}
+h_{t+1}=Ah_{t}(1-u_{t})\ 
+\end{equation*}%
+or%
+\begin{equation*}
+V\left( h_{t}\right) =\underset{h_{t+1}}{\max }\frac{\left( B\left( h_{t}-%
+\frac{h_{t+1}}{A}\right) \right) ^{\sigma }}{\sigma }+\beta V\left(
+h_{t+1}\right)
+\end{equation*}%
+Foc is%
+\begin{equation*}
+\frac{B}{A}C_{t}^{\sigma -1}=\beta V^{\prime }\left( h_{t+1}\right)
+\end{equation*}%
+The envelope condition updated is%
+\begin{equation*}
+V^{\prime }\left( h_{t+1}\right) =BC_{t+1}^{\sigma -1}
+\end{equation*}
+
+\item 
+\begin{equation*}
+\frac{C_{t}^{\sigma -1}B}{A}=\beta BC_{t+1}^{\sigma -1}
+\end{equation*}%
+\begin{equation*}
+\frac{C_{t+1}}{C_{t}}=\left( \beta A\right) ^{\frac{1}{1-\sigma }}
+\end{equation*}%
+\begin{equation*}
+\gamma =\left( \beta A\right) ^{\frac{1}{1-\sigma }}
+\end{equation*}%
+from capital accumulation%
+\begin{equation*}
+\gamma =A(1-u_{t})\ 
+\end{equation*}%
+so%
+\begin{equation*}
+\left( \beta A\right) ^{\frac{1}{1-\sigma }}=A(1-u_{t})\ 
+\end{equation*}%
+\begin{equation*}
+u=1-\beta ^{\frac{1}{1-\sigma }}A^{\frac{\sigma }{1-\sigma }}
+\end{equation*}%
+(assuming $\beta ^{\frac{1}{1-\sigma }}A^{\frac{\sigma }{1-\sigma }}<1$, the
+only case we consider)
+
+\item All is the same to here, 
+\begin{equation*}
+\gamma =\beta A
+\end{equation*}%
+but $\sigma =0$ and 
+\begin{equation*}
+A=\left( 1-\bar{u}\right) ^{-\alpha }
+\end{equation*}%
+so that 
+\begin{equation*}
+\gamma =\beta \left( 1-u\right) ^{-\alpha }
+\end{equation*}%
+From capital accumulation%
+\begin{eqnarray*}
+\gamma &=&A(1-u)\  \\
+\gamma &=&\left( 1-u\right) ^{-\alpha }(1-u) \\
+\gamma &=&\left( 1-u\right) ^{1-\alpha }
+\end{eqnarray*}%
+The two expressions for $\gamma $ give%
+\begin{equation*}
+\left( 1-u\right) ^{1-\alpha }=\beta \left( 1-u\right) ^{-\alpha }
+\end{equation*}%
+so that%
+\begin{equation*}
+1-u=\beta
+\end{equation*}%
+\begin{equation*}
+u=1-\beta
+\end{equation*}%
+\begin{equation*}
+\gamma =\left( 1-\left( 1-\beta \right) \right) ^{1-\alpha }
+\end{equation*}%
+\begin{equation*}
+\gamma =\beta ^{1-\alpha }
+\end{equation*}
+
+\begin{enumerate}
+\item and
+\end{enumerate}
+
+\item The social planner internalizes the externality so sets $%
+A=(1-u_{t})^{-\alpha }$ giving 
+\begin{equation*}
+h_{t+1}=(1-u_{t})^{-\alpha }h_{t}(1-u_{t})=h_{t}(1-u_{t})^{1-\alpha }
+\end{equation*}%
+Solve for $u_{t}$%
+\begin{eqnarray*}
+\left( \frac{h_{t+1}}{h_{t}}\right) ^{\frac{1}{1-\alpha }} &=&1-u_{t} \\
+u_{t} &=&1-\left( \frac{h_{t+1}}{h_{t}}\right) ^{\frac{1}{1-\alpha }}
+\end{eqnarray*}%
+so%
+\begin{equation*}
+C_{t}=h_{t}u_{t}
+\end{equation*}%
+becomes%
+\begin{equation*}
+C_{t}=h_{t}-h_{t}^{\frac{-\alpha }{1-\alpha }}h_{t+1}^{\frac{1}{1-\alpha }}
+\end{equation*}%
+Write as 
+\begin{equation*}
+V\left( h_{t}\right) =\underset{h_{t+1}}{\max }\left[ \ln \left(
+h_{t}-h_{t}^{\frac{-\alpha }{1-\alpha }}h_{t+1}^{\frac{1}{1-\alpha }}\right)
++\beta V\left( h_{t+1}\right) \right]
+\end{equation*}%
+Foc is%
+\begin{equation*}
+\frac{1}{1-\alpha }h_{t}^{\frac{-\alpha }{1-\alpha }}h_{t+1}^{\frac{\alpha }{%
+1-\alpha }}C_{t}^{-1}=\beta V^{\prime }\left( h_{t+1}\right)
+\end{equation*}%
+The envelope condition updated is%
+\begin{equation*}
+V^{\prime }\left( h_{t+1}\right) =C_{t+1}^{-1}\left( 1+\frac{\alpha }{%
+1-\alpha }h_{t+1}^{\frac{-1}{1-\alpha }}h_{t+2}^{\frac{1}{1-\alpha }}\right)
+\end{equation*}
+
+\item Combing gives 
+\begin{equation*}
+\frac{1}{1-\alpha }h_{t}^{\frac{-\alpha }{1-\alpha }}h_{t+1}^{\frac{\alpha }{%
+1-\alpha }}C_{t}^{-1}=\beta C_{t+1}^{-1}\left( 1+\frac{\alpha }{1-\alpha }%
+h_{t+1}^{\frac{-1}{1-\alpha }}h_{t+2}^{\frac{1}{1-\alpha }}\right)
+\end{equation*}%
+Consumption and human capital both grow at rate $\gamma $ so this simplifies
+to%
+\begin{equation*}
+\frac{1}{1-\alpha }h_{t}^{\frac{-\alpha }{1-\alpha }}h_{t+1}^{\frac{\alpha }{%
+1-\alpha }}\frac{C_{t+1}}{C_{t}}=\beta \left( 1+\frac{\alpha }{1-\alpha }%
+h_{t+1}^{\frac{-1}{1-\alpha }}h_{t+2}^{\frac{1}{1-\alpha }}\right)
+\end{equation*}%
+\begin{equation*}
+\frac{1}{1-\alpha }\gamma ^{\frac{\alpha }{1-\alpha }}\gamma =\beta \left( 1+%
+\frac{\alpha }{1-\alpha }\gamma ^{\frac{1}{1-\alpha }}\right)
+\end{equation*}%
+\begin{equation*}
+\frac{1}{1-\alpha }\gamma ^{\frac{1}{1-\alpha }}=\beta \left( 1+\frac{\alpha 
+}{1-\alpha }\gamma ^{\frac{1}{1-\alpha }}\right)
+\end{equation*}%
+\begin{equation*}
+\frac{1-\beta \alpha }{1-\alpha }\gamma ^{\frac{1}{1-\alpha }}=\beta
+\end{equation*}%
+\begin{equation*}
+\frac{1-\beta \alpha }{1-\alpha }\gamma ^{\frac{1}{1-\alpha }}=\beta
+\end{equation*}%
+\begin{equation*}
+\gamma =\left( \frac{\beta \left( 1-\alpha \right) }{1-\beta \alpha }\right)
+^{1-\alpha }
+\end{equation*}%
+Since 
+\begin{equation*}
+\left( \frac{h_{t+1}}{h_{t}}\right) ^{\frac{1}{1-\alpha }}=1-u_{t}
+\end{equation*}%
+\begin{equation*}
+\gamma ^{\frac{1}{1-\alpha }}=1-u_{t}
+\end{equation*}%
+\begin{equation*}
+\frac{\beta \left( 1-\alpha \right) }{1-\beta \alpha }=1-u_{t}
+\end{equation*}%
+\begin{equation*}
+u=1-\frac{\beta \left( 1-\alpha \right) }{1-\beta \alpha }
+\end{equation*}
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,299 @@
+% !TEX TS-program = lualatex
+
+\DocumentMetadata{
+  lang = en,
+  pdfversion = 2.0,
+  pdfstandard = ua-2,
+  tagging = on,
+  tagging-setup = {
+    math/setup = {mathml-SE},
+    table/header-rows = 1
+  }
+}
+
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{
+  letterpaper,
+  textwidth=6.5in,
+  textheight=9in,
+  top=0.85in,
+  bottom=1in,
+  left=0.75in,
+  right=0.75in,
+}
+\usepackage{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\tagpdfsetup{
+  math/alt/use,
+  role/new-tag=section/H1,
+}
+
+\hypersetup{
+  pdftitle={Assignment 6 -- Key},
+  pdfauthor={Blankenau},
+  pdfsubject={Fall, 2025},
+  hidelinks,
+}
+
+\begin{document}
+\begin{center}
+{\LARGE Assignment 6}
+\end{center}
+
+\noindent Blankenau
+
+\noindent Economics 905, Fall, 2025
+
+\medskip
+\noindent \noindent \textit{Instructions.} You may work in groups and may
+compare answers prior to submission. Joint submissions with up to 4 names
+are allowed and encouraged. All work should be legible and concise. A due
+date will be announced in class.
+
+\begin{enumerate}
+\item Describe how each of the following affects the $\dot{k}=0$ and $\dot{c}%
+=0$ curves in our phase diagram, and thus how they affect the
+balanced-growth-path values of $c$ and $k$:
+
+\begin{enumerate}
+\item A rise in $\theta .$
+
+\item A change in the depreciation rate from the value of 0 assumed so far
+to some positive level. That is, capital now evolves according to $\overset{.%
+}{k}\left( t\right) =f\left( k\left( t\right) \right) -c\left( t\right)
+-\left( n+g+\delta \right) k\left( t\right) .$ Note in addition that now the
+return on capital is $r\left( t\right) =f^{\prime }\left( k\left( t\right)
+\right) -\delta \ $rather than $r\left( t\right) =f^{\prime }\left( k\left(
+t\right) \right) .$ This should lead you to conclude that both the $\dot{k}%
+=0 $ and $\dot{c}=0$ shift.
+\end{enumerate}
+
+\item Consider a standard Ramsey-Cass-Koopman's growth model where
+investment income is subsidized at rate $\varsigma _{k}.$ In each period,
+revenue for the subsidy is generated from a lump sum tax of $G\left(
+t\right) $ per effective unit of labor. The representative household
+maximizes 
+\begin{equation*}
+U=\dint\limits_{t=0}^{\infty }e^{-\left( \rho -n-\left( 1-\theta \right)
+g\right) t}\frac{c\left( t\right) ^{1-\theta }}{1-\theta }dt
+\end{equation*}%
+$\theta >0,$ $\ \rho -n-\left( 1-\theta \right) g>0$ subject to%
+\begin{equation*}
+k\left( 0\right) +\dint\limits_{t=0}^{\infty }e^{-R\left( t\right)
+}e^{\left( n+g\right) t}\left( w\left( t\right) -G\left( t\right) \right)
+dt=\dint\limits_{t=0}^{\infty }e^{-R\left( t\right) }e^{\left( n+g\right)
+t}c\left( t\right) dt
+\end{equation*}%
+and the standard transversality condition. The capital stock per effective
+unit of labor evolves according to $\overset{.}{k}\left( t\right) =f\left(
+k\left( t\right) \right) -c\left( t\right) -\left( n+g\right) k\left(
+t\right) .$ All items are defined as in the text: $c\left( t\right) $ and $%
+k\left( t\right) $ are consumption and capital per effective unit of labor, $%
+n$ in the growth rate of the population, $g$ is the growth rate of the labor
+augmenting technology, $\rho $ is the discount rate, $R\left( t\right)
+=\dint\limits_{\tau =0}^{t}r\left( \tau \right) d\tau $ $\ $where $r\left(
+\tau \right) $ is the period $\tau $ interest rate, $w\left( t\right) $ is
+the period $t$ wage. Thus the real interest rate facing households is given
+by $\left( 1+\varsigma _{k}\right) f^{\prime }\left( k\left( t\right)
+\right) .$ The intensive form production function $f\left( k\left( t\right)
+\right) $ has the standard properties.
+
+\begin{enumerate}
+\item Show your derivation of the optimal growth rate of consumption.
+
+\item Draw the $\overset{.}{k}\left( t\right) =0$ and $\overset{.}{c}\left(
+t\right) =0$ loci in the $c,\,k$ space (that is, draw the principal curves
+of the phase diagram). Label everything properly. Label the steady state
+level of capital $k^{\ast }.$
+
+\item For this part only let $n=g=0$ and $f\left( k\left( t\right) \right)
+=y\left( t\right) =\left( k\left( t\right) \right) ^{.5}$. Suppose that the
+economy has been operating at $k\left( t\right) =\frac{K_{0}}{L_{0}A_{0}}%
+=k_{0}.$ Suddenly $k\left( t\right) $ changes to $k=zk_{0}\ $where $z<1$
+This might have happened because of destruction of some of the capital
+stock, a one-time permanent increase in $L$ or a one-time permanent increase
+in $A$. A policy maker says that it does not matter what caused this
+decrease since all dynamics are the same, regardless of the cause of the
+decrease. Do you agree with this? If so, explain why. If not, describe the
+differences across the three cases, paying particular attention to $y\left(
+t\right) $ and per capita output. Consider these items both immediately and
+in the long run.
+
+\item Suppose the economy is again at $k=k^{\ast }.$ What are the immediate
+and long run consequence on $c$ and $k$ of an increase in $\varsigma _{k}?$
+Show this on a phase diagram.
+
+\item A policy maker says that in this situation, the effect of an increase
+in $\varsigma _{k}=0$ to $\varsigma _{k}>0$ on utility, $U$, is ambiguous
+because consumption is affected differently in the short run and in the long
+run. Do you agree with this statement? Why or why not?\end{enumerate}
+\end{enumerate}
+
+\section*{Answer Key}
+
+\begin{enumerate}
+\item \textit{See below.}
+\begin{enumerate}
+\item \textbf{For all of this, be sure to draw the pictures. I only
+describe them here and can answer questions in class.} From 
+\begin{eqnarray*}
+\dot{k}\left( t\right)  &=&f\left( k\left( t\right) \right) -c\left(
+t\right) -\left( n+g\right) k\left( t\right)  \\
+\frac{\dot{c}\left( t\right) }{c\left( t\right) } &=&\frac{f^{\prime }\left(
+k\left( t\right) \right) -\rho -\theta g}{\theta }
+\end{eqnarray*}%
+we know that the curves are  
+\begin{eqnarray*}
+\dot{k}\left( t\right)  &:&c\left( t\right) =f\left( k\left( t\right)
+\right) -\left( n+g\right) k\left( t\right)  \\
+\dot{c}\left( t\right)  &:&f^{\prime }\left( k\left( t\right) \right) =\rho
++\theta g
+\end{eqnarray*}%
+The parameter $\theta $ appears only in $f^{\prime }\left( k\left( t\right)
+\right) =\rho +\theta g$ so only this curve moves. With $\rho +\theta g$
+larger, $f^{\prime }\left( k\left( t\right) \right) $ must be larger which
+occurs at a smaller $k$. Thus this curve shifts left. The new intersection
+is at a smaller $c$ and $k$ so steady state values of these are lower.
+However, the immediate effect of $c\left( t\right) $ is a jump up to get on
+the new saddle path. $k(t)$ does not change immediately. Note that your new
+saddle path should be above the $\dot{k}\left( t\right) =0$ curve. 
+
+\item Now 
+\begin{eqnarray*}
+\dot{k}\left( t\right)  &:&c\left( t\right) =f\left( k\left( t\right)
+\right) -\left( n+g+\delta \right) k\left( t\right)  \\
+\dot{c}\left( t\right)  &:&f^{\prime }\left( k\left( t\right) \right) =\rho
++\theta g+\delta 
+\end{eqnarray*}
+Since $\delta $ is in each, both curves move. We consider them one at a
+time. 
+
+\begin{itemize}
+\item Your $\dot{k}\left( t\right) =0$ curve should shifts down. In
+particular, it intersects the horizontal axis at the same point on the left,
+but at a smaller amount of capital to the right so the new curve is
+everywhere below the original curve. From this effect in isolation, the
+curves intersect at the same capital and less consumption. There is an
+immediate jump to the new level of consumption. 
+
+\begin{itemize}
+\item Immediate effects are less consumption, same capital. 
+
+\item Long run effect are less consumption, same capital. 
+\end{itemize}
+
+\item Now consider the other shift in isolation. With $\rho +\theta g+\delta 
+$ larger, $f^{\prime }\left( k\right) $ must be larger. This occurs with
+less $k.$ The curve shifts to the left. 
+
+\begin{itemize}
+\item Immediately, consumption increases to get on the new saddle path. 
+
+\item In the long run, capital falls and consumption falls since the new
+intersection is at lower $c$ and $k$. 
+\end{itemize}
+
+\item So immediately, we have downward pressure on consumption from the
+first shift and upward from the second shift. We do not know the effect on
+immediate consumption because we do not know which of these dominates.
+Immediately, neither shift moves capital so capital does not change. 
+
+\item In the long run we have downward pressure on consumption from both
+effects so it definitely falls. In the long run we have no change in capital
+from the first effect and a downward change from the other. So $k$
+definitely falls in the long run. 
+\end{itemize}
+\end{enumerate}
+
+\item \begin{enumerate}
+\item except for $r_{t}=\left( 1+\varsigma _{k}\right) f^{\prime }\left(
+k\left( t\right) \right) ,$ this is the same as in your notes. 
+
+\item as in notes. 
+
+\item We know how to handle the case of larger $A$ from your notes, just
+generalizing from $1.1$ to $z^{-1}$, the relevant rows are     
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llcc}
+Item & Prior to shock & Immediate & Long Run \\ 
+$y$ & \multicolumn{1}{|l}{$y_{0}=k_{0}^{.5}=\left( \frac{K_{0}}{A_{0}L}%
+\right) ^{.5}$} & \multicolumn{1}{|c}{$\left( \frac{K_{0}}{A_{1}L}\right)
+^{.5}=\left( \frac{1}{z^{-1}}\right) ^{.5}k_{0}^{.5}=z^{0.5}y_{0}$ } & 
+\multicolumn{1}{|c}{$y_{1}=y_{0}$} \\ 
+$\frac{Y}{L}$ & \multicolumn{1}{|l}{$A_{0}y_{0}$} & \multicolumn{1}{|c}{$%
+z^{0.5}A_{1}y_{0}=z^{-0.5}A_{0}y_{0}$} & \multicolumn{1}{|c}{$%
+z^{-1}A_{0}y_{0}$}%
+\end{tabular}
+\caption{Table 1: Comparison of values.}
+\end{table}
+If it is instead an increase in $L.$%
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llcc}
+Item & Prior to shock & Immediate & Long Run \\ 
+$y$ & \multicolumn{1}{|l}{$y_{0}=k_{0}^{.5}=\left( \frac{K_{0}}{A_{0}L}%
+\right) ^{.5}$} & \multicolumn{1}{|c}{$\left( \frac{K_{0}}{AL_{1}}\right)
+^{.5}=\left( \frac{1}{z^{-1}}\right) ^{.5}k_{0}^{.5}=z^{0.5}y_{0}$ } & 
+\multicolumn{1}{|c}{$y_{1}=y_{0}$} \\ 
+$\frac{Y}{L}$ & \multicolumn{1}{|l}{$Ay_{0}$} & \multicolumn{1}{|c}{$%
+z^{0.5}Ay_{0}$} & \multicolumn{1}{|c}{$Ay_{0}$}%
+\end{tabular}
+\caption{Table 2: Comparison of values.}
+\end{table}
+If it is instead $K$ 
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llcc}
+Item & Prior to shock & Immediate & Long Run \\ 
+$y$ & \multicolumn{1}{|l}{$y_{0}=k_{0}^{.5}=\left( \frac{K_{0}}{A_{0}L}%
+\right) ^{.5}$} & \multicolumn{1}{|c}{$\left( \frac{zK_{0}}{AL}\right)
+^{.5}=z^{0.5}y_{0}$ } & \multicolumn{1}{|c}{$y_{1}=y_{0}$} \\ 
+$\frac{Y}{L}$ & \multicolumn{1}{|l}{$Ay_{0}$} & \multicolumn{1}{|c}{$%
+z^{0.5}Ay_{0}$} & \multicolumn{1}{|c}{$Ay_{0}$}%
+\end{tabular}
+\caption{Table 3: Comparison of values.}
+\end{table}A graphical and intuitive response will also suffice. 
+
+\item In this case there is no government consumption so the $\dot{k}\left(
+t\right) =0$ curve does not move. But now%
+\begin{equation*}
+\dot{c}\left( t\right) :f^{\prime }\left( k\left( t\right) \right) \left(
+1+\varsigma _{k}\right) =\rho +\theta g+\delta 
+\end{equation*}%
+An increase in $\varsigma _{k}$ increases the left hand side but does not
+change the right. $f^{\prime }\left( k\left( t\right) \right) $ must
+decrease to preserve the equality. This happens at higher $k.$ The curve
+shifts right. Immediately consumption falls to get on the new saddle path.
+In the long run $c$ and $k$ increase.   
+
+\item In class.  
+\end{enumerate}
+\end{enumerate}
+\end{document}

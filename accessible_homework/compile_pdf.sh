@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
-# Build tagged slide PDF locally (MacTeX + LuaLaTeX + ltx-talk).
+# Build tagged homework PDF locally (MacTeX + LuaLaTeX + tagged article).
 set -euo pipefail
 
 TEXBIN="/Library/TeX/texbin"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-STEM="${1:-slides1fall25}"
-WORKDIR="${2:-$SCRIPT_DIR/../905_materials}"
+STEM="${1:-hw1fall25}"
+WORKDIR="${2:-$SCRIPT_DIR/../905_homework}"
 OUTDIR="${3:-$SCRIPT_DIR/../canvas_pdfs}"
-TEX="${STEM}_slides.tex"
-PDF="${STEM}_slides.pdf"
+TEX="${STEM}_hw.tex"
+PDF="${STEM}_hw.pdf"
 
 if [[ ! -x "$TEXBIN/lualatex" ]]; then
   echo "MacTeX not found. Install from https://www.tug.org/mactex/mactex-download.html"
@@ -22,7 +22,7 @@ export PATH="$TEXBIN:$PATH"
 cd "$WORKDIR"
 
 if [[ ! -f "$TEX" ]]; then
-  echo "Missing $WORKDIR/$TEX — run convert_swp_slides first."
+  echo "Missing $WORKDIR/$TEX — run convert_swp_hw first."
   exit 1
 fi
 

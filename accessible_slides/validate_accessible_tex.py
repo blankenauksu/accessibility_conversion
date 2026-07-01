@@ -166,6 +166,12 @@ def validate_accessible_tex(tex_path: PathLike) -> ValidationReport:
             "compile_reminder",
             f"Compile with: bash accessible_slides/compile_pdf.sh {stem} {workdir}",
         )
+        _add(
+            report,
+            "info",
+            "pdf_output",
+            "PDFs are written to canvas_pdfs/",
+        )
 
     return report
 
